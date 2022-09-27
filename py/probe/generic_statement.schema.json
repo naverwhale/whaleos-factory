@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "patternProperties": {
+    "^.+$": {
+      "type": "object",
+      "properties": {
+        "generic": {
+          "type": "object",
+          "properties": {
+            "eval": {
+              "type": [
+                "string",
+                "object",
+                "array"
+              ]
+            }
+          },
+          "required": [
+            "eval"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "generic"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

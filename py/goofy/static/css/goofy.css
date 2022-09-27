@@ -1,0 +1,774 @@
+/*
+ * Copyright 2012 The Chromium OS Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+@import 'reset.css';
+@import 'fonts.css';
+@import 'test_ui.css';
+
+/* Top-level UI elements. */
+#goofy-div-wait {
+  font-family: sans-serif;
+  font-size: 3em;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  line-height: 1.5;
+}
+#goofy-div {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-flow: column;
+}
+#goofy-splitpane-container {
+  flex: 1;
+}
+.goofy-horizontal-border {
+  position: relative;
+  overflow: hidden;
+  top: 0; right: 0; height: 4px; width: 100%;
+}
+.goofy-horizontal-border-1 {
+  position: absolute;
+  left: 0; width: 100%; height: 100%;
+  background-color: #4172a0;
+}
+.goofy-horizontal-border-2 {
+  position: absolute;
+  left: 25%; width: 100%; height: 100%;
+  background-color: #779fd3;
+}
+.goofy-horizontal-border-3 {
+  position: absolute;
+  left: 50%; width: 100%; height: 100%;
+  background-color: #85b4df;
+}
+.goofy-horizontal-border-4 {
+  position: absolute;
+  left: 75%; width: 100%; height: 100%;
+  background-color: #cddff0;
+}
+#goofy-control {
+  padding: 5px 0;
+  width: 100%;
+  flex: 1;
+}
+#goofy-control, #goofy-status-bar {
+  cursor: default;
+  user-select: none;
+}
+#goofy-control, #goofy-console {
+  overflow: auto;
+}
+
+/* Overrides for status bar. */
+.goofy-indicator {
+  border-top: 1px solid lightgray;
+  color: white;
+  display: none;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+#goofy-engineering-mode-indicator {
+  background-color: red;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.goofy-engineering-mode #goofy-engineering-mode-indicator {
+  display: block;
+}
+#goofy-disable-engineering-mode {
+  border: none;
+  cursor: pointer;
+  margin-left: 1em;
+  vertical-align: -5px;
+  width: 21; height: 21;
+}
+
+/* Elements in the control pane. */
+#goofy-splitpane-left {
+  display: flex;
+  flex-flow: column;
+}
+#goofy-logo {
+  height: 18px;
+  vertical-align: -3px;
+  padding: 0 3px 0 7px;
+  min-width: 18px;
+  background-color: white;
+  background-image: url('/images/logo128.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.goofy-note-warning#goofy-logo, .goofy-note-critical#goofy-logo {
+  background-image: url('/images/warning.svg');
+  cursor: pointer;
+}
+.goofy-note-info#goofy-logo {
+  background-image: url('/images/info.png');
+  cursor: pointer;
+}
+#goofy-logo-text {
+  cursor: pointer;
+  font-size: 1.25em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#goofy-logo-down-arrow {
+  vertical-align: 3px;
+}
+#goofy-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cddff0;
+  padding: 2px 0;
+}
+#goofy-title {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+#goofy-locale-selector {
+  flex: none;
+  display: flex;
+  align-items: center;
+}
+#goofy-go, #goofy-terminal, #goofy-locale-selector {
+  cursor: pointer;
+  padding: 2px;
+}
+#goofy-go:hover, #goofy-locale-selector:hover {
+  text-decoration: underline;
+}
+#goofy-loading {
+  font-style: italic;
+  font-size: 0.75em;
+}
+#goofy-loading img {
+  margin-right: 3px;
+  vertical-align: bottom;
+}
+.goofy-kbd-shortcut {
+  float: right;
+  font-size: 0.75em;
+  padding-right: .5em;
+  color: darkgray;
+}
+
+.goofy-test-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: -2px;
+  width: 16px; height: 16px;
+}
+.goofy-status-passed > div > .goofy-test-icon {
+  background-image: url('/images/passed.gif');
+}
+.goofy-status-active > div > .goofy-test-icon {
+  background-image: url('/images/active.gif');
+}
+.goofy-status-failed > div > .goofy-test-icon {
+  background-image: url('/images/failed.gif');
+}
+.goofy-status-failed-and-waived > div > .goofy-test-icon {
+  background-image: url('/images/failed_and_waived.gif');
+}
+.goofy-status-untested > div > .goofy-test-icon {
+  background-image: url('/images/untested.gif');
+}
+.goofy-status-skipped > div > .goofy-test-icon {
+  background-image: url('/images/passed.gif');
+}
+.goofy-status-skipped > div > .goog-tree-item-label {
+  text-decoration: line-through;
+  color: darkgray;
+}
+.goofy-test-failure-expanded .goofy-test-failure-detail-link {
+  display: none;
+}
+.goofy-test-failure-expanded .goofy-test-failure-detail {
+  display: block;
+}
+.goofy-test-failure-detail-link, .goofy-test-failure-debug-link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+  font-style: italic;
+  font-size: 0.75em;
+  padding-top: 1em;
+}
+.goofy-test-failure-detail + .goofy-test-failure-debug-link {
+  padding-top: 0;
+}
+.goofy-test-failure-detail {
+  white-space: pre;
+  display: none;
+  font-size: 0.75em;
+  padding-top: 1em;
+}
+.goofy-debug-tabbar {
+  overflow: hidden;
+  width: 980px;
+  border: 1px solid #cccccc;
+  background-color: #f1f1f1;
+  position: fixed;
+}
+.goofy-debug-tab {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.goofy-debug-tab-clicked {
+  background-color: #cccccc;
+}
+.goofy-debug-tab:hover {
+  background-color: #dddddd;
+}
+.goofy-debug-div {
+  padding-top: 3em;
+}
+.goofy-debug-div-invisible {
+  display: none;
+}
+.goofy-history {
+  height: 500px;
+}
+.goofy-history table {
+  border-spacing: 0;
+}
+table + .goofy-history-header {
+  padding-top: 1em;
+}
+.goofy-history th, .goofy-history td {
+  font-size: 0.75em;
+  text-align: left;
+}
+.goofy-history th {
+  padding-right: 1em;
+}
+.goofy-history-code {
+  font-family: monospace;
+  white-space: pre;
+}
+.goofy-history-metadata, .goofy-history-log, .goofy-log-data,
+.goofy-device-manager {
+  white-space: pre;
+  font-size: 0.75em;
+}
+.goofy-log-data {
+  overflow: auto;
+}
+.goofy-log-time {
+  font-size: 0.75em;
+  padding-top: 0.5em;
+}
+.goofy-note-name {
+  font-size: 0.75em;
+  min-width: 75px;
+  padding-right: 5px;
+  text-align: right;
+  padding-top: 5px;
+}
+.goofy-note-text {
+  font-size: 0.75em;
+  white-space: pre;
+  min-width: 200px;
+}
+.goofy-note-time {
+  font-size: 0.75em;
+  font-style: italic;
+  min-width: 75px;
+}
+#goofy-note-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+.goofy-addnote-table th {
+  vertical-align: middle;
+}
+#goofy-addnote-text {
+  min-width: 350px;
+  min-height: 100px;
+}
+.goofy-fullnote-display-outer {
+  display: table;
+  height: 100%; width: 100%;
+}
+.goofy-fullnote-display-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: pink;
+}
+.goofy-fullnote-title {
+  font-size: 3em;
+  text-align: center;
+}
+.goofy-fullnote-logo {
+  height: 170px;
+  width: 170px;
+  vertical-align: middle;
+}
+.goofy-fullnote-note {
+  max-height: 300px;
+  min-width: 460px;
+  overflow: auto;
+  display: inline-block;
+}
+.goofy-ul-table th {
+  text-align: left;
+}
+.goofy-ul-archive-key {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.goofy-unknown {
+  color: darkgray;
+  font-style: italic;
+}
+.goofy-debug-status-pass {
+  color: #0A0;
+}
+.goofy-debug-status-fail {
+  color: #D00;
+}
+
+/* Elements in the main pane. */
+#goofy-test-ui-main, #goofy-main-and-console-container {
+  display: flex;
+  flex-flow: column;
+}
+#goofy-test-ui-main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+#goofy-background {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background: -webkit-linear-gradient(210deg, #cddff0, #85b4df);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+#goofy-main-logo {
+  opacity: 0.1;
+}
+.goofy-test-iframe {
+  display: none;
+}
+.goofy-test-iframe.goofy-test-visible {
+  display: inline;
+  flex: 1;
+}
+.goofy-test-iframe.goofy-test-fullscreen {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  /* This is same as goofy-background */
+  background: -webkit-linear-gradient(210deg, #cddff0, #85b4df);
+}
+
+/* Elements in the console pane. */
+#goofy-console-container {
+  display: flex;
+  flex-flow: column;
+}
+#goofy-console {
+  padding: .5em .5em 0 .5em;
+  flex: 1;
+}
+.goofy-internal-log {
+  font-style: italic;
+}
+.goofy-internal-error {
+  color: red;
+}
+
+/* Plugins UI */
+.goofy-plugin-area {
+  display: flex;
+  flex: none;
+}
+.goofy-plugin {
+  height: 24px; width: 100%;
+  flex: none;
+  border-top: 1px solid lightgray;
+  position: relative;
+}
+.goofy-plugin iframe {
+  height: 100%; width: 100%;
+  background-color: white;
+}
+
+/* Dialogs. */
+.goofy-shutdown-dialog .modal-dialog-content {
+  font-size: 2em;
+  padding: 0.5em;
+}
+.goofy-shutdown-dialog .progress-bar-horizontal {
+  margin: .25em 0;
+}
+.goofy-shutdown-dialog p {
+  padding-bottom: 0.5em;
+}
+.goofy-engineering-mode-dialog .modal-dialog-userInput {
+  font-size: 2em;
+  -webkit-text-security: disc;
+}
+.goofy-engineering-mode-dialog br, .goofy-log-identifier-prompt br {
+  display: none;
+}
+.goofy-log-identifier-prompt input {
+  margin-top: 0.5em;
+  width: 100%;
+}
+.goofy-startup-error {
+  white-space: pre-wrap;
+  margin-top: 1em;
+}
+.modal-dialog-buttons {
+  text-align: center;
+}
+.modal-dialog-buttons button {
+  margin: 0 .5em;
+}
+.goofy-dialog {
+  max-width: 85vw;
+  max-height: 85vh;
+  display: flex;
+  flex-flow: column;
+}
+.goofy-dialog .modal-dialog-content {
+  display: flex;
+  flex-flow: column;
+  overflow: auto;
+  flex: 1;
+}
+.goofy-debug-dialog {
+  width: 1000px;
+}
+.goofy-debug-dialog .modal-dialog-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Overrides for Closure components. */
+#goofy .goog-menu {
+  margin-left: -1em;
+}
+#goofy .goog-menuitem {
+  padding-left: 1em;
+  padding-right: 2em;
+}
+#goofy .goog-menuitem.goog-option {
+  padding-left: 2em;
+}
+#goofy-control .goog-tree-root {
+  padding-left: .5em;
+}
+#goofy-control .goog-tree-row {
+  height: 20px;
+  line-height: 20px;
+}
+#goofy-control .goog-tree-item-label {
+  margin-left: 2px;
+  cursor: pointer;
+}
+#goofy-control .goog-tree-expand-icon {
+  vertical-align: -1px;
+}
+/* No background for any tree items in the control pane. */
+#goofy-control .goog-tree-item-label {
+  background-color: transparent;
+}
+/* Add a background for the visible test. */
+#goofy-control .goofy-test-visible .goog-tree-item-label {
+  background-color: #cddff0;
+}
+.modal-dialog button {
+  padding: 6px 16px;
+}
+.modal-dialog-bg {
+  z-index: 10;
+}
+.modal-dialog {
+  z-index: 11;
+}
+
+/* Definitions for closure components not included in Closure. */
+.goog-splitpane {
+  flex: 1;
+  overflow: hidden;
+}
+.goog-splitpane-handle {
+  background: #cddff0;
+  position: absolute;
+}
+.goog-splitpane-handle-horizontal {
+  cursor: col-resize;
+}
+.goog-splitpane-handle-vertical {
+  cursor: row-resize;
+}
+.goog-splitpane-first-container,
+.goog-splitpane-second-container {
+  position: absolute;
+}
+
+.progress-bar-vertical,
+.progress-bar-horizontal {
+  position: relative;
+  border: 1px solid #949dad;
+  background: white;
+  overflow: hidden;
+}
+
+.progress-bar-horizontal {
+  width: 100%;
+  height: 1.5em;
+}
+
+.progress-bar-vertical {
+  width: 14px;
+  height: 200px;
+}
+
+.progress-bar-thumb {
+  position: relative;
+  background: #d4e4ff;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Used by the Device Manager window. */
+#goofy-device-manager-refresh {
+  position: absolute;
+  top: 90%;
+}
+
+#goofy-device-manager-refresh-icon {
+  width: 36px;
+  height: 36px;
+  background-image: url('/images/refresh.png');
+  background-size: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#goofy-device-manager-refresh-text {
+  font-size: 1.2em;
+  font-weight: normal;
+  vertical-align: middle;
+  padding: 2px;
+  display: inline-block;
+}
+
+.goofy-device-manager {
+  width: 85vw;
+  height: 85vh;
+}
+
+/* TODO(pihsun): Change this to not use position: absolute, so we don't need
+ * to set size for .goofy-device-manager. */
+.goofy-device-manager #goofy-device-data-area {
+  width: 60%;
+  height: 80%;
+  overflow: scroll;
+  position: absolute;
+  left: 38%;
+  top: 9%;
+  display: inline-block;
+}
+
+.goofy-device-manager #goofy-device-data-area .device-name {
+  font-size: 2.4em;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.goofy-device-manager #goofy-device-data-area .device-manager-loading {
+  font-size: 2em;
+  line-height: 50px;
+}
+
+.goofy-device-manager #goofy-device-data-area ul li{
+  line-height: 180%;
+  position: relative;
+  left: 5px;
+}
+
+.goofy-device-manager #goofy-device-data-area table {
+  border-spacing: 5px;
+}
+
+.goofy-device-manager #goofy-device-data-area table tr td {
+  padding: 1px;
+}
+
+.goofy-device-manager #goofy-device-data-area .two-column-table tr td:first-child {
+  font-weight: bold;
+}
+
+.goofy-device-manager #goofy-device-data-area .multi-column-table tr td {
+  background-color: #f4f4f4;
+}
+
+.goofy-device-manager #goofy-device-data-area .multi-column-table tr th {
+  font-weight: bold;
+}
+
+.goofy-device-manager #goofy-device-list-area {
+  width: 35%;
+  height: 80%;
+  overflow: scroll;
+  position: absolute;
+  top: 9%;
+}
+
+.goofy-device-manager #goofy-device-list-area table tr:hover {
+  background-color: #f4f4f4;
+}
+
+.goofy-device-manager .toggle {
+  cursor: pointer;
+  cursor: hand;
+  background-repeat: none;
+  background-position: right;
+}
+
+.goofy-device-manager tr.goog-drilldown-expanded .toggle {
+  background-image: url('/images/dropdown.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170%;
+  padding: 2px;
+}
+
+.goofy-device-manager tr.goog-drilldown-collapsed .toggle {
+  background-image: url('/images/dropright.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170%;
+  padding: 2px;
+}
+
+.goofy-device-manager .goog-flat-button {
+  color: black;
+  cursor: pointer;
+}
+
+/* Used by the Terminal window. */
+#goofy-terminal {
+  display: none;
+}
+
+#goofy-terminal.goofy-engineering-mode {
+  display: inline-block;
+}
+
+.goofy-terminal-window {
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  z-index: 5;
+  float: left;
+  border: 5px solid #eee;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.8);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.goofy-terminal-title {
+  float: left;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  line-height: 20px;
+  background-color: #eee;
+  cursor: move;
+  padding-bottom: 4px;
+}
+
+.goofy-terminal-control {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 20px;
+  color: black;
+  background-color: #eee;
+}
+
+.goofy-terminal-control * {
+  display: inline-block;
+}
+
+.goofy-terminal-close:hover, .goofy-terminal-minimize:hover {
+  opacity: 0.7;
+}
+
+.goofy-terminal-close {
+  background-image: url('/images/close.png');
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.goofy-terminal-minimize {
+  background-image: url('/images/minimize.png');
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.goofy-terminal-window .terminal {
+  clear: both;
+  font-size: 14px;
+  line-height: 16px;
+  text-rendering: auto;
+  border-width: 5px 0 0 5px;
+}
+
+.terminal * {
+  font-family: monospace;
+  white-space: nowrap;
+}

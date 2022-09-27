@@ -1,0 +1,15 @@
+{
+  "active_bundle_id": "default",
+  "bundles": [
+    {
+      "id": "default",
+      "note": "Default bundle for testing update",
+      "payloads": "payload.5f4d37b044e74da13f0cf8fbeca7e148.json"
+    }
+  ],
+  "services": {
+    "umpire_http": {},
+    "rsync": {},
+    "shop_floor": {}
+  }
+}

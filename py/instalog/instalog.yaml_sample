@@ -1,0 +1,23 @@
+instalog:
+  node_id: 'sample_node'
+  data_dir: '/tmp/instalog'
+  pid_file: '/tmp/instalog.pid'
+  log_file: '/tmp/instalog.log'
+  cli_hostname: 'localhost'
+  cli_port: 7000
+buffer:
+  plugin: 'buffer_simple_file'
+  args:
+    copy_attachments: False
+    truncate_interval: 0
+input:
+  time:
+    plugin: 'input_time'
+    targets: 'stdout'
+    args:
+      interval: 10
+      num_attachments: 1
+      attachment_bytes: 1024
+output:
+  stdout:
+    plugin: 'output_stdout'

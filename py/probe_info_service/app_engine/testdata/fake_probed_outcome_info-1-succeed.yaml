@@ -1,0 +1,30 @@
+component_testdata_names:
+  - "1-valid"
+
+envs:
+  FAKE_RUNTIME_PROBE_STDOUT: "{}"
+  FAKE_RUNTIME_PROBE_RETURN_CODE: "0"
+
+probed_outcome_prototxt: '
+  probe_statement_metadatas: {
+    component_name: "AVL_1"
+    fingerprint: "1d288df55b83826b7a146ff80ffff9691828c60f"
+  }
+  rp_invocation_result: {
+    result_type: FINISHED
+    return_code: 0
+    raw_stdout: "{}\n"
+  }'
+
+probe_config_payload: '
+  {
+    "storage": {
+      "AVL_1": {
+        "eval": {"mmc_storage": {}},
+        "expect": {
+          "mmc_manfid": [true, "hex", "!eq 0x0A"],
+          "mmc_name": [true, "str", "!eq ABCxyz"]
+        }
+      }
+    }
+  }'

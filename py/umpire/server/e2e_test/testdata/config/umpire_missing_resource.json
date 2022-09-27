@@ -1,0 +1,15 @@
+{
+  "active_bundle_id": "empty_init_bundle",
+  "bundles": [
+    {
+      "id": "empty_init_bundle",
+      "note": "n/a",
+      "payloads": "payload.nonexist.json"
+    }
+  ],
+  "services": {
+    "umpire_http": {},
+    "rsync": {},
+    "shop_floor": {}
+  }
+}

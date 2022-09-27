@@ -1,0 +1,21 @@
+{
+  "plugins": {
+    "time_sanitizer": {
+      "args": {
+        "base_time_files": ["/usr/local/etc/lsb-factory",
+                            "/etc/lsb-release"]
+      }
+    },
+    "instalog": {
+      "args": {
+        "uplink_hostname": "localhost",
+        "uplink_port": 7500,
+        "uplink_use_factory_server": true
+      }
+    },
+    "station_setup.station_setup": {
+      "args": {
+      }
+    }
+  }
+}

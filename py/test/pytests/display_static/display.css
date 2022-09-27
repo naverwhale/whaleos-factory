@@ -1,0 +1,182 @@
+/*
+ * Copyright 2012 The Chromium OS Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+.display-caption {
+  text-align: center;
+  font-size: 2.25em;
+}
+
+.display-table-container {
+  width: 60%;
+  flex: 1;
+  overflow: auto;
+  display: flex;
+}
+
+#display-table {
+  flex: 1;
+  display: grid;
+  grid: auto-flow 1fr / repeat(2, 1fr);
+  border: 1px black solid;
+  min-height: min-content;
+}
+
+#display-table > div {
+  border: 1px black solid;
+}
+
+#display-timer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  mix-blend-mode: difference;
+  color: white;
+  font-size: 2em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtest-status-untested {
+  background-color: gray;
+}
+
+.subtest-status-passed {
+  background-color: green;
+  opacity: 0.5;
+}
+
+.subtest-status-failed {
+  background-color: red;
+  opacity: 0.5;
+}
+
+#display-div {
+  width: 100%;
+  height: 100%;
+}
+
+#display-div.subtest-grid {
+  background-image: linear-gradient(0deg, black 1px, transparent 1px),
+                    linear-gradient(90deg, black 1px, transparent 1px);
+  background-size: 10px 10px;
+}
+
+#display-div.subtest-solid-gray-170 {
+  background-color: #aaaaaa;
+}
+
+#display-div.subtest-solid-gray-127 {
+  background-color: #7f7f7f;
+}
+
+#display-div.subtest-solid-gray-127 ~ #display-timer {
+  mix-blend-mode: normal;
+}
+
+#display-div.subtest-solid-gray-63 {
+  background-color: #3f3f3f;
+}
+
+#display-div.subtest-solid-red {
+  background-color: red;
+}
+
+#display-div.subtest-solid-green {
+  background-color: green;
+}
+
+#display-div.subtest-solid-blue {
+  background-color: blue;
+}
+
+#display-div.subtest-solid-gray {
+  background-color: gray;
+}
+
+#display-div.subtest-solid-black {
+  background-color: black;
+}
+
+#display-div.subtest-solid-white {
+  background-color: white;
+}
+
+#display-div.subtest-rectangle {
+  background-color: black;
+  border: 10px solid white;
+  box-sizing: border-box;
+}
+
+#display-div.subtest-gradient-red {
+  background-image: linear-gradient(to bottom right, black, red);
+}
+
+#display-div.subtest-gradient-green {
+  background-image: linear-gradient(to bottom right, black, green);
+}
+
+#display-div.subtest-gradient-blue {
+  background-image: linear-gradient(to bottom right, black, blue);
+}
+
+#display-div.subtest-gradient-white {
+  background-image: linear-gradient(to bottom right, black, white);
+}
+
+#display-div.subtest-image-complex {
+  background-image: url(./complex.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-black {
+  background-image: url(./black.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-white {
+  background-image: url(./white.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-crosstalk-black {
+  background-image: url(./crosstalk-black.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-crosstalk-white {
+  background-image: url(./crosstalk-white.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-gray-63 {
+  background-image: url(./gray-63.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-gray-127 {
+  background-image: url(./gray-127.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-gray-170 {
+  background-image: url(./gray-170.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-horizontal-rgbw {
+  background-image: url(./horizontal-rgbw.bmp);
+  background-size: 100% 100%;
+}
+
+#display-div.subtest-image-vertical-rgbw {
+  background-image: url(./vertical-rgbw.bmp);
+  background-size: 100% 100%;
+}

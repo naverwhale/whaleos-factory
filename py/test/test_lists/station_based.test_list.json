@@ -1,0 +1,157 @@
+{
+  "__comment": "We assume the DUT is also running Goofy, so FactoryState APIs are used.",
+  "inherit": [
+    "generic_common.test_list"
+  ],
+  "label": "Station-Based Test Template",
+  "constants": {
+    "check_serial_number": true,
+    "__comment_check_serial_number": "Set this to false if you don't expect MLB SN on device.",
+    "load_dut_storage": false,
+    "__comment_load_dut_storage": "Load data from STORAGE_SAVED_DICT.json on device."
+  },
+  "options": {
+    "clear_state_on_start": true,
+    "hooks_class": "cros.factory.goofy.hooks.StationTestListHooks",
+    "plugin_config_name": "goofy_plugin_station"
+  },
+  "definitions": {
+    "ConnectDevice": {
+      "pytest_name": "station_entry",
+      "label": "Connect Device",
+      "args": {
+        "prompt_start": true,
+        "load_dut_storage": "eval! constants.load_dut_storage"
+      }
+    },
+    "DisconnectDevice": {
+      "pytest_name": "station_entry",
+      "label": "Disconnect Device",
+      "args": {
+        "start_station_tests": false,
+        "disconnect_dut": true
+      }
+    },
+    "FactoryState": {
+      "pytest_name": "factory_state"
+    },
+    "FactoryStateCleanUp": {
+      "inherit": "FlattenGroup",
+      "subtests": [
+        "FactoryStateCopyToDUT",
+        "FactoryStateMergeOnDUT",
+        "FactoryStatePopOnStation"
+      ]
+    },
+    "FactoryStateCopyFromDUT": {
+      "inherit": "FactoryState",
+      "label": "Copy Factory State From DUT",
+      "args": {
+        "action": "COPY",
+        "device": "DUT"
+      }
+    },
+    "FactoryStateCopyToDUT": {
+      "inherit": "FactoryState",
+      "label": "Copy Factory State To DUT",
+      "args": {
+        "action": "COPY",
+        "device": "STATION"
+      }
+    },
+    "FactoryStateMergeOnDUT": {
+      "inherit": "FactoryState",
+      "label": "Merge Factory State On DUT",
+      "args": {
+        "action": "MERGE",
+        "device": "DUT"
+      }
+    },
+    "FactoryStatePopOnStation": {
+      "inherit": "FactoryState",
+      "label": "Pop Factory State On Station",
+      "args": {
+        "action": "POP",
+        "device": "STATION"
+      }
+    },
+    "FactoryStateSetup": {
+      "inherit": "FlattenGroup",
+      "subtests": [
+        "FactoryStateCopyFromDUT"
+      ]
+    },
+    "StationCheckSerialNumber": {
+      "inherit": "CheckSerialNumber",
+      "run_if": "constants.check_serial_number"
+    },
+    "StationLoop": {
+      "iterations": -1,
+      "retries": -1,
+      "__comment": "This will be run forever",
+      "subtests": [
+        "StationLoopStart",
+        "StationLoopMain",
+        "CheckPoint",
+        "StationLoopEnd"
+      ]
+    },
+    "StationLoopEnd": {
+      "teardown": true,
+      "subtests": [
+        "FlushTestlog",
+        "FactoryStateCleanUp",
+        "DisconnectDevice",
+        "StationLoopItemsAfterDisconnection"
+      ]
+    },
+    "StationLoopItemsAfterDisconnection": {
+      "inherit": "FlattenGroup",
+      "__comment": "These items will be run everytime after the device is disconnected.",
+      "subtests": [
+        {
+          "inherit": "Placeholder",
+          "label": "Placeholder: AfterDisconnection"
+        }
+      ]
+    },
+    "StationLoopItemsBeforeConnection": {
+      "inherit": "FlattenGroup",
+      "__comment": "These items will be run everytime before the device is connected.",
+      "subtests": [
+        {
+          "inherit": "Placeholder",
+          "label": "Placeholder: BeforeConnection"
+        }
+      ]
+    },
+    "StationLoopMain": {
+      "__comment": "These items will be run everytime after the device is connected.",
+      "subtests": [
+        {
+          "inherit": "Placeholder",
+          "label": "Placeholder: Main"
+        }
+      ]
+    },
+    "StationLoopStart": {
+      "child_action_on_failure": "STOP",
+      "subtests": [
+        "SyncFactoryServer",
+        "StationLoopItemsBeforeConnection",
+        "ConnectDevice",
+        "StationCheckSerialNumber",
+        "FactoryStateSetup"
+      ]
+    },
+    "StationSetupItems": {
+      "inherit": "FlattenGroup",
+      "__comment": "One time setup items when station is up.",
+      "subtests": []
+    }
+  },
+  "tests": [
+    "StationSetupItems",
+    "StationLoop"
+  ]
+}

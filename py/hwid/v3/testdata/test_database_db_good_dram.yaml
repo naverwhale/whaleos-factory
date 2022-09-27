@@ -1,0 +1,74 @@
+board: CHROMEBOOK
+
+
+##### BEGIN CHECKSUM BLOCK
+#
+# WARNING: This checksum is generated and audited by Google. Do not
+# modify it. If you modify it, devices' configurations will be
+# invalid, and the devices may not be sold.
+#
+# 警告：此校验码由 Google 产生及审核，禁止手动修改。
+# 若修改将使设备配置變為无效，并且不得销售此设备。
+#
+#####
+checksum: c2a98858ae21b5e19b8f46c4f73bdcc86f98ff4a
+
+##### END CHECKSUM BLOCK. See the warning above. 请参考上面的警告。
+
+
+encoding_patterns:
+  0: default
+
+image_id:
+  0: TEST
+
+pattern:
+  - image_ids: [0]
+    encoding_scheme: base8192
+    fields:
+    - display_panel_field: 1
+    - ram_field: 1
+
+encoded_fields:
+  display_panel_field:
+    0: { display_panel: display_panel_0 }
+    1: { display_panel: display_panel_1 }
+  ram_field:
+    0: { ram: ram_0 }
+    1: { ram: ram_1 }
+
+components:
+  display_panel:
+    items:
+      display_panel_0:
+        values:
+          cores: '1'
+          model: 'x'
+      display_panel_1:
+        values:
+          cores: '4'
+          model: 'abc'
+  ram:
+    items:
+      ram_0:
+        values:
+          size: '1024'
+      ram_1:
+        values:
+          size: '4096'
+  dram:
+    items:
+      dram_type_4g_0:
+        values:
+          part: anything
+          size: '4096'
+          slot: '0'
+      dram_type_256mb_and_real_is_512mb:
+        values:
+          part: whatever
+          size: '512'
+          slot: '0'
+
+rules:
+- name: device_info.set_image_id
+  evaluate: SetImageId('TEST');

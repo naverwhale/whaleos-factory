@@ -1,0 +1,63 @@
+board: CHROMEBOOK
+
+
+##### BEGIN CHECKSUM BLOCK
+#
+# WARNING: This checksum is generated and audited by Google. Do not
+# modify it. If you modify it, devices' configurations will be
+# invalid, and the devices may not be sold.
+#
+# 警告：此校验码由 Google 产生及审核，禁止手动修改。
+# 若修改将使设备配置變為无效，并且不得销售此设备。
+#
+#####
+checksum: e78db8e4f8bb47708d6bb99da214d33bbf55c8ea
+
+##### END CHECKSUM BLOCK. See the warning above. 请参考上面的警告。
+
+
+encoding_patterns:
+  0: default
+
+image_id:
+  0: TEST
+
+pattern:
+  - image_ids: [0]
+    encoding_scheme: base8192
+    fields:
+    - cpu_field: 1
+
+encoded_fields:
+  cpu_field:
+    0: { cpu: cpu_0 }
+    1: { cpu: cpu_1 }
+
+components:
+  cpu:
+    items:
+      cpu_0:
+        values:
+          cores: '1'
+          model: 'x'
+      cpu_1:
+        values:
+          cores: '4'
+          model: 'abc'
+      cpu_2_3#3:
+        values:
+          cores: '4'
+          model: 'def'
+      cpu_original_2:  # Don't fail for unchanged invalid component names
+        values:
+          cores: '5'
+          model: 'def'
+      cpu_3_4#5:
+        status: unsupported
+        values:
+          cores: '6'
+          model: 'def'
+
+rules:
+- name: device_info.set_image_id
+  evaluate: SetImageId('TEST');

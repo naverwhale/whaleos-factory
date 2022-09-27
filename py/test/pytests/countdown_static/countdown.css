@@ -1,0 +1,80 @@
+/*
+ * Copyright 2017 The Chromium OS Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+table {
+  margin: auto;
+  border: solid 4px #779FD3;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 0 8px;
+}
+
+thead tr {
+  font-size: 200%;
+  background-color: #CDDFF0;
+}
+
+thead tr th {
+  text-align: center;
+}
+
+tbody tr {
+  background-color: white;
+}
+
+tbody tr:first-child * {
+  padding-top: 4px;
+}
+
+tbody tr:last-child * {
+  padding-bottom: 4px;
+}
+
+#cd-container {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  flex-flow: column;
+  padding: 5vh 0;
+}
+
+#cd-log-panel,
+#cd-legend-panel {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 4px #779FD3;
+  background-color: white;
+  text-align: left;
+  width: 80%;
+}
+
+#cd-log-panel {
+  overflow: scroll;
+  padding: 10px;
+  flex: 1;
+}
+
+#cd-legend-title {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  background-color: #CDDFF0;
+}
+
+#cd-legend-item-panel {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cd-legend-item {
+  display: inline-block;
+  margin: 0 .5em;
+  white-space: nowrap
+}

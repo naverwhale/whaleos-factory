@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "inherit": {
+      "oneOf": [
+        {"type": "string"},
+        {"type": "array"}
+      ]
+    }
+  },
+  "patternProperties": {
+    "_int$": {
+      "type": "integer"
+    },
+    "_str$": {
+      "type": "string"
+    },
+    "_mapping$": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

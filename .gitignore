@@ -1,0 +1,12 @@
+*.pyc
+*.par
+build
+shopfloor_data
+.tests-passed
+overlay-*
+go/bin
+go/pkg
+*.venv
+setup/rootCA.pem
+setup/cert.pem
+setup/ovl_password

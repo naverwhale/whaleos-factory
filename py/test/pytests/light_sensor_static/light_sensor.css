@@ -1,0 +1,38 @@
+#container {
+  font-size: 1.5em;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.task {
+  color: green;
+  border-bottom: 1px gray solid;
+}
+
+#prompt,
+.task,
+#input {
+  padding: .5em 0;
+}
+
+.desc-row {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.desc {
+  flex: 2;
+  white-space: nowrap;
+}
+
+.result {
+  flex: 1;
+  white-space: nowrap;
+}
+
+#input {
+  flex: 1;
+}

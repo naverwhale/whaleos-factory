@@ -1,0 +1,55 @@
+{
+  "inherit": [
+    "generic_smt.test_list",
+    "generic_fat.test_list",
+    "generic_run_in.test_list",
+    "generic_fft.test_list",
+    "generic_grt.test_list"
+  ],
+  "label": "Generic Chromebook",
+  "options": {
+    "skipped_tests": {
+      "device.factory.end_SMT": [
+        "SMT"
+      ],
+      "device.factory.end_FAT": [
+        "FAT"
+      ],
+      "device.factory.end_RUNIN": [
+        "RunIn"
+      ],
+      "device.factory.end_FFT": [
+        "FFT"
+      ]
+    },
+    "ui_locale": "zh-CN"
+  },
+  "definitions": {
+    "FATP": {
+      "inherit": "FlattenGroup",
+      "locals": {
+        "factory_server_url": "eval! constants.default_factory_server_url"
+      },
+      "subtests": [
+        "FAT",
+        "RunIn",
+        "FFT",
+        "GRT"
+      ]
+    },
+    "SMT": {
+      "locals": {
+        "factory_server_url": "eval! constants.default_factory_server_url"
+      }
+    },
+    "SyncFactoryServer": {
+      "args": {
+        "server_url": "eval! locals.factory_server_url"
+      }
+    }
+  },
+  "tests": [
+    "SMT",
+    "FATP"
+  ]
+}

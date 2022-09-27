@@ -1,0 +1,88 @@
+<html id="goofy">
+  <head>
+    <title>CrOS Factory</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/css/closure.css">
+    <link rel="stylesheet" type="text/css" href="/css/goofy.css">
+    <link rel="stylesheet" type="text/css" href="/css/i18n.css">
+    <link rel="stylesheet" type="text/css" href="/css/diagnosis_tool.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css">
+    <link rel="icon" type="image/png" href="images/logo32.png">
+
+    <script type="text/javascript">
+      var CLOSURE_NO_DEPS = true;
+    </script>
+    <script type="text/javascript" src="/js/goofy-translations.js"></script>
+    <script type="text/javascript" src="/js/goofy.js"></script>
+    <script type="text/javascript" src="/js/custom_components.js"></script>
+    <script type="text/javascript" src="/js/term.min.js"></script>
+    <script type="text/javascript" src="/js/base64.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
+  </head>
+  <body>
+    <div id='goofy-div-wait'>
+      Chrome OS Factory: Loading...
+    </div>
+    <div id='goofy-div'>
+      <div class="goog-splitpane" id="goofy-splitpane">
+        <div class="goog-splitpane-first-container" id="goofy-splitpane-left">
+          <div class="goofy-horizontal-border">
+            <div class="goofy-horizontal-border-1"></div>
+            <div class="goofy-horizontal-border-2"></div>
+            <div class="goofy-horizontal-border-3"></div>
+            <div class="goofy-horizontal-border-4"></div>
+          </div>
+          <div id="goofy-header">
+            <div id="goofy-title">
+              <span id="goofy-logo" onclick="goofy.viewNotes()"></span>
+              <span id="goofy-logo-text">CrOS Factory</span>
+              <span id="goofy-logo-down-arrow"> ▼</span>
+            </div>
+            <img id="goofy-locale-selector" src="images/translate.svg" width="32" height="32">
+            <img id="goofy-go" src="images/play.svg" width="32" height="32"
+              onclick="goofy.startAutoTest()">
+            <img id="goofy-terminal" src="images/terminal.svg" width="32"
+              height="32" onclick="goofy.launchTerminal()">
+          </div>
+
+          <div id="goofy-control">
+            <div id="goofy-loading">
+              <img src="images/active.gif">Loading test list...
+            </div>
+            <div id="goofy-test-tree"></div>
+          </div>
+          <div id="goofy-status-bar">
+            <div id="goofy-plugin-area-testlist" class="goofy-plugin-area"></div>
+            <div class="goofy-indicator" id="goofy-engineering-mode-indicator">
+              <i18n-label>Engineering mode</i18n-label>
+              <img id="goofy-disable-engineering-mode" style="display: none"
+                onclick="goofy.setEngineeringMode(false)"
+                src="images/white_close.png">
+            </div>
+          </div>
+        </div>
+        <div class="goog-splitpane-handle"></div>
+        <div id="goofy-main-and-console-container"
+          class="goog-splitpane-second-container">
+          <div id="goofy-main-and-console" class="goog-splitpane">
+            <div id="goofy-main" class="goog-splitpane-first-container">
+              <div id="goofy-background">
+                <img id="goofy-main-logo" src="/images/logo256.png">
+              </div>
+              <div id="goofy-test-ui-main"></div>
+            </div>
+            <div class="goog-splitpane-handle"></div>
+            <div class="goog-splitpane-second-container"
+              id="goofy-console-container">
+              <div id="goofy-console"></div>
+              <div id="goofy-plugin-area-console" class="goofy-plugin-area"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="goofy-plugin-area-goofy-full" class="goofy-plugin-area"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "bundles": [
+    {
+      "id": "test",
+      "note": "bundle for test",
+      "payloads": "payload.99914b932bd37a50b983c5e7c90ae93b.json"
+    }
+  ],
+  "services": {
+    "umpire_http": {
+      "reverse_proxies": [
+        {
+          "proxy_addr": "192.168.51.1:8080",
+          "remoteip": "192.168.51.0/24"
+        }
+      ]
+    },
+    "rsync": {},
+    "shop_floor": {}
+  },
+  "active_bundle_id": "test"
+}

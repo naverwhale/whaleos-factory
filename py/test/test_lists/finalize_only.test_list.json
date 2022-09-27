@@ -1,0 +1,26 @@
+{
+  "inherit": [
+    "generic_common.test_list"
+  ],
+  "__comment": "This is dummy test only execute finalize pytest",
+  "label": "Finalize only",
+  "definitions": {
+    "TestAll": {
+      "inherit": "FlattenGroup",
+      "subtests": [
+        "GRTFinalize"
+      ]
+    },
+    "GRTFinalize": {
+      "pytest_name": "finalize",
+      "args": {
+        "enable_factory_server": false,
+        "has_ectool": false,
+        "secure_wipe": false
+      }
+    }
+  },
+  "tests": [
+    "TestAll"
+  ]
+}

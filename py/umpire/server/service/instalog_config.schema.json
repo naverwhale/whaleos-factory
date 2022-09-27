@@ -1,0 +1,57 @@
+{
+  "data_truncate": {
+    "type": "object",
+    "properties": {
+      "WARNING! Enable data_truncate may lose data!": {
+        "type": "object",
+        "description": "This object is for Dome UI only.",
+        "properties": {}
+      },
+      "enable": { "type": "boolean" }
+    }
+  },
+  "input_http": {
+    "type": "object",
+    "properties": {
+      "log_level_threshold": {
+        "type": "string"
+      }
+    }
+  },
+  "archive": {
+    "type": "object",
+    "properties": {
+      "enable": { "type": "boolean" },
+      "args": {
+        "type": "object",
+        "properties": {
+          "interval": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "forward": {
+    "type": "object",
+    "properties": {
+      "enable": { "type": "boolean" },
+      "args": {
+        "type": "object",
+        "properties": {
+          "batch_size": { "type": "integer" }
+        }
+      }
+    }
+  },
+  "customized_output": {
+    "type": "object",
+    "properties": {
+      "enable": { "type": "boolean" },
+      "args": {
+        "type": "object",
+        "properties": {
+          "batch_size": { "type": "integer" }
+        }
+      }
+    }
+  }
+}

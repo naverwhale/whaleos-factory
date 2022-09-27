@@ -1,0 +1,53 @@
+{
+  "inherit": [
+    "base.test_list"
+  ],
+  "label": "Locals",
+  "constants": {
+    "foo": "FOO",
+    "phase": "EVT"
+  },
+  "options": {
+    "ui_locale": "zh-CN"
+  },
+  "definitions": {
+    "NOP": {
+      "pytest_name": "nop",
+      "args": {
+        "foo": "eval! locals.ddd.foo",
+        "bar": "eval! locals.ddd.bar"
+      }
+    }
+  },
+  "tests": [
+    {
+      "id": "SMT",
+      "locals": {
+        "ddd": {
+          "foo": "eval! constants.foo",
+          "bar": "BAR"
+        }
+      },
+      "subtests": [
+        "NOP",
+        {
+          "inherit": "NOP",
+          "locals": {
+            "ddd": {
+              "bar": "BAZ"
+            }
+          }
+        },
+        {
+          "inherit": "NOP",
+          "locals": {
+            "ddd": {
+              "foo": "eval! locals.ddd.bar",
+              "bar": "BAZ"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

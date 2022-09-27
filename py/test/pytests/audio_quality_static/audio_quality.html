@@ -1,0 +1,42 @@
+<test-template>
+  <div id="msg-utility" onclick="toggleFAUtility()">
+    Click to toggle FA utility:
+  </div>
+  <div id="fa-utility" class="hidden">
+    <div>
+      <input type="radio" id="loop_0" onclick="testCommand('loop_0')">
+      No audio looping
+    </div>
+    <div>
+      <input type="radio" id="loop_1" onclick="testCommand('loop_1')">
+      Loop from LCD mic to headphone out
+    </div>
+    <div>
+      <input type="radio" id="loop_2" onclick="testCommand('loop_2')">
+      Loop from headphone in to speaker
+    </div>
+    <div>
+      <input type="radio" id="loop_3" onclick="testCommand('loop_3')">
+      Loop from headphone in to headphone out
+    </div>
+    <div>
+      <input type="radio" id="loop_4" onclick="testCommand('loop_4')">
+      Loop from keyboard mic to headphone out
+    </div>
+    <div>
+      <input type="radio" id="xtalk_l" onclick="testCommand('xtalk_l')">
+      Mute headphone left channel while playing tone
+    </div>
+    <div>
+      <input type="radio" id="xtalk_r" onclick="testCommand('xtalk_r')">
+      Mute headphone right channel while playing tone
+    </div>
+    <div>
+      <input type="radio" id="multitone" onclick="testCommand('multitone')">
+      Play multitone
+    </div>
+    <input type="button" onclick="restore()" value="Restore">
+  </div>
+  <h1 id="message">
+  </h1>
+</test-template>

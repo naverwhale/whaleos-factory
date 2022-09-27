@@ -1,0 +1,63 @@
+/*
+ * Copyright 2012 The Chromium OS Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+#test-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 1px;
+}
+
+#prompt {
+  text-align: center;
+  font-size: 2em;
+  position: absolute;
+  top: 20;
+  left: 0;
+  right: 0;
+}
+
+#timer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.3;
+  z-index: 999;
+  font-size: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.state-untested {
+  background-color: lightgray;
+}
+
+.state-tested {
+  background-color: lightgreen;
+}
+
+.state-failed {
+  background-color: lightcoral;
+}
+
+.demo-0 {
+  background-color: #3399FF;
+}
+
+.demo-1 {
+  background-color: #47A3FF;
+}
+
+.demo-2 {
+  background-color: #5CADFF;
+}
+
+.demo-3 {
+  background-color: #70B8FF;
+}

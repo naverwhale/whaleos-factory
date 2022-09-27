@@ -1,0 +1,79 @@
+{
+  "inherit": [
+    "base.test_list"
+  ],
+  "label": "Override Args",
+  "constants": {
+    "component_list": [
+      "cpu",
+      "audio",
+      "flash_chip"
+    ],
+    "enable_factory_server": true,
+    "phase": "EVT",
+    "timestamp": 1,
+    "__comment_timestamp": "this is used by testReloadConfig"
+  },
+  "options": {
+    "engineering_password_sha1": "dummy_password_sha1",
+    "sync_event_log_period_secs": 0,
+    "ui_locale": "zh-CN"
+  },
+  "definitions": {
+    "LEDTest": {
+      "pytest_name": "led",
+      "args": {
+        "colors": [
+          "RED",
+          "GREEN",
+          "BLUE"
+        ]
+      }
+    }
+  },
+  "tests": [
+    {
+      "id": "SMT",
+      "subtests": [
+        {
+          "inherit": "LEDTest",
+          "id": "FirstLEDTest"
+        },
+        {
+          "inherit": "LEDTest",
+          "id": "SecondLEDTest",
+          "args": {
+            "colors": [
+              "RED",
+              "GREEN"
+            ]
+          }
+        },
+        "LEDTest",
+        "LEDTest"
+      ]
+    }
+  ],
+  "override_args": {
+    "SMT.FirstLEDTest": {
+      "colors": [
+        "RED"
+      ]
+    },
+    "SMT.LEDTest": {
+      "colors": [
+        "GREEN"
+      ]
+    },
+    "SMT.LEDTest_2": {
+      "colors": [
+        "WHITE"
+      ]
+    },
+    "SMT.SecondLEDTest": {
+      "colors": [
+        "BLUE"
+      ]
+    }
+  }
+}

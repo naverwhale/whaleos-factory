@@ -1,0 +1,5 @@
+coverage==4.2
+Django==1.10.1
+django-finalware==1.0.0
+djangorestframework==3.8.2
+djangorestframework-camel-case==0.2.0

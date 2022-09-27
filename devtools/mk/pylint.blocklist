@@ -1,0 +1,22 @@
+# Virtual environments
+py/instalog/virtual_env/%
+devtools/mk/pylint.venv/%
+devtools/mk/yapf.venv/%
+py/instalog/plugins/input_drm_screencap/drm.py
+py/test/utils/media_utils_unittest.py
+py/proto/%_pb2.py
+py/umpire/server/e2e_test/testdata/umpire/toolkits/device/%
+# This is to avoid weird warning from pylint, since py.test is alias module to
+# pytest in chroot, so pylint tries to import that module when checking this
+# file...
+py/test/__init__.py
+doc/conf.py
+# There are some old Dome migrations that has lint error, but since we
+# shouldn't be modifying migration files, skip them in lint check. Newer
+# migrations should be manually formatted to conform lint checks before
+# uploading.
+py/dome/backend/migrations/0007_auto_20170411_0943.py
+py/dome/backend/migrations/0013_auto_20180516_0704.py
+py/dome/backend/migrations/0014_auto_20180612_0603.py
+# HWID v2 is deprecated, better not touch them.
+py/hwid/v2/%

@@ -1,0 +1,21 @@
+{
+  "inherit": [
+    "generic_common.test_list"
+  ],
+  "label": "Test List for Tast Tests",
+  "options": {
+    "plugin_config_name": "goofy_plugin_chromeos_tast"
+  },
+  "definitions": {
+    "TouchFile": {
+      "pytest_name": "exec_shell",
+      "no_host": true,
+      "args": {
+        "commands": "echo done >/tmp/tast_factory_test"
+      }
+    }
+  },
+  "tests": [
+    "TouchFile"
+  ]
+}

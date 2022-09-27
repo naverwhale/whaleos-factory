@@ -1,0 +1,104 @@
+checksum: unused-value
+
+project: CHROMEBOOK
+
+encoding_patterns:
+  0: default
+
+image_id:
+  0: EVT
+  1: PVT
+
+pattern:
+  - image_ids: [0]
+    encoding_scheme: base8192
+    fields:
+    - battery_field: 1
+    - firmware_keys_field: 1
+    - region_field: 2
+
+  - image_ids: [1]
+    encoding_scheme: base8192
+    fields:
+    - battery_field: 2
+    - firmware_keys_field: 1
+    - region_field: 2
+
+encoded_fields:
+  battery_field:
+    0:
+      battery: battery_unsupported
+    1:
+      battery: battery_deprecated
+    2:
+      battery: battery_unqualified
+    3:
+      battery: [battery_supported, battery_supported]
+
+  firmware_keys_field:
+    0:
+      firmware_keys: key_premp
+    1:
+      firmware_keys: key_mp
+
+  region_field: !region_field [tw, us]
+
+components:
+  battery:
+    items:
+      battery_unsupported:
+        status: unsupported
+        values:
+          size: '1'
+      battery_deprecated:
+        status: deprecated
+        values:
+          size: '10'
+      battery_unqualified:
+        status: unqualified
+        values:
+          size: '100'
+      battery_supported:
+        values:
+          size: '1000'
+
+  dram:
+    items:
+      K4E6E304EC-EGCF_4096mb_0:
+        values:
+          part: K4E6E304EC-EGCF
+          size: '4096'
+          slot: '0'
+          timing: LPDDR3-800,LPDDR3-1066,LPDDR3-1333,LPDDR3-1600,LPDDR3-1866
+      K4E6E304EC-EGCF_4096mb_1:
+        values:
+          part: K4E6E304EC-EGCF
+          size: '4096'
+          slot: '1'
+          timing: LPDDR3-800,LPDDR3-1066,LPDDR3-1333,LPDDR3-1600,LPDDR3-1866
+
+  storage:
+    items:
+      KLMCG2KCTA-B041_0200000000000000:
+        values:
+          emmc5_fw_ver: 0200000000000000 (2)
+          hwrev: '0x0'
+          manfid: '0x000015'
+          name: CKTA42
+          oemid: '0x0100'
+          prv: '0x2'
+          sectors: '122142720'
+          type: MMC
+
+  firmware_keys:
+    items:
+      key_premp:
+        values:
+          rootkey: abcde
+      key_mp:
+        values:
+          rootkey: fghij
+
+  region: !region_component
+
+rules: []

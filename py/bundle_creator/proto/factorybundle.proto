@@ -1,0 +1,124 @@
+syntax = "proto2";
+package cros.factory.proto;
+
+message FactoryBundleBoard {
+  optional string name = 1;
+  repeated string project_names = 2;
+}
+
+message CreateBundleRpcRequest {
+  optional string board = 1;
+  optional string project = 2;
+  optional string phase = 3;
+  optional string toolkit_version = 4;
+  optional string test_image_version = 5;
+  optional string release_image_version = 6;
+  optional string email = 7;
+  optional string firmware_source = 8;
+}
+
+message CreateBundleRpcResponse {
+  enum Status {
+    NO_ERROR = 0;
+  }
+  optional Status status = 1 [default = NO_ERROR];
+}
+
+message CreateBundleMessage {
+  optional string doc_id = 1;
+  optional CreateBundleRpcRequest request = 2;
+}
+
+message WorkerResult {
+  enum Status {
+    NO_ERROR = 0;
+    FAILED = 1;
+  }
+  optional Status status = 1 [default = NO_ERROR];
+  optional CreateBundleRpcRequest original_request = 2;
+  optional string error_message = 3;
+  optional string gs_path = 4;
+}
+
+// TODO(b/178182522): Remove `BundleHistoryProject` and use `FactoryBundleBoard`
+// instead of `BundleHistoryBoard`.
+message BundleHistoryProject {
+  optional string name = 1;
+}
+
+message BundleHistoryBoard {
+  optional string board_name = 1;
+  repeated BundleHistoryProject projects = 2;
+}
+
+message GetBundleHistoryRpcRequest {
+  repeated BundleHistoryBoard board_projects = 1;
+}
+
+message Bundle {
+  optional string board = 1;
+  optional string project = 2;
+  optional string filename = 3;
+  optional string path = 4;
+  optional string creator = 6;
+  optional string toolkit_version = 7;
+  optional string test_image_version = 8;
+  optional string release_image_version = 9;
+  optional string firmware_source = 10;
+  optional double created_timestamp_sec = 11;
+
+  reserved 5;
+}
+
+message GetBundleHistoryRpcResponse {
+  repeated Bundle bundles = 1;
+}
+
+message DownloadBundleRpcRequest {
+  optional string path = 1;
+  optional string email = 2;
+}
+
+message DownloadBundleRpcResponse {
+  optional string download_link = 1;
+}
+
+message GetUserRequestsRpcRequest {
+  optional string email = 1;
+  repeated FactoryBundleBoard boards = 2;
+}
+
+message GetUserRequestsRpcResponse {
+  message UserRequest {
+    optional string board = 1;
+    optional string project = 2;
+    optional string phase = 3;
+    optional string toolkit_version = 4;
+    optional string test_image_version = 5;
+    optional string release_image_version = 6;
+    optional string firmware_source = 7;
+    optional string email = 8;
+    optional string status = 9;
+    optional double request_time_sec = 10;
+    optional double start_time_sec = 11;
+    optional double end_time_sec = 12;
+    optional string error_message = 13;
+  }
+
+  repeated UserRequest user_requests = 1;
+}
+
+service FactoryBundleService {
+  rpc CreateBundleAsync(CreateBundleRpcRequest)
+      returns (CreateBundleRpcResponse) {
+  }
+  rpc GetBundleHistory(GetBundleHistoryRpcRequest)
+      returns (GetBundleHistoryRpcResponse) {
+  }
+  rpc DownloadBundle(DownloadBundleRpcRequest)
+      returns (DownloadBundleRpcResponse) {
+  }
+  rpc GetUserRequests(GetUserRequestsRpcRequest)
+      returns (GetUserRequestsRpcResponse) {
+  }
+}

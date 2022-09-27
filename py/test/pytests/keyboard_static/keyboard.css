@@ -1,0 +1,81 @@
+/*
+ * Copyright 2017 The Chromium OS Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+#keyboard {
+  display: flex;
+  position: relative;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#keyboard-test-image {
+  position: relative;
+}
+
+#keyboard-keys {
+  position: absolute;
+}
+
+#numpad {
+  display: none;
+  grid-template-rows: 30px repeat(5, 60px);
+  grid-template-columns: repeat(4, 60px);
+  grid-gap: 5px;
+  padding-left: 20px;
+}
+
+.numpad-key {
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+/*
+ * TODO(treapking): This approach will fail if the keycodes are overridden by
+ *                  `replacement_keymap` argument.
+ */
+/* 78: KEY_KPPLUS, 96: KEY_KPENTER*/
+.numpad-key[data-keycode="78"],
+.numpad-key[data-keycode="96"] {
+  grid-row: span 2;
+}
+
+/* 78: KEY_KP0*/
+.numpad-key[data-keycode="82"] {
+  grid-column: span 2;
+}
+
+.main-keyboard-key {
+  z-index: 2;
+  position: absolute;
+}
+
+.keyboard-test-key {
+  opacity: 0.5;
+}
+
+.keyboard-test-key:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.keyboard-test-key.state-untested {
+  background-color: white;
+}
+
+.keyboard-test-key.state-tested {
+  background-color: green;
+}
+
+.keyboard-test-key.state-down {
+  background-color: yellow;
+}
+
+.keyboard-test-key.state-skipped {
+  background-color: gray;
+}

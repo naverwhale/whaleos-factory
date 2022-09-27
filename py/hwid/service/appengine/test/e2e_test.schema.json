@@ -1,0 +1,107 @@
+{
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "host_name": {
+      "type": "string",
+      "title": "The URL of the API.",
+      "default": "",
+      "examples": [
+        "https://chromeos-hwid-dev.appspot.com"
+      ]
+    },
+    "test_cmd": {
+      "type": "string",
+      "title": "The test command.",
+      "default": "",
+      "examples": [
+        "run.sh"
+      ]
+    },
+    "check_env_cmd": {
+      "type": "array",
+      "title": "The command to check if the environment is ready for test.",
+      "default": [""],
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        ["check.sh", "--opt1", "true"]
+      ]
+    },
+    "setup_env_cmd": {
+      "type": "array",
+      "title": "The command to setup environment for test.",
+      "default": [""],
+      "items": {
+        "type": "string"
+      },
+      "examples": [
+        ["setup.sh", "--opt1", "true"]
+      ]
+    },
+    "tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Test name",
+            "default": "",
+            "examples": [
+              "TestGetProjects"
+            ]
+          },
+          "proto_filename": {
+            "type": "string",
+            "title": "The name of the proto file",
+            "default": "",
+            "examples": [
+              "hwid_api_messages"
+            ]
+          },
+          "api": {
+            "type": "string",
+            "title": "The stubby API name",
+            "default": "",
+            "examples": [
+              "HwidService.GetProjects"
+            ]
+          },
+          "request_class": {
+            "type": "string",
+            "title": "The request class name.",
+            "default": "",
+            "examples": [
+              "ProjectsRequest"
+            ]
+          },
+          "response_class": {
+            "type": "string",
+            "title": "The response class name.",
+            "default": "",
+            "examples": [
+              "ProjectsResponse"
+            ]
+          },
+          "request": {
+            "type": "object",
+            "title": "Request object.",
+            "default": "",
+            "examples": [
+              {
+                "hwid": "BOARD A2A-B2B"
+              }
+            ]
+          },
+          "expected_output": {
+            "type": "object",
+            "title": "Expected output"
+          }
+        }
+      }
+    }
+  }
+}

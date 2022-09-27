@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Diagnosis Tool",
+  "description": "ChromeOS Diagnosis Tool Extension",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "assets/icon_128.png"
+  },
+  "background": {
+    "scripts": ["src/background.js"]
+  },
+  "web_accessible_resources": [
+    "src/tests/video/project-fi.mp4",
+    "src/tests/keyboard/*.json",
+    "src/tests/keyboard/*.png"
+  ],
+  "permissions": [
+    "system.cpu",
+    "system.memory",
+    "system.storage"
+  ]
+}

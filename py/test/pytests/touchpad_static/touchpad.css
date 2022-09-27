@@ -1,0 +1,66 @@
+/*
+ * Copyright 2017 The Chromium OS Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+#first-container {
+  flex: 1;
+  display: flex;
+  align-self: stretch;
+}
+
+#second-container {
+  display: flex;
+  align-self: stretch;
+}
+
+.table-div {
+  display: grid;
+  margin: 3px;
+}
+
+.table-div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+.table-div div.state-tested {
+  background-color: green;
+  opacity: 0.5;
+}
+
+.circle {
+  border: 3px solid gray;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.circle.state-down {
+  border: 3px solid yellow;
+}
+
+.circle.state-tested {
+  border: 3px solid green;
+}
+
+#quadrant-table {
+  display: grid;
+  grid: 1fr 1fr / 1fr 1fr;
+  flex: 4;
+  text-align: center;
+  margin: 3px;
+}
+
+.click {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

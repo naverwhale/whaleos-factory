@@ -1,0 +1,61 @@
+
+@import url("default.css");
+
+.factory-copyright {
+    margin-top: 12px;
+    font-size: 60%;
+    color: white;
+}
+
+.factory-copyright a, .factory-copyright a:visited, .factory-copyright a:hover {
+    color: white;
+}
+
+.factory-regions-list {
+    font-size: 90%;
+    font-family: monospace, courier;
+}
+
+.factory-regions-list .description {
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.factory-regions-list .row-even {
+    background-color: #eed;
+}
+
+.factory-regions-list tr:hover {
+    font-weight: bold;
+}
+
+.factory-unconfirmed-regions-list {
+    color: #888;
+    font-style: italic;
+}
+
+.factory-regions-list tr .note {
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 80%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.factory-regions-list tr .spnTooltip {
+    font-family: sans-serif;
+    text-align: left;
+    z-index: 10;
+    display: none;
+    margin-right: 10px;
+    margin-left: -10px;
+    padding: 10px 10px;
+}
+
+.factory-regions-list tr:hover .spnTooltip {
+    display: inline;
+    position: absolute;
+    color: #111;
+    border: 1px solid #DCA;
+    background: #fffAF0;
+}

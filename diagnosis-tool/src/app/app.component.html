@@ -1,0 +1,24 @@
+<div class="body">
+  <div class="left">
+    <h2 style="text-align: center">{{ title }}!</h2>
+    <div id="testList" ng-controller="list">
+      <app-test-list></app-test-list>
+    </div>
+  </div>
+
+  <div class="right">
+    <div id="setting">
+      <app-test-setting
+        [hidden]="testState != 'SETUP'"
+        [argsSpec]="currentArgsSpec"
+        [startTestCallback]="startTest">
+      </app-test-setting>
+      <div [hidden]="testState != 'ACTIVE'">
+        <ng-template appTest></ng-template>
+      </div>
+    </div>
+    <div id="log">
+      <span *ngFor="let log of logs">{{ log }}</span>
+    </div>
+  </div>
+</div>

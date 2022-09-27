@@ -1,0 +1,237 @@
+[
+  {
+    "active": false,
+    "name": "testing_bundle_02",
+    "note": "swimming like a whale",
+    "resources": {
+      "complete": {
+        "type": "complete",
+        "version": "1.2.3"
+      },
+      "firmware": {
+        "type": "firmware",
+        "version": "N/A"
+      },
+      "hwid": {
+        "type": "hwid",
+        "version": "N/A"
+      },
+      "netbootCmdline": {
+        "type": "netboot_cmdline",
+        "version": "N/A"
+      },
+      "netbootFirmware": {
+        "type": "netboot_firmware",
+        "version": "N/A"
+      },
+      "netbootKernel": {
+        "type": "netboot_kernel",
+        "version": "N/A"
+      },
+      "projectConfig": {
+        "type": "project_config",
+        "version": "N/A"
+      },
+      "releaseImage": {
+        "type": "release_image",
+        "version": "N/A"
+      },
+      "testImage": {
+        "type": "test_image",
+        "version": "N/A"
+      },
+      "toolkit": {
+        "type": "toolkit",
+        "version": "3.2.1"
+      }
+    }
+  },
+  {
+    "active": true,
+    "name": "testing_bundle_01",
+    "note": "flying like an eagle",
+    "resources": {
+      "complete": {
+        "type": "complete",
+        "version": "1234.5678"
+      },
+      "firmware": {
+        "type": "firmware",
+        "version": "N/A"
+      },
+      "hwid": {
+        "type": "hwid",
+        "version": "N/A"
+      },
+      "netbootCmdline": {
+        "type": "netboot_cmdline",
+        "version": "N/A"
+      },
+      "netbootFirmware": {
+        "type": "netboot_firmware",
+        "version": "N/A"
+      },
+      "netbootKernel": {
+        "type": "netboot_kernel",
+        "version": "N/A"
+      },
+      "projectConfig": {
+        "type": "project_config",
+        "version": "N/A"
+      },
+      "releaseImage": {
+        "type": "release_image",
+        "version": "N/A"
+      },
+      "testImage": {
+        "type": "test_image",
+        "version": "N/A"
+      },
+      "toolkit": {
+        "type": "toolkit",
+        "version": "5678.1234"
+      }
+    }
+  },
+  {
+    "active": false,
+    "name": "testing_bundle_03",
+    "note": "running like a leopard",
+    "resources": {
+      "complete": {
+        "type": "complete",
+        "version": "11223344"
+      },
+      "firmware": {
+        "type": "firmware",
+        "version": "N/A"
+      },
+      "hwid": {
+        "type": "hwid",
+        "version": "N/A"
+      },
+      "netbootCmdline": {
+        "type": "netboot_cmdline",
+        "version": "N/A"
+      },
+      "netbootFirmware": {
+        "type": "netboot_firmware",
+        "version": "N/A"
+      },
+      "netbootKernel": {
+        "type": "netboot_kernel",
+        "version": "N/A"
+      },
+      "projectConfig": {
+        "type": "project_config",
+        "version": "N/A"
+      },
+      "releaseImage": {
+        "type": "release_image",
+        "version": "N/A"
+      },
+      "testImage": {
+        "type": "test_image",
+        "version": "N/A"
+      },
+      "toolkit": {
+        "type": "toolkit",
+        "version": "44332211"
+      }
+    }
+  },
+  {
+    "active": false,
+    "name": "empty_init_bundle",
+    "note": "n/a",
+    "resources": {
+      "complete": {
+        "type": "complete",
+        "version": ""
+      },
+      "firmware": {
+        "type": "firmware",
+        "version": "N/A"
+      },
+      "hwid": {
+        "type": "hwid",
+        "version": "N/A"
+      },
+      "netbootCmdline": {
+        "type": "netboot_cmdline",
+        "version": "N/A"
+      },
+      "netbootFirmware": {
+        "type": "netboot_firmware",
+        "version": "N/A"
+      },
+      "netbootKernel": {
+        "type": "netboot_kernel",
+        "version": "N/A"
+      },
+      "projectConfig": {
+        "type": "project_config",
+        "version": "N/A"
+      },
+      "releaseImage": {
+        "type": "release_image",
+        "version": "N/A"
+      },
+      "testImage": {
+        "type": "test_image",
+        "version": "N/A"
+      },
+      "toolkit": {
+        "type": "toolkit",
+        "version": ""
+      }
+    }
+  },
+  {
+    "active": false,
+    "name": "testing_bundle_04_with_中文",
+    "note": "🐰",
+    "resources": {
+      "complete": {
+        "type": "complete",
+        "version": "22334455"
+      },
+      "firmware": {
+        "type": "firmware",
+        "version": "N/A"
+      },
+      "hwid": {
+        "type": "hwid",
+        "version": "N/A"
+      },
+      "netbootCmdline": {
+        "type": "netboot_cmdline",
+        "version": "N/A"
+      },
+      "netbootFirmware": {
+        "type": "netboot_firmware",
+        "version": "N/A"
+      },
+      "netbootKernel": {
+        "type": "netboot_kernel",
+        "version": "N/A"
+      },
+      "projectConfig": {
+        "type": "project_config",
+        "version": "N/A"
+      },
+      "releaseImage": {
+        "type": "release_image",
+        "version": "N/A"
+      },
+      "testImage": {
+        "type": "test_image",
+        "version": "N/A"
+      },
+      "toolkit": {
+        "type": "toolkit",
+        "version": "55443322"
+      }
+    }
+  }
+]

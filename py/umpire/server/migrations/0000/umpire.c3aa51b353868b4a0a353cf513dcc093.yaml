@@ -1,0 +1,21 @@
+rulesets:
+- bundle_id: empty
+  note: n/a
+  active: true
+services:
+  http: {}
+  rsync: {}
+  shop_floor: {}
+  instalog:
+    archive:
+      enable: true
+      args:
+        interval: 21600  # 6 hours
+    forward:
+      enable: false
+      args: {}
+shopfloor_service_url: http://localhost:8090
+bundles:
+- id: empty
+  note: n/a
+  payloads: payload.99914b932bd37a50b983c5e7c90ae93b.json

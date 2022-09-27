@@ -1,0 +1,103 @@
+html, body, #main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  margin-left: 2%;
+  display: inline-block;
+  float: left;
+  width: 40%;
+  height: calc(100% - 120px);
+}
+
+.overall-status {
+  height: 15%;
+}
+
+.client-box {
+  height: 85%;
+  overflow: auto;
+  overflow-wrap: anywhere;
+}
+
+.filter-input {
+  margin: 5px 0px;
+}
+
+.client-info {
+  margin: 2px 0px;
+  padding: 2px;
+  position: relative;
+}
+
+.client-info-button {
+  display: inline-block;
+  opacity: 0.5;
+  cursor: pointer;
+  height: 16px;
+  line-height: 12px;
+  vertical-align: middle;
+}
+
+.client-info-button:hover {
+  opacity: 1.0;
+}
+
+.terminal-group {
+  position: fixed;
+  left: 25%;
+  top: 10%;
+}
+
+.fixture-group {
+  display: inline-block;
+  margin: -10px 10px 0px 10px;
+  width: 55%;
+}
+
+.upload-progress-bars {
+  position: fixed;
+  right: 50px;
+  bottom: 0px;
+}
+
+.status-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.client-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-cell-common {
+  overflow: hidden;
+  padding: 10px 0px 10px 10px;
+}
+
+.table-serial-col {
+  width: 25%;
+}
+
+.table-status-col {
+  width: 15%;
+}
+
+.table-pytest-col {
+  width: 35%;
+}
+
+.table-model-col {
+  width: 15%;
+}
+
+.table-manage-col {
+  width: 10%;
+}
+
+tr {
+  border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,7 @@
+# This file should be synced with /etc/init/boot-alert-ready.conf but remove the
+# dependancy "boot-splash".
+
+description     "Abstract job that runs when boot-splash is done"
+author          "chromium-os-dev@chromium.org"
+
+start on boot-alert-request

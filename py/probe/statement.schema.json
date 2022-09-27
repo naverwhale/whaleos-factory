@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "patternProperties": {
+    "^.+$": {
+      "type": "object",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "properties": {
+            "eval": {
+              "type": [
+                "string",
+                "array",
+                "object"
+              ]
+            },
+            "expect": {
+              "type": [
+                "string",
+                "object"
+              ]
+            },
+            "keys": {
+              "type": [
+                "array"
+              ]
+            },
+            "information": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "eval"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

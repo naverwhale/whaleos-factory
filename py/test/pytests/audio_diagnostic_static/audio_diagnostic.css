@@ -1,0 +1,80 @@
+/*
+ * Copyright 2013 The Chromium OS Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file.
+ */
+
+#container {
+  display: grid;
+  grid: auto-flow / repeat(2, 1fr);
+  text-align: center;
+}
+
+#tonegen {
+  grid-column: span 2;
+}
+
+#test-result {
+  grid-column: span 2;
+}
+
+.btn-on-text {
+  display: none;
+}
+
+.btn-off-text {
+  display: none;
+}
+
+.btn-on .btn-on-text {
+  display: block;
+}
+
+.btn-off .btn-off-text {
+  display: block;
+}
+
+#freq-max-label {
+  display: none;
+}
+
+#freq-max-edit {
+  display: none;
+}
+
+.edit-on #freq-max-edit {
+  display: inline;
+}
+
+.edit-off #freq-max-label {
+  display: inline;
+}
+
+.ctl-panel {
+  padding: 0.3em;
+}
+
+.ctl-panel h2 {
+  margin: 0.5em;
+}
+
+.cras-node {
+  cursor: pointer;
+  margin: 0.2em;
+}
+
+#tonegen-vol-sliders input {
+  height: 8em;
+  width: 2em;
+  -webkit-appearance: slider-vertical;
+}
+
+#tonegen-main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+}
+
+#freq-bar {
+  width: 100%;
+}

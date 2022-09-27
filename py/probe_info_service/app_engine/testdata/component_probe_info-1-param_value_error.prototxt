@@ -1,0 +1,15 @@
+component_identity: {
+  qual_id: 1
+  readable_label: "PART_NO_1234"
+}
+probe_info: {
+  probe_function_name: "storage.mmc_storage"
+  probe_parameters: {
+    name: "mmc_manfid"
+    string_value: "0?"  # '?' is not a valid character for a hex string.
+  }
+  probe_parameters: {
+    name: "mmc_name"
+    string_value: "This is an unexpected long string."
+  }
+}

@@ -1,0 +1,44 @@
+checksum: unused-checksum
+
+project: CHROMEBOOK
+
+encoding_patterns: {0: default}
+
+image_id: {0: PROTO, 1: EVT, 15: RMA}
+
+pattern:
+  - image_ids: [15]
+    encoding_scheme: base8192
+    fields:
+    - comp_cls_3_field: 1
+  - image_ids: [0, 1]
+    encoding_scheme: base8192
+    fields: []
+
+encoded_fields:
+  comp_cls_3_field:
+    0: {comp_cls_3: []}
+
+components:
+  comp_cls_1:
+    items:
+      comp_1_1: {values: {key: value1}}
+      comp_1_default: {status: unsupported, values: null}
+
+  comp_cls_2:
+    items:
+      comp_2_1: {values: {key: value1}}
+      comp_2_2: {values: {key: value2}}
+      comp_2_2_extra_key: {values: {key: value2, key2: valuexxx}}
+      comp_2_default: {values: null}
+      comp_2_x: {status: unsupported, values: {key: valueX}}
+
+  comp_cls_3:
+    items:
+      comp_3_1: {values: {key: !re 'this is .*'}}
+      # This is bad because whatever matches comp_3_2 would also match comp_3_1.
+      comp_3_2: {values: {key: 'this is bad'}}
+      # This is marked as 'duplicate', so it won't be used for matching.
+      comp_3_3: {values: {key: 'this is okay'}, status: duplicate}
+
+rules: []

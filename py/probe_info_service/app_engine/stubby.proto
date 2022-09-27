@@ -1,0 +1,244 @@
+syntax = "proto3";
+package cros.factory.probe_info_service.app_engine.stubby_pb2;
+
+enum ProbeParameterValueType {
+  UNKNOWN = 0;  // Reserved for forward compatibility.
+
+  STRING = 1;
+  INT = 2;
+}
+
+message ProbeParameterDefinition {
+  string name = 1;                         // Required.
+  string description = 2;                  // Required.
+  ProbeParameterValueType value_type = 3;  // Required.
+}
+
+message ProbeFunctionDefinition {
+  string name = 1;         // Required.
+  string description = 2;  // Required.
+  repeated ProbeParameterDefinition parameter_definitions = 3;
+}
+
+message ProbeSchema {
+  repeated ProbeFunctionDefinition probe_function_definitions = 1;
+}
+
+message ProbeParameter {
+  string name = 1;  // Required.
+
+  oneof value {  // Required.
+    string string_value = 2;
+    int32 int_value = 3;
+  }
+}
+
+message ProbeInfo {
+  string probe_function_name = 1;  // Required.
+  repeated ProbeParameter probe_parameters = 2;
+}
+
+message ProbeParameterSuggestion {
+  int32 index = 1;
+  string hint = 2;
+}
+
+message ProbeInfoParsedResult {
+  enum ResultType {
+    UNKNOWN = 0;  // Reserved for forward compatiblity.
+
+    PASSED = 1;
+    PROBE_PARAMETER_ERROR = 2;
+
+    INCOMPATIBLE_ERROR = 3;
+    UNKNOWN_ERROR = 4;
+
+    OVERRIDDEN_PROBE_STATEMENT_ERROR = 5;
+  }
+
+  ResultType result_type = 1;  // Required.
+  string general_error_msg = 2;
+  repeated ProbeParameterSuggestion probe_parameter_errors = 3;
+}
+
+message ProbeInfoTestResult {
+  enum ResultType {
+    UNKNOWN = 0;  // Reserved for forward compatibility.
+
+    PASSED = 1;
+    PROBE_PRAMETER_SUGGESTION = 2;
+    INTRIVIAL_ERROR = 3;
+    LEGACY = 4;
+
+    NOT_INCLUDED = 5;
+    NOT_PROBED = 6;
+  }
+  ResultType result_type = 1;  // Required.
+  string intrivial_error_msg = 2;
+  repeated ProbeParameterSuggestion probe_parameter_suggestions = 3;
+}
+
+message ComponentIdentity {
+  int64 qual_id = 1;  // Required.
+  string device_id = 2;
+  string readable_label = 3;
+}
+
+message ComponentProbeInfo {
+  ComponentIdentity component_identity = 1;  // Required.
+  ProbeInfo probe_info = 2;                  // Required.
+}
+
+message ProbeMetadata {
+  enum ProbeStatementType {
+    UNKNOWN = 0;
+
+    AUTO_GENERATED = 1;
+    QUAL_OVERRIDDEN = 2;
+    DEVICE_OVERRIDDEN = 3;
+  }
+
+  reserved 1;
+
+  bool is_tested = 2;
+  bool is_proved_ready_for_overridden = 3;
+  ProbeStatementType probe_statement_type = 4;
+  string probe_statement_preview = 5;
+}
+
+message GetProbeSchemaRequest {}
+
+message GetProbeSchemaResponse {
+  ProbeSchema probe_schema = 1;  // Required.
+}
+
+message ValidateProbeInfoRequest {
+  bool is_qual = 1;          // Required.
+  ProbeInfo probe_info = 2;  // Required.
+}
+
+message ValidateProbeInfoResponse {
+  ProbeInfoParsedResult probe_info_parsed_result = 1;  // Required.
+}
+
+message GetQualProbeTestBundleRequest {
+  ComponentProbeInfo qual_probe_info = 1;  // Required.
+}
+
+message GetQualProbeTestBundleResponse {
+  enum Status {
+    UNKNOWN = 0;
+
+    SUCCEED = 1;
+    INVALID_PROBE_INFO = 2;
+    UNKNOWN_ERROR = 3;
+  }
+
+  Status status = 1;     // Required.
+  string error_msg = 2;  // Set if |result_type| is |UNKNOWN_ERROR|.
+  ProbeInfoParsedResult probe_info_parsed_result = 3;
+
+  bytes test_bundle_payload = 4;
+  string test_bundle_file_name = 5;
+}
+
+message UploadQualProbeTestResultRequest {
+  ComponentProbeInfo qual_probe_info = 1;  // Required.
+  bytes test_result_payload = 2;           // Required.
+}
+
+message UploadQualProbeTestResultResponse {
+  bool is_uploaded_payload_valid = 1;  // Required.
+  string uploaded_payload_error_msg = 2;
+  ProbeInfoTestResult probe_info_test_result = 3;
+}
+
+message CreateOverriddenProbeStatementRequest {
+  ComponentProbeInfo component_probe_info = 1;  // Required.
+}
+
+message CreateOverriddenProbeStatementResponse {
+  enum Status {
+    UNKNOWN = 0;
+
+    SUCCEED = 1;
+    ALREADY_OVERRIDDEN_ERROR = 2;
+  }
+  Status status = 1;  // Required.
+  string error_msg = 2;
+  string result_msg = 3;
+}
+
+message GetDeviceProbeConfigRequest {
+  repeated ComponentProbeInfo component_probe_infos = 1;  // Required.
+}
+
+message GetDeviceProbeConfigResponse {
+  enum Status {
+    UNKNOWN = 0;
+
+    SUCCEED = 1;
+    INVALID_PROBE_INFO = 2;
+    UNKNOWN_ERROR = 3;
+  }
+
+  Status status = 1;  // Required.
+  string error_msg = 2;
+  repeated ProbeInfoParsedResult probe_info_parsed_results = 3;
+
+  bytes generated_config_payload = 4;
+  string generated_config_file_name = 5;
+}
+
+message UploadDeviceProbeResultRequest {
+  repeated ComponentProbeInfo component_probe_infos = 1;  // Required.
+
+  bytes probe_result_payload = 2;  // Required.
+}
+
+message UploadDeviceProbeResultResponse {
+  enum UploadStatus {
+    UNKNOWN = 0;
+
+    SUCCEED = 2;
+    PAYLOAD_INVALID_ERROR = 1;
+    INTRIVIAL_ERROR = 3;
+  }
+  UploadStatus upload_status = 1;
+  string error_msg = 2;
+  repeated ProbeInfoTestResult probe_info_test_results = 3;
+}
+
+message GetProbeMetadataRequest {
+  repeated ComponentProbeInfo component_probe_infos = 1;  // Required.
+  bool include_probe_statement_preview = 2;
+}
+
+message GetProbeMetadataResponse {
+  repeated ProbeMetadata probe_metadatas = 1;  // Required.
+}
+
+service ProbeInfoService {
+  rpc GetProbeSchema(GetProbeSchemaRequest) returns (GetProbeSchemaResponse) {}
+
+  rpc ValidateProbeInfo(ValidateProbeInfoRequest)
+      returns (ValidateProbeInfoResponse) {}
+
+  rpc GetQualProbeTestBundle(GetQualProbeTestBundleRequest)
+      returns (GetQualProbeTestBundleResponse) {}
+
+  rpc UploadQualProbeTestResult(UploadQualProbeTestResultRequest)
+      returns (UploadQualProbeTestResultResponse) {}
+
+  rpc GetDeviceProbeConfig(GetDeviceProbeConfigRequest)
+      returns (GetDeviceProbeConfigResponse) {}
+
+  rpc UploadDeviceProbeResult(UploadDeviceProbeResultRequest)
+      returns (UploadDeviceProbeResultResponse) {}
+
+  rpc CreateOverriddenProbeStatement(CreateOverriddenProbeStatementRequest)
+      returns (CreateOverriddenProbeStatementResponse) {}
+
+  rpc GetProbeMetadata(GetProbeMetadataRequest)
+      returns (GetProbeMetadataResponse) {}
+}

@@ -1,0 +1,106 @@
+checksum: DUMMY
+
+board: MODEL_A
+
+encoding_patterns: {0: default}
+
+image_id: {0: EVT}
+
+pattern:
+  - image_ids: [0]
+    encoding_scheme: base8192
+    fields:
+    - battery: 2
+    - cpu: 1
+    - storage: 2
+
+encoded_fields:
+  battery:
+    0: {battery: battery_small_supported}
+    1: {battery: battery_medium_unqualified}
+    2: {battery: battery_large_deprecated}
+  cpu:
+    0: {cpu: cpu_0}
+  storage:
+    0: {storage: storage_0_unsupported}
+    1: {storage: storage_1_duplicate}
+
+components:
+  battery:
+    items:
+      battery_small_supported:
+        values:
+          manufacturer: Li-ion
+          model_name: S
+          technology: tech
+      battery_medium_unqualified:
+        status: unqualified
+        values:
+          manufacturer: Li-ion
+          model_name: M
+          technology: tech
+      battery_large_deprecated:
+        status: deprecated
+        values:
+          manufacturer: Li-ion
+          model_name: L
+          technology: tech
+  cpu:  # CPU is totally ignored by the generator.
+    items:
+      cpu_0:
+        values:
+          name: CPU @ 1.80GHz
+          cores: '4'
+  storage:
+    items:
+      storage_0_unsupported:
+        status: unsupported
+        values:
+          type: MMC
+          name: ABCxyz
+          manfid: '0x000022'
+          oemid: '0x4455'
+          prv: '0x00000a'
+          serial: '0x1234abcd'
+          sectors: '1000000'
+      storage_1_duplicate:  # Duplicated component should be ignored.
+        status: duplicate
+        values:
+          type: MMC
+      storage_2_should_be_ignored:  # Component without suitable generate should
+                                    # be ignored.
+        status: duplicate
+        values:
+          a_special_field: a_special_value
+  touchpad:
+    items:
+      touchpad_0:
+        values:
+          name: Touchpad 0
+          product: 12ab
+          vendor: 12ab
+      touchpad_1:
+        values:
+          name: Touchpad 1
+          product: '12ab'
+          vendor: 12ab
+  touchscreen:
+    items:
+      touchscreen_0:
+        values:
+          name: Touchscreen 0
+          product: 12ab
+          vendor: 12ab
+      touchscreen_1:
+        values:
+          name: Touchscreen 1
+          product: '12ab'
+          vendor: 12ab
+          fw_version: '1234'
+      touchscreen_2:
+        values:
+          name: Touchscreen 2
+          fw_version: '1234'
+          hw_version: 12ab
+
+rules: []

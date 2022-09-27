@@ -1,0 +1,190 @@
+#!/bin/sh
+# Copyright 2014 The Chromium OS Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+INIT_BASE="$(dirname "$(readlink -f "$0")")"
+
+# The request file contains the path to the factory toolkit. If this file
+# exists, and the path it points to also exists, the script will try to install
+# factory toolkit from that path.
+INSTALL_REQUEST_FILE="${INIT_BASE}/install"
+IS_PARALLEL=
+
+export INIT_BASE
+
+log() {
+  echo "[$(date)] $*"
+}
+
+is_enabled() {
+  # Returns 0 if this rule is enabled.
+  # Returns 1 if this rule if disabled.
+  #
+  # A rule is disabled if and only if:
+  #   1. file "disable-${rule_name}" exists OR
+  #   2. file "enable-${rule_name}" doesn't exist AND "${rule_file}" is
+  #      not executable
+  #
+  # Parameters:
+  #   rule_file: path to the rule file: "/path/to/${rule_name}.sh"
+
+  local rule_file="$1"
+  local rule_dir="$(dirname "$rule_file")"
+  local rule_file_name="$(basename "${rule_file}")"
+  local rule_name="${rule_file_name%.sh}"
+  local enable_rule="${rule_dir}/enable-${rule_name}"
+  local disable_rule="${rule_dir}/disable-${rule_name}"
+
+  if [ -e "${disable_rule}" ]; then
+    return 1
+  fi
+  [ -e "${enable_rule}" -o -x "${rule_file}" ]
+}
+
+execute_rules() {
+  local init_folder="$1"
+  local rule_file="" rule_name="" enable_rule="" disable_rule=""
+
+  for rule_file in "${INIT_BASE}/${init_folder}"/*.sh; do
+    [ -e "${rule_file}" ] || continue  # Skip if no rules found.
+    rule_name="$(basename "${rule_file%.sh}")"
+
+    if ! is_enabled "${rule_file}"; then
+      log "Skipping disabled ${rule_file}..."
+      continue
+    fi
+    # In UNIX we cannot wait for grandchildren (which will become children of
+    # init when its parent = our children exits), so we have to put the logic
+    # here.
+    if [ -n "${IS_PARALLEL}" ]; then
+      log "Applying ${rule_file} in parallel..."
+      sh "${rule_file}" &
+    else
+      log "Applying ${rule_file}..."
+      sh "${rule_file}"
+    fi
+  done
+}
+
+execute_rules_in_parallel() {
+  IS_PARALLEL=true execute_rules "$@"
+}
+
+factory_install() {
+  log "Probing install request file..."
+  if [ ! -e "${INSTALL_REQUEST_FILE}" ]; then
+    log "Install request file '${INSTALL_REQUEST_FILE}' not found, " \
+      "will not install factory toolkit"
+    return
+  fi
+  log "${INSTALL_REQUEST_FILE} found"
+
+  local factory_toolkit_path="$(cat "${INSTALL_REQUEST_FILE}")"
+  log "Probing factory toolkit file at '${factory_toolkit_path}'..."
+  if [ ! -x "${factory_toolkit_path}" ]; then
+    log "'${factory_toolkit_path}' not found or not executable, " \
+      "will not install factory toolkit"
+    return
+  fi
+  log "'${factory_toolkit_path}' found and is executable"
+
+  log "Installing factory toolkit from '${factory_toolkit_path}'..."
+  if ! "${factory_toolkit_path}" -- --yes; then
+    log "Failed to install factory toolkit, abort"
+    return 1
+  fi
+  log "Factory toolkit installed, removing install request file..."
+  rm -f "${INSTALL_REQUEST_FILE}"
+
+  # Hand this over to the new startup script.
+  log "Executing the new startup script..."
+  exec "${INIT_BASE}/startup" init
+}
+
+factory_preinit() {
+  log "Starting ChromeOS factory preinit..."
+
+  execute_rules preinit.d
+
+  log "Finish all preinit programs."
+}
+
+factory_init() {
+  log "Starting ChromeOS factory initialization..."
+
+  # the upstart "factory-init" job will wait other jobs finished, so we can
+  # reload configuration without losting the event.
+  initctl reload-configuration
+
+  local frecon_vt0="/run/frecon/vt0"
+  local text_splash="/usr/local/factory/misc/boot_splash.txt"
+
+  if [ -c "${frecon_vt0}" ]; then
+    cat "${text_splash}" >>"${frecon_vt0}"
+  fi
+
+  # Probe the install request file to see if we need to install toolkit first.
+  factory_install
+
+  execute_rules init.d
+  execute_rules iptables.d
+
+  # See factory_main for the path of tag that may disable Goofy.
+  local goofy_rule="${INIT_BASE}/main.d/goofy.sh"
+  if ! is_enabled "${goofy_rule}"; then
+    log "Initialization finished (Goofy rules are disabled)."
+    return
+  fi
+
+  execute_rules "goofy.d"
+  log "All initialization finished."
+}
+
+factory_main() {
+  log "Running ChromeOS factory main program pre-start jobs..."
+  execute_rules main.d/pre-start
+  # Unlike factory_init, the main programs may need to run in parallel for a
+  # long time and occupy the session time of factory.conf so we have to wait
+  # until all children processes finished.
+  log "Starting ChromeOS factory main program in parallel..."
+  execute_rules_in_parallel main.d
+  log "All main programs started, waiting to finish..."
+  wait
+  log "Finished all main programs. Factory job stopped."
+}
+
+main() {
+  mkdir -p /var/log
+  local log_file=/var/log/factory-init.log
+
+  local mode="init"
+  if [ "$#" -gt 0 ]; then
+    mode="$1"
+  fi
+
+  case "${mode}" in
+    preinit )
+      # Preinit should be invoked only one time so we want to re-create the
+      # logs.
+      # This should be called after chromeos_startup finished, that is, before
+      # starting boot-services.
+      factory_preinit 2>&1 | tee "${log_file}"
+      ;;
+    init )
+      # Init will be invoked after preinit finished, so we append the logs
+      factory_init 2>&1 | tee -a "${log_file}"
+      ;;
+    main )
+      # Developers may try to start factory main several times so we want to
+      # append the logs.
+      factory_main 2>&1 | tee -a "${log_file}"
+      ;;
+    * )
+      log "Unknown mode: ${mode}." | tee -a "${log_file}"
+      exit 1
+      ;;
+  esac
+}
+
+main "$@"

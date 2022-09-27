@@ -1,0 +1,18 @@
+{
+  "json.schemas": [
+    {
+        "fileMatch": [
+            "*.test_list.json"
+        ],
+        "url": "./py_pkg/cros/factory/test/test_lists/test_list.schema.json"
+    }
+  ],
+  "python.pythonPath": "/usr/bin/python3.6",
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/py_pkg"
+  ],
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/py_pkg"
+  ],
+  "python.formatting.provider": "yapf"
+}

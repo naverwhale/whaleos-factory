@@ -1,0 +1,9 @@
+probe_statement_metadatas: {
+  component_name: "AVL_1"
+  fingerprint: "1d288df55b83826b7a146ff80ffff9691828c60f"
+}
+rp_invocation_result: {
+  result_type: FINISHED
+  return_code: 0
+  raw_stdout: "{{{This is not a valid JSON string!"
+}

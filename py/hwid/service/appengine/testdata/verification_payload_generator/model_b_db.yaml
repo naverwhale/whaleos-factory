@@ -1,0 +1,48 @@
+checksum: DUMMY
+
+board: MODEL_B
+
+encoding_patterns: {0: default}
+
+image_id: {0: EVT}
+
+pattern:
+  - image_ids: [0]
+    encoding_scheme: base8192
+    fields:
+    - battery: 2
+
+encoded_fields:
+  battery:
+    0: {battery: battery_small_supported}
+    1: {battery: battery_medium_supported}
+    2: {battery: battery_large_supported_tech_1}
+    3: {battery: battery_large_supported_tech_2}
+
+components:
+  battery:
+    items:
+      battery_small_supported:
+        values:
+          manufacturer: Li-ion
+          model_name: S
+          technology: tech1
+      battery_medium_supported:
+        status: supported
+        values:
+          manufacturer: Li-ion
+          model_name: M
+          technology: tech2
+      battery_large_supported_tech_1:
+        values:
+          manufacturer: Li-ion
+          model_name: L
+          technology: tech1
+      battery_large_supported_tech_2:
+        status: supported
+        values:
+          manufacturer: Li-ion
+          model_name: L
+          technology: tech2
+
+rules: []

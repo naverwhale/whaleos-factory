@@ -1,0 +1,21 @@
+{
+  "storage": {
+    "AVL_1": {
+      "eval": {
+        "mmc_storage": {}
+      },
+      "expect": {
+        "mmc_manfid": [
+          true,
+          "hex",
+          "!eq 0x0A"
+        ],
+        "mmc_name": [
+          true,
+          "str",
+          "!eq ABCxyz"
+        ]
+      }
+    }
+  }
+}

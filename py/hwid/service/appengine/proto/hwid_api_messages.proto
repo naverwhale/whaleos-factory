@@ -1,0 +1,524 @@
+syntax = "proto3";
+package cros.factory.hwid.service.appengine.proto.hwid_api_messages_pb2;
+
+enum Status {
+  STATUS_UNSPECIFIED = 0;
+  SUCCESS = 1;
+  KNOWN_BAD_HWID = 2;
+  BAD_REQUEST = 3;
+  NOT_FOUND = 4;
+  SCHEMA_ERROR = 5;
+  YAML_ERROR = 6;
+  SERVER_ERROR = 7;
+  VALIDATION_EXPIRED = 8;
+}
+
+message AvlInfo {
+  // Component id.
+  int64 cid = 1;
+  // Qualification id.
+  int64 qid = 2;
+}
+
+// A component of a BOM.
+message Component {
+  // The type of component.
+  string component_class = 1;
+  // The canonical name
+  string name = 2;
+  // The probe result that results for this component.
+  string probe_result = 3;
+  // Extra fields that show all fields defined in HWID DB.
+  repeated Field fields = 4;
+  // A bool to indicate if the AVL info exists.
+  bool has_avl = 5;
+  // AVL info
+  AvlInfo avl_info = 6;
+}
+
+message Field {
+  string name = 1;
+  string value = 2;
+}
+
+// A label on a BOM.
+message Label {
+  // The component-class this applies to, if any
+  string component_class = 1;
+  // The label's name
+  string name = 2;
+  // The label's value, possibly none.
+  string value = 3;
+}
+
+// A request for all projects supported by the server.
+message ProjectsRequest {
+  // List of BOM file versions to include.
+  repeated string versions = 1;
+}
+
+// A request to validate a config.
+message ValidateConfigRequest {
+  // The HWID config as a string.
+  string hwid_config_contents = 1;
+}
+
+// A request to validate a config and update its checksum.
+message ValidateConfigAndUpdateChecksumRequest {
+  // The HWID config as a string.
+  string hwid_config_contents = 1;
+  // The previous version of the HWID config.  If present, it will trigger some
+  // additional validation checks.
+  string prev_hwid_config_contents = 2;
+}
+
+// The response to a projects request.
+message ProjectsResponse {
+  // A list of the supported projects.
+  repeated string projects = 1;
+  Status status = 2;
+}
+
+// A request to query BOM data from a given HWID string.
+message BomRequest {
+  // The HWID string.
+  string hwid = 1;
+  // A flag to indicate whether to return the detail fields in response.
+  bool verbose = 2;
+}
+
+// The response to a BOM request.
+message BomResponse {
+  // A list of the components in the BOM.
+  repeated Component components = 1;
+  // A list of labels of the BOM.
+  repeated Label labels = 2;
+  // Build phase (corresponding to HWID image_id).
+  string phase = 3;
+  // Error message if there was a problem decoding the HWID, if error is set
+  // the other fields in the message should be disregarded.
+  string error = 4;
+  Status status = 5;
+}
+
+// A request to query BOM data from given HWID strings.
+message BatchGetBomRequest {
+  // The list of HWID strings.
+  repeated string hwid = 1;
+  // A flag to indicate whether to return the detail fields in response.
+  bool verbose = 2;
+}
+
+// The response to BatchGetBOMRequest.
+message BatchGetBomResponse {
+  // The response to a BOM request.
+  message Bom{
+    // A list of the components in the BOM.
+    repeated Component components = 1;
+    // A list of labels of the BOM.
+    repeated Label labels = 2;
+    // Build phase (corresponding to HWID image_id).
+    string phase = 3;
+    // Error message if there was a problem decoding the HWID, if error is set
+    // the other fields in the message should be disregarded.
+    string error = 4;
+    Status status = 5;
+  }
+  map<string, Bom> boms = 1;
+  string error = 2;
+  Status status = 3;
+}
+
+// A request to query all HWIDs with the project and filter.
+message HwidsRequest {
+  // The project as a string.
+  string project = 1;
+  // The included classes to filter the result.
+  repeated string with_classes = 2;
+  // The excluded classes to filter the result.
+  repeated string without_classes = 3;
+  // The included components to filter the result.
+  repeated string with_components = 4;
+  // The excluded components to filter the result.
+  repeated string without_components = 5;
+}
+
+// The response to a HWIDs request.
+message HwidsResponse {
+  // A filtered list of the HWIDs for a project.
+  repeated string hwids = 1;
+  // Error message if there was a problem looking up the HWIDs.
+  string error = 2;
+  Status status = 3;
+}
+
+// A request to query possible component classes of a project.
+message ComponentClassesRequest {
+  // The project as a string.
+  string project = 1;
+}
+
+// The response to a component classes request.
+message ComponentClassesResponse {
+  // A list of the components for a project.
+  repeated string component_classes = 1;
+  // Error message if there was a problem looking up components.
+  string error = 2;
+  Status status = 3;
+}
+
+// A request to query all components with the project and filter.
+message ComponentsRequest {
+  // The project as a string.
+  string project = 1;
+  // The included classes to filter the result.
+  repeated string with_classes = 2;
+}
+
+// The response to a components request.
+message ComponentsResponse {
+  // A filtered list of the components for a project.
+  repeated Component components = 1;
+  // Error message if there was a problem looking up components.
+  string error = 2;
+  Status status = 3;
+}
+
+message NameChangedComponent {
+  enum SupportStatus {
+    SUPPORT_STATUS_UNSPECIFIED = 0;
+    SUPPORTED = 1;
+    DEPRECATED = 2;
+    UNSUPPORTED = 3;
+    UNQUALIFIED = 4;
+    DUPLICATE = 5;
+  }
+
+  int64 cid = 1;
+  int64 qid = 2;
+  SupportStatus support_status = 3;
+  string component_name = 4;
+  // True if this component name has AVL information.
+  bool has_cid_qid = 5;
+}
+
+message NameChangedComponents {
+  repeated NameChangedComponent entries = 1;
+}
+
+// The response to a 'validate config' request.
+message ValidateConfigResponse {
+  // If an error occurred, this describes the error.
+  string error_message = 1;
+  Status status = 2;
+}
+
+// The response to a 'validate config and update checksum' request.
+message ValidateConfigAndUpdateChecksumResponse {
+  // The updated HWID config as a string.
+  string new_hwid_config_contents = 1;
+  // If an error occurred, this describes the error.
+  string error_message = 2;
+  Status status = 3;
+  // Name-changed components per category.
+  map<string, NameChangedComponents> name_changed_components_per_category = 4;
+  // model name.
+  string model = 5;
+}
+
+// A request to query SKU info from a given HWID string.
+message SkuRequest {
+  // The HWID as a string.
+  string hwid = 1;
+}
+
+// The response to a BOM request.
+message SkuResponse {
+  // The project listed in the BOM.
+  string project = 1;
+  // The listed CPU in the BOM.
+  string cpu = 2;
+  // Total number of bytes of memory in the BOM.
+  int64 memory_in_bytes = 3;
+  // String combination of project, processor and memory.
+  string sku = 4;
+  // Error message if there was a problem decoding the HWID, if error is set
+  // the other fields in the message should be disregarded.
+  string error = 5;
+  // A human readable string representing the memory on the device.
+  string memory = 6;
+  Status status = 7;
+}
+
+// A label of a DUT.
+message DutLabel {
+  // The name of the label.
+  string name = 1;
+  // The value of the property associated with this label name.
+  string value = 2;
+}
+
+// A request to query DUT labels.
+message DutLabelsRequest {
+  // The HWID as a string.
+  string hwid = 1;
+}
+
+// The response to a DUT label request.
+message DutLabelsResponse {
+  // A list of DUTLabel messages.
+  repeated DutLabel labels = 1;
+  // Details of any errors when constructing the list of labels.
+  string error = 2;
+  // Possible labels in the labels field.
+  repeated string possible_labels = 3;
+  Status status = 4;
+}
+
+message GetHwidDbEditableSectionRequest {
+  // The project as a string.
+  string project = 1;
+}
+
+message GetHwidDbEditableSectionResponse {
+  // The editable section of the queried HWID DB.
+  string hwid_db_editable_section = 1;
+}
+
+message HwidDbEditableSectionChangeValidationResult {
+  enum ErrorCode {
+    RESULT_CODE_UNSPECIFIED = 0;  // Reserved.
+
+    SCHEMA_ERROR = 1;
+    CONTENTS_ERROR = 2;
+  }
+
+  message Error {
+    ErrorCode code = 1;
+    string message = 2;
+  }
+
+  // Empty list if the validation passes.  Otherwise it stores a list of errors
+  // detected by the validation process.
+  repeated Error errors = 1;
+
+  // Name-changed components per category.
+  map<string, NameChangedComponents> name_changed_components_per_category = 3;
+}
+
+message ValidateHwidDbEditableSectionChangeRequest {
+  // The project as a string.
+  string project = 1;
+  // The HWID DB contents to validate.
+  string new_hwid_db_editable_section = 2;
+}
+
+message ValidateHwidDbEditableSectionChangeResponse {
+  // An unique identifier to this round of validation.  This ID is required
+  // to be attached on other RPCs that needs to be invoke after validation.
+  string validation_token = 1;
+
+  // The result of the validation.
+  HwidDbEditableSectionChangeValidationResult validation_result = 2;
+}
+
+message CreateHwidDbEditableSectionChangeClRequest {
+  // The project as a string.
+  string project = 1;
+  // The HWID DB contents to validate.
+  string new_hwid_db_editable_section = 2;
+  // The ID from ValidateHwidDbEditableSectionChange to
+  // justify that the contents have been validated.
+  string validation_token = 3;
+
+  string original_requester = 5;
+  string description = 4;
+  int64 bug_number = 6;
+  repeated string reviewer_emails = 7;
+  repeated string cc_emails = 8;
+  // A bool indicating if this CL should be auto-approved.
+  bool auto_approved = 9;
+}
+
+message CreateHwidDbEditableSectionChangeClResponse {
+  // The CL number to the created HWID change request.
+  int64 cl_number = 1;
+}
+
+message BatchGetHwidDbEditableSectionChangeClInfoRequest {
+  // The CL numbers to query.
+  repeated int64 cl_numbers = 1;
+}
+
+message HwidDbEditableSectionChangeClInfo {
+  enum Status {
+    STATUS_UNSPECIFIC = 0;
+
+    PENDING = 1;    // The CL is still under review.
+    MERGED = 2;     // The CL is already merged.
+    ABANDONED = 3;  // The CL is already abandoned.
+  }
+  Status status = 1;
+
+  message Comment {
+    string email = 1;
+    string message = 2;
+  }
+  repeated Comment comments = 2;
+}
+
+message BatchGetHwidDbEditableSectionChangeClInfoResponse {
+  map<int64, HwidDbEditableSectionChangeClInfo> cl_status = 1;
+}
+
+// A request for generating the component name for HWID from the given AVL IDs.
+message BatchGenerateAvlComponentNameRequest {
+  message ComponentNameMaterial {
+    string component_class = 1;
+    int64 avl_cid = 2;
+    int64 avl_qid = 3;
+    int32 seq_no = 4;
+  }
+
+  repeated ComponentNameMaterial component_name_materials = 1;
+}
+
+// A response for generating the component name for HWID from the given AVL IDs.
+message BatchGenerateAvlComponentNameResponse {
+  repeated string component_names = 1;
+}
+
+// A request to analyze a HWID config.
+message AnalyzeHwidDbEditableSectionRequest {
+  // The project name.
+  string project = 1;
+  // The HWID DB as a string.
+  string hwid_db_editable_section = 2;
+}
+
+// The response for analyzing the HWID config.
+message AnalyzeHwidDbEditableSectionResponse {
+  HwidDbEditableSectionChangeValidationResult validation_result = 1;
+  HwidDbEditableSectionAnalysisReport analysis_report = 2;
+}
+
+// An analysis report for a HWID config.
+message HwidDbEditableSectionAnalysisReport {
+  // A part of a line in HWID config.
+  message HwidDbLinePart {
+    oneof part_type {
+      // The text value if this part represents a fixed text snippet.
+      string fixed_text = 1;
+      // ID to the component info if this part represents that component's name
+      // string.
+      string component_name_field_id = 2;
+      // ID to the component info if this part represents that component's
+      // support status value.
+      string support_status_field_id = 3;
+    }
+  }
+
+  // A line in HWID config.
+  message HwidDbLine {
+    enum HwidDbLineModificationStatus {
+      HWID_DB_LINE_MODIFICATION_STATUS_UNSPECIFIC = 0;  // Reserved.
+      NOT_MODIFIED = 1;
+      MODIFIED = 2;
+      NEWLY_ADDED = 3;
+    }
+    HwidDbLineModificationStatus modification_status = 1;
+    repeated HwidDbLinePart parts = 2;
+  }
+
+  message ComponentInfo {
+    // The component type.
+    string component_class = 1;
+    // The original component name in this field.
+    string original_name = 2;
+    // The original support status value.
+    string original_status = 3;
+
+    // Whether this component is newly added comparing to the previous version
+    // of HWID DB.
+    bool is_newly_added = 4;
+    // The corresponding AVL info of the original component name.
+    AvlInfo avl_info = 5;
+    // Whether the original component name contains the AVL info.
+    bool has_avl = 6;
+
+    // The expected sequential number of this component.
+    int32 seq_no = 7;
+    // The expected component name if the original sequential number is invalid.
+    string component_name_with_correct_seq_no = 8;
+  }
+
+  // A list of support status values that is available no matter the AVL entry
+  // is qualified or not.
+  repeated string unqualified_support_status = 1;
+
+  // A list of support status values that is only available when the AVL entry
+  // is qualified.
+  repeated string qualified_support_status = 2;
+
+  repeated HwidDbLine hwid_config_lines = 3;
+  map<string, ComponentInfo> component_infos = 4;
+}
+
+service HwidService {
+  rpc GetProjects(ProjectsRequest) returns (ProjectsResponse);
+
+  rpc GetBom(BomRequest) returns (BomResponse);
+
+  rpc GetSku(SkuRequest) returns (SkuResponse);
+
+  rpc GetHwids(HwidsRequest) returns (HwidsResponse);
+
+  rpc GetComponentClasses(ComponentClassesRequest)
+      returns (ComponentClassesResponse);
+
+  rpc GetComponents(ComponentsRequest) returns (ComponentsResponse);
+
+  rpc ValidateConfig(ValidateConfigRequest) returns (ValidateConfigResponse);
+
+  rpc ValidateConfigAndUpdateChecksum(ValidateConfigAndUpdateChecksumRequest)
+      returns (ValidateConfigAndUpdateChecksumResponse);
+
+  rpc GetDutLabels(DutLabelsRequest) returns (DutLabelsResponse);
+
+  rpc GetHwidDbEditableSection(GetHwidDbEditableSectionRequest)
+      returns (GetHwidDbEditableSectionResponse);
+
+  // Validates a change of HWID DB.
+  //
+  // This RPC compares the given updated HWID DB contents with the
+  // current one and validates the difference.  In addition, if the
+  // change is valid, this RPC also responds details of the change
+  // like what HWID components are introduced, etc.
+  rpc ValidateHwidDbEditableSectionChange(
+      ValidateHwidDbEditableSectionChangeRequest)
+      returns (ValidateHwidDbEditableSectionChangeResponse);
+
+  // Create a CL to change the HWID DB contents.
+  //
+  // The canonical error `ABORTED` will be raised if the given validation
+  // result ID is expired.  This usually happens if the upstream HWID DB
+  // has changed since the last validation.
+  rpc CreateHwidDbEditableSectionChangeCl(
+      CreateHwidDbEditableSectionChangeClRequest)
+      returns (CreateHwidDbEditableSectionChangeClResponse);
+
+  // Get the basic info of the CLs that change HWID DBs.
+  rpc BatchGetHwidDbEditableSectionChangeClInfo(
+      BatchGetHwidDbEditableSectionChangeClInfoRequest)
+      returns (BatchGetHwidDbEditableSectionChangeClInfoResponse);
+
+  // Generate the component names from the specific AVL IDs.
+  rpc BatchGenerateAvlComponentName(BatchGenerateAvlComponentNameRequest)
+      returns (BatchGenerateAvlComponentNameResponse);
+
+  // Analyze the given HWID DB payload.
+  rpc AnalyzeHwidDbEditableSection(AnalyzeHwidDbEditableSectionRequest)
+      returns (AnalyzeHwidDbEditableSectionResponse);
+
+  rpc BatchGetBom(BatchGetBomRequest) returns (BatchGetBomResponse);
+}

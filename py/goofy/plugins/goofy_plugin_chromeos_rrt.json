@@ -1,0 +1,10 @@
+{
+  "inherit": "goofy_plugin_chromeos",
+  "plugins": {
+    "log_rotation_checker": {
+      "args": {
+        "disable_rotation": false
+      }
+    }
+  }
+}

@@ -1,0 +1,3842 @@
+# Copyright 2017 The Chromium OS Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+msgid ""
+msgstr ""
+"Project-Id-Version: ChromeOS Factory Software\n"
+"PO-Revision-Date: 2021-10-01 12:10+CST\n"
+"Last-Translator: ChromeOS Factory Team\n"
+"Language-Team: ChromeOS Factory Team\n"
+"Language: zh-CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+#: ../build/pytests_label_generated.json
+msgid "AC Power"
+msgstr "AC 电源"
+
+#: ../build/pytests_label_generated.json
+msgid "Accelerometers"
+msgstr "加速度计"
+
+#: ../build/pytests_label_generated.json
+msgid "Accelerometers Calibration"
+msgstr "加速度计校正"
+
+#: ../build/pytests_label_generated.json
+msgid "Accelerometers Lid Angle"
+msgstr "加速度计上盖角度"
+
+#: ../build/pytests_label_generated.json
+msgid "Audio"
+msgstr "音讯"
+
+#: ../build/pytests_label_generated.json
+msgid "Audio Basic"
+msgstr "基础音源"
+
+#: ../build/pytests_label_generated.json
+msgid "Audio Diagnostic"
+msgstr "音效诊断"
+
+#: ../build/pytests_label_generated.json
+msgid "Audio Loop"
+msgstr "音源回放"
+
+#: ../build/pytests_label_generated.json
+msgid "Audio Quality"
+msgstr "音源品质"
+
+#: ../build/pytests_label_generated.json
+msgid "Backlight"
+msgstr "背光亮度"
+
+#: ../build/pytests_label_generated.json
+msgid "Bad Blocks"
+msgstr "毁损扇区"
+
+#: ../build/pytests_label_generated.json
+msgid "Battery"
+msgstr "电池"
+
+#: ../build/pytests_label_generated.json
+msgid "Battery Basic"
+msgstr "简单电池测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Battery Current"
+msgstr "充电放电电流"
+
+#: ../build/pytests_label_generated.json
+msgid "Battery Cycle"
+msgstr "电池充放电"
+
+#: ../build/pytests_label_generated.json
+msgid "Battery Sysfs"
+msgstr "Sysfs 电池"
+
+#: ../build/pytests_label_generated.json
+msgid "BFT Fixture"
+msgstr "BFT 治具"
+
+#: ../build/pytests_label_generated.json
+msgid "Blocking Charge"
+msgstr "充电"
+
+#: ../build/pytests_label_generated.json
+msgid "Bluetooth"
+msgstr "蓝牙"
+
+#: ../build/pytests_label_generated.json
+msgid "Bluetooth Host"
+msgstr "蓝牙主机"
+
+#: ../build/pytests_label_generated.json
+msgid "Brightness"
+msgstr "亮度"
+
+#: ../build/pytests_label_generated.json
+msgid "Brightness LCD Backlight"
+msgstr "萤幕背光亮度"
+
+#: ../build/pytests_label_generated.json
+msgid "Brightness LED"
+msgstr "LED 亮度"
+
+#: ../build/pytests_label_generated.json
+msgid "Button"
+msgstr "按钮"
+
+#: ../build/pytests_label_generated.json
+msgid "Buzzer"
+msgstr "蜂鸣器"
+
+#: ../build/pytests_label_generated.json
+msgid "Camera"
+msgstr "相机"
+
+#: ../build/pytests_label_generated.json
+msgid "Cellular Switch Firmware"
+msgstr "切换数据机韧体"
+
+#: ../build/pytests_label_generated.json
+msgid "Chameleon"
+msgstr "Chameleon"
+
+#: ../build/pytests_label_generated.json
+msgid "Charger"
+msgstr "充电器"
+
+#: ../build/pytests_label_generated.json
+msgid "Check CR50 Board ID"
+msgstr "检查 CR50 版号"
+
+#: ../build/pytests_label_generated.json
+msgid "Check Image Version"
+msgstr "检查映像版本"
+
+#: ../build/pytests_label_generated.json
+msgid "Check Retimer Firmware"
+msgstr "确认 Retimer 韧体"
+
+#: ../build/pytests_label_generated.json
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Check Secdata Version"
+msgstr "检查Secdata版本"
+
+#: ../build/pytests_label_generated.json
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Check Serial Number"
+msgstr "检查机器序号"
+
+#: ../build/pytests_label_generated.json
+msgid "Compass"
+msgstr "罗盘"
+
+#: ../build/pytests_label_generated.json
+msgid "Countdown"
+msgstr "倒数计时"
+
+#: ../build/pytests_label_generated.json
+msgid "CR50 Write Whitelabel Flags"
+msgstr "写入 CR50 Whitelabel Flags"
+
+#: ../build/pytests_label_generated.json
+msgid "Display"
+msgstr "显示"
+
+#: ../build/pytests_label_generated.json
+msgid "Display Images"
+msgstr "显示图像"
+
+#: ../build/pytests_label_generated.json
+msgid "Display Point"
+msgstr "显示点"
+
+#: ../build/pytests_label_generated.json
+msgid "DSM Calibration"
+msgstr "DSM 校正"
+
+#: ../build/pytests_label_generated.json
+msgid "Ethernet"
+msgstr "网路"
+
+#: ../build/pytests_label_generated.json
+msgid "Exec Python"
+msgstr "执行 Python"
+
+#: ../build/pytests_label_generated.json
+msgid "Exec Shell"
+msgstr "执行指令"
+
+#: ../build/pytests_label_generated.json
+msgid "External Display"
+msgstr "外接显示"
+
+#: ../build/pytests_label_generated.json
+msgid "Factory State"
+msgstr "工厂测试状态"
+
+#: ../build/pytests_label_generated.json
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Fan Speed"
+msgstr "风扇转速"
+
+#: ../build/pytests_label_generated.json
+msgid "Fastboot Flash"
+msgstr "烧录 Fastboot"
+
+#: ../build/pytests_label_generated.json
+msgid "Finalize"
+msgstr "最终程序"
+
+#: ../build/pytests_label_generated.json
+msgid "Fingerprint Mcu"
+msgstr ""
+
+#: ../build/pytests_label_generated.json
+msgid "Flash Netboot"
+msgstr "烧录 netboot 韧体"
+
+#: ../build/pytests_label_generated.json
+msgid "GPS"
+msgstr "GPS"
+
+#: ../build/pytests_label_generated.json
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Gyroscope"
+msgstr "陀螺仪"
+
+#: ../build/pytests_label_generated.json
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Gyroscope Calibration"
+msgstr "陀螺仪校正"
+
+#: ../build/pytests_label_generated.json
+msgid "HWID"
+msgstr "HWID"
+
+#: ../build/pytests_label_generated.json
+msgid "Interrupt"
+msgstr "中断"
+
+#: ../build/pytests_label_generated.json
+msgid "Keyboard"
+msgstr "键盘"
+
+#: ../build/pytests_label_generated.json
+msgid "Keyboard Backlight"
+msgstr "键盘背光"
+
+#: ../build/pytests_label_generated.json
+msgid "Keyboard SMT"
+msgstr "SMT 键盘"
+
+#: ../build/pytests_label_generated.json ../py/test/pytests/led.py
+msgid "LED"
+msgstr "LED"
+
+#: ../build/pytests_label_generated.json
+msgid "Lid Switch"
+msgstr "上盖开关"
+
+#: ../build/pytests_label_generated.json
+msgid "Light Sensor"
+msgstr "光感测器"
+
+#: ../build/pytests_label_generated.json
+msgid "Light Sensor Calibration"
+msgstr "光感应器校正"
+
+#: ../build/pytests_label_generated.json
+msgid "Lightbar"
+msgstr "光棒"
+
+#: ../build/pytests_label_generated.json
+msgid "Line Check Item"
+msgstr "项目验证"
+
+#: ../build/pytests_label_generated.json
+msgid "LTE Verify Config"
+msgstr "LTE 验证设定"
+
+#: ../build/pytests_label_generated.json
+msgid "Memory Size"
+msgstr "记忆体大小"
+
+#: ../build/pytests_label_generated.json
+msgid "Message"
+msgstr "讯息"
+
+#: ../build/pytests_label_generated.json
+msgid "Model Sku"
+msgstr "组态与样式(SKU)"
+
+#: ../build/pytests_label_generated.json
+msgid "Modem Security"
+msgstr "调解器安全"
+
+#: ../build/pytests_label_generated.json
+msgid "Mouse"
+msgstr "鼠标"
+
+#: ../build/pytests_label_generated.json
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "MRC Cache"
+msgstr "MRC Cache"
+
+#: ../build/pytests_label_generated.json
+msgid "Network Setup"
+msgstr "网路设定"
+
+#: ../build/pytests_label_generated.json
+msgid "Nop"
+msgstr "无动作"
+
+#: ../build/pytests_label_generated.json
+msgid "Offline Test"
+msgstr "离线测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Offline Test Shell Deploy"
+msgstr "离线测试部署"
+
+#: ../build/pytests_label_generated.json
+msgid "Offline Test Shell Fetch Log"
+msgstr "离线测试日志提取"
+
+#: ../build/pytests_label_generated.json
+msgid "Partition Table"
+msgstr "分区表"
+
+#: ../build/pytests_label_generated.json
+msgid "PD FW Min Version"
+msgstr "PD 轫体最小版本"
+
+#: ../build/pytests_label_generated.json
+msgid "Ping Test"
+msgstr "连线测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Plankton CC2 Pull Test"
+msgstr "Plankton CC2 电压测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Plankton CC Flip Check"
+msgstr "Plankton CC 翻转检查"
+
+#: ../build/pytests_label_generated.json
+msgid "Plankton Charge"
+msgstr "Plankton 充电"
+
+#: ../build/pytests_label_generated.json
+msgid "Plankton Display"
+msgstr "Plankton 显示"
+
+#: ../build/pytests_label_generated.json
+msgid "Power Under Stress"
+msgstr "压力电源测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Probe"
+msgstr "侦测"
+
+#: ../build/pytests_label_generated.json
+msgid "Probe Cellular Info"
+msgstr "数据机信息"
+
+#: ../build/pytests_label_generated.json
+msgid "Probe SIM"
+msgstr "侦测 SIM 卡"
+
+#: ../build/pytests_label_generated.json
+msgid "Probe SIM Card Tray"
+msgstr "探測 SIM 卡卡盘"
+
+#: ../build/pytests_label_generated.json
+msgid "Proximity Sensor"
+msgstr "距离感测器"
+
+#: ../build/pytests_label_generated.json
+msgid "Read Device Data From VPD"
+msgstr "从 VPD 读机器资料"
+
+#: ../build/pytests_label_generated.json
+msgid "Removable Storage"
+msgstr "可移除储存装置"
+
+#: ../build/pytests_label_generated.json
+msgid "Retrieve Config"
+msgstr "载入设定"
+
+#: ../build/pytests_label_generated.json
+msgid "Retrieve Parameter"
+msgstr "下载档案"
+
+#: ../build/pytests_label_generated.json
+msgid "RF Graphyte"
+msgstr "RF Graphyte"
+
+#: ../build/pytests_label_generated.json
+msgid "Robot Movement"
+msgstr ""
+
+#: ../build/pytests_label_generated.json
+msgid "Sample Customized Test"
+msgstr "范例自订测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Scan"
+msgstr "扫描机器编号"
+
+#: ../build/pytests_label_generated.json
+msgid "Select For Sampling"
+msgstr "採样选择"
+
+#: ../build/pytests_label_generated.json
+msgid "Serial Echo"
+msgstr ""
+
+#: ../build/pytests_label_generated.json
+msgid "Shopfloor Service"
+msgstr "Shopfloor"
+
+#: ../build/pytests_label_generated.json
+msgid "Shutdown"
+msgstr "关机"
+
+#: ../build/pytests_label_generated.json
+msgid "Spatial Sensor Calibration"
+msgstr "感应器校正"
+
+#: ../build/pytests_label_generated.json
+msgid "Start"
+msgstr "开始"
+
+#: ../build/pytests_label_generated.json
+msgid "Station Entry"
+msgstr "测站开始"
+
+#: ../build/pytests_label_generated.json
+msgid "Station Setup"
+msgstr "测站名称"
+
+#: ../build/pytests_label_generated.json
+msgid "Storage Simple Stress"
+msgstr "储存装置压力测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Stressapptest"
+msgstr "压力测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Stylus"
+msgstr "触控笔"
+
+#: ../build/pytests_label_generated.json
+msgid "Stylus Garage"
+msgstr "触控笔插槽"
+
+#: ../build/pytests_label_generated.json
+msgid "Summary"
+msgstr "总结"
+
+#: ../build/pytests_label_generated.json
+msgid "Suspend Resume"
+msgstr "暂停/恢复"
+
+#: ../build/pytests_label_generated.json
+msgid "Suspend Stress"
+msgstr "暂停/恢复压力测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Sync Factory Server"
+msgstr "同步工厂伺服器"
+
+#: ../build/pytests_label_generated.json
+msgid "Sync Time"
+msgstr "同步时间"
+
+#: ../build/pytests_label_generated.json
+msgid "Tablet Mode"
+msgstr "平板模式"
+
+#: ../build/pytests_label_generated.json
+msgid "Tablet Rotation"
+msgstr "平版旋转"
+
+#: ../build/pytests_label_generated.json
+msgid "Thermal Load"
+msgstr "温度压力"
+
+#: ../build/pytests_label_generated.json
+msgid "Thermal Sensors"
+msgstr "温度感应器"
+
+#: ../build/pytests_label_generated.json
+msgid "Thermal Slope"
+msgstr "温度升降速率"
+
+#: ../build/pytests_label_generated.json
+msgid "Thunderbolt Loopback"
+msgstr "TBT 回送卡"
+
+#: ../build/pytests_label_generated.json
+msgid "Touch Device FW Update"
+msgstr "触控轫体更新"
+
+#: ../build/pytests_label_generated.json
+msgid "Touch Uniformity"
+msgstr "触控均一性"
+
+#: ../build/pytests_label_generated.json
+msgid "Touchpad"
+msgstr "触控板"
+
+#: ../build/pytests_label_generated.json
+msgid "Touchpad Hover"
+msgstr "触控板悬浮"
+
+#: ../build/pytests_label_generated.json
+msgid "Touchscreen"
+msgstr "触控面板"
+
+#: ../build/pytests_label_generated.json
+msgid "Touchscreen Calibration"
+msgstr "触控面板校正"
+
+#: ../build/pytests_label_generated.json
+msgid "TPM Clear Owner"
+msgstr "清除 TPM"
+
+#: ../build/pytests_label_generated.json
+msgid "TPM Diagnosis"
+msgstr "TPM 诊断"
+
+#: ../build/pytests_label_generated.json
+msgid "TPM Verify EK"
+msgstr "TPM 证书"
+
+#: ../build/pytests_label_generated.json
+msgid "Update Cbi"
+msgstr "更新 CBI"
+
+#: ../build/pytests_label_generated.json
+msgid "Update CR50 Firmware"
+msgstr "更新 CR50 韧体"
+
+#: ../build/pytests_label_generated.json
+msgid "Update Detachable Base"
+msgstr "更新可拆式底座韧体"
+
+#: ../build/pytests_label_generated.json
+msgid "Update Device Data"
+msgstr "更新机器资料"
+
+#: ../build/pytests_label_generated.json
+#: ../py/test/test_lists/generic_common.test_list.json
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "Update Firmware"
+msgstr "更新韧体"
+
+#: ../build/pytests_label_generated.json
+msgid "Update Fpmcu Firmware"
+msgstr "更新 Fpmcu 韧体"
+
+#: ../build/pytests_label_generated.json
+msgid "Update Kernel"
+msgstr "更新 Kernel"
+
+#: ../build/pytests_label_generated.json
+msgid "Urandom"
+msgstr "乱数产生"
+
+#: ../build/pytests_label_generated.json
+msgid "USB"
+msgstr "USB"
+
+#: ../build/pytests_label_generated.json
+msgid "Verify Component"
+msgstr "验证元件"
+
+#: ../build/pytests_label_generated.json
+msgid "Verify Root Partition"
+msgstr "验证根磁区"
+
+#: ../build/pytests_label_generated.json
+msgid "Video Playback"
+msgstr "音源回放"
+
+#: ../build/pytests_label_generated.json
+msgid "VSWR"
+msgstr "VSWR"
+
+#: ../build/pytests_label_generated.json
+msgid "Vsync"
+msgstr "Vsync"
+
+#: ../build/pytests_label_generated.json
+msgid "Wait External Test"
+msgstr "等待外部測試"
+
+#: ../build/pytests_label_generated.json
+msgid "Wait Fixture Ready"
+msgstr "等待制具"
+
+#: ../build/pytests_label_generated.json
+msgid "Webgl Aquarium"
+msgstr "WebGL 水族箱"
+
+#: ../build/pytests_label_generated.json
+msgid "Whale Check Voltage"
+msgstr "Whale 电压测试"
+
+#: ../build/pytests_label_generated.json
+msgid "Whale Cover"
+msgstr "Whale 压合"
+
+#: ../build/pytests_label_generated.json
+msgid "Wifi Check Calibration"
+msgstr "检查无线校正"
+
+#: ../build/pytests_label_generated.json
+msgid "Wifi Throughput"
+msgstr "无线频宽"
+
+#: ../build/pytests_label_generated.json
+msgid "Wireless Antenna"
+msgstr "无线天线"
+
+#: ../build/pytests_label_generated.json
+msgid "Wireless Charge"
+msgstr "无线充电"
+
+#: ../build/pytests_label_generated.json
+msgid "Wireless Connect"
+msgstr "连线到无线网路"
+
+#: ../build/pytests_label_generated.json
+msgid "Write Device Data To VPD"
+msgstr "机器资料写入到 VPD"
+
+#: ../build/pytests_label_generated.json
+msgid "Write Protect Switch"
+msgstr "写入保护开关"
+
+#: ../py/goofy/js/diagnosis_tool.js
+msgid "State:"
+msgstr "状态:"
+
+#: ../py/goofy/js/diagnosis_tool.js
+msgid "Description:"
+msgstr "说明/描述:"
+
+#: ../py/goofy/js/diagnosis_tool.js
+msgid "Input:"
+msgstr "输入:"
+
+#: ../py/goofy/js/diagnosis_tool.js
+msgid "Time remaining: "
+msgstr "剩余时间: "
+
+#: ../py/goofy/js/goofy.js
+msgid "Enter"
+msgstr "ENTER"
+
+#: ../py/goofy/js/goofy.js
+msgid "ESC"
+msgstr "ESC"
+
+#: ../py/goofy/js/goofy.js
+msgid "Space"
+msgstr "空白"
+
+#: ../py/goofy/js/goofy.js
+msgid "Factory tests stopped"
+msgstr "工厂测试已停止"
+
+#: ../py/goofy/js/goofy.js
+msgid "{label} ({iterations} times)"
+msgstr "{label} ({iterations} 次)"
+
+#: ../py/goofy/js/goofy.js
+msgid ""
+"An error occurred while starting the factory test system\n"
+"Factory testing cannot proceed."
+msgstr ""
+"开工厂测试系统时发生错误.\n"
+"没办法继续测试."
+
+#: ../py/goofy/js/goofy.js
+msgid "Iterations"
+msgstr "重复次数"
+
+#: ../py/goofy/js/goofy.js
+msgid "Retries"
+msgstr "失败重试次数"
+
+#: ../py/goofy/js/goofy.js
+msgid "Set iterations and retries of test \"{test}\""
+msgstr "设置测试「{test}」的重复次数和失败重试次数"
+
+#: ../py/goofy/js/goofy.js
+msgid "Iterations must be a positive integer or -1."
+msgstr "重复次数必须为正整数或-1。"
+
+#: ../py/goofy/js/goofy.js
+msgid "Retries must be a positive integer, 0, or -1."
+msgstr "失败重试次数必须为正整数，0或-1。"
+
+#: ../py/goofy/js/goofy.js
+msgid ""
+"Iterations or retries is too large.\n"
+"Please use -1 to represent infinity."
+msgstr ""
+"重复次数或失败重试次数太大。\n"
+"请使用-1表示无穷大。"
+
+#: ../py/goofy/js/goofy.js
+msgid "Press OK to shutdown"
+msgstr "按 OK 后将关机"
+
+#: ../py/goofy/js/goofy.js
+msgid "Rebooting"
+msgstr "重开机"
+
+#: ../py/goofy/js/goofy.js
+msgid "Shutting down"
+msgstr "关机"
+
+#: ../py/goofy/js/goofy.js
+msgid "once"
+msgstr "1次"
+
+#: ../py/goofy/js/goofy.js
+msgid "{count} of {total} times"
+msgstr "{total}次测试中的第{count}次"
+
+#: ../py/goofy/js/goofy.js
+msgid ""
+"{action} in {seconds_left} seconds ({times_text}).\n"
+"To cancel, press the Escape key."
+msgstr ""
+"将会在{seconds_left}秒内{action}（{times_text}）.\n"
+"按ESC键取消."
+
+#: ../py/goofy/js/goofy.js
+msgid "Shutting down..."
+msgstr "关机中..."
+
+#: ../py/goofy/js/goofy.js ../py/test/pytests/sync_factory_server.py
+msgid "Cancel"
+msgstr "取消"
+
+#: ../py/goofy/js/goofy.js
+msgid "Critical factory note; cannot run tests"
+msgstr "工厂测试已停止"
+
+#: ../py/goofy/js/goofy.js
+msgid "Not in engineering mode; cannot skip tests"
+msgstr "工程模式才能跳过测试"
+
+#: ../py/goofy/js/goofy.js
+msgid "Run all {count} tests in \"{test}\""
+msgstr "执行所有{count}个在「{test}」里面的测试"
+
+#: ../py/goofy/js/goofy.js
+msgid "Run test \"{test}\""
+msgstr "执行测试「{test}」"
+
+#: ../py/goofy/js/goofy.js
+msgid "Restart all {count} tests in \"{test}\""
+msgstr "重跑所有{count}个在「{test}」里面的测试"
+
+#: ../py/goofy/js/goofy.js
+msgid "Restart test \"{test}\""
+msgstr "重跑测试「{test}」"
+
+#: ../py/goofy/js/goofy.js
+msgid "Restart {count} tests in \"{test}\" that have not passed"
+msgstr "重跑{count}个在「{test}」里面未成功的测试"
+
+#: ../py/goofy/js/goofy.js
+msgid "Clear status of {count} tests in \"{test}\""
+msgstr "清除{count}个在「{test}」里面的测试的状态"
+
+#: ../py/goofy/js/goofy.js
+msgid "Clear status of test \"{test}\""
+msgstr "清除测试「{test}」的状态"
+
+#: ../py/goofy/js/goofy.js
+msgid "Run {count} untested tests in \"{test}\""
+msgstr "执行{count}个在「{test}」里面未测的测试"
+
+#: ../py/goofy/js/goofy.js
+msgid "Set {count} tests in \"{test}\" to run multiple times"
+msgstr "设置{count}个在「{test}」里面的测试的重复次数"
+
+#: ../py/goofy/js/goofy.js
+msgid "Set test \"{test}\" to run multiple times"
+msgstr "设置测试「{test}」的重复次数"
+
+#: ../py/goofy/js/goofy.js
+msgid "Stop all tests"
+msgstr "停止所有的测试"
+
+#: ../py/goofy/js/goofy.js
+msgid "Abort {count} active tests in \"{test}\" and continue testing"
+msgstr "取消{count}个在「{test}」里面执行中的测试并继续"
+
+#: ../py/goofy/js/goofy.js
+msgid "Abort active test \"{test}\" and continue testing"
+msgstr "取消执行中的测试「{test}」并继续"
+
+#: ../py/goofy/js/goofy.js
+msgid "Show test UI"
+msgstr "显示测试画面"
+
+#: ../py/goofy/js/goofy.js
+msgid "System time: "
+msgstr "系统时间："
+
+#: ../py/goofy/js/goofy.js
+msgid "Your Name"
+msgstr "你的名字"
+
+#: ../py/goofy/js/goofy.js
+msgid "Note Content"
+msgstr "注记内容"
+
+#: ../py/goofy/js/goofy.js
+msgid "Severity"
+msgstr "严重性"
+
+#: ../py/goofy/js/goofy.js
+msgid "Add Note"
+msgstr "新增注记"
+
+#: ../py/goofy/js/goofy.js
+msgid "Uploading factory logs..."
+msgstr "正在上载工厂记录..."
+
+#: ../py/goofy/js/goofy.js
+msgid "Uploading factory logs.  Please wait..."
+msgstr "正在上载工厂记录 。 请稍等..."
+
+#: ../py/goofy/js/goofy.js
+msgid "Serial Number"
+msgstr "序号"
+
+#: ../py/goofy/js/goofy.js
+msgid "Bug Description"
+msgstr "Bug 描述"
+
+#: ../py/goofy/js/goofy.js
+msgid "Upload Factory Logs"
+msgstr "上载工厂记录"
+
+#: ../py/goofy/js/goofy.js
+msgid "Save Factory Logs to USB"
+msgstr "保存工厂记录到 U盘"
+
+#: ../py/goofy/js/goofy.js
+msgid "Saving factory logs to USB drive..."
+msgstr "正在保存工厂记录到 U盘..."
+
+#: ../py/goofy/js/goofy.js
+msgid ""
+"Success! Saved factory logs ({size}) bytes) to {dev} as\n"
+"{filename}. The drive has been unmounted."
+msgstr ""
+"保存工厂记录 ({size} bytes) 到 U盘 {dev} 已成功，文件叫\n"
+"{filename}。U盘已卸载。"
+
+#: ../py/goofy/js/goofy.js
+msgid ""
+"Success! Saved factory logs ({size}) bytes) to {dev} as\n"
+"{filename}."
+msgstr ""
+"保存工厂记录 ({size} bytes) 到 U盘 {dev} 已成功，文件叫\n"
+"{filename}。"
+
+#: ../py/goofy/js/goofy.js
+msgid "Enter an optional identifier for the archive (or press Enter for none):"
+msgstr "请输入识别号给工厂记录文件，或按回车键不选："
+
+#: ../py/goofy/js/goofy.js
+msgid "Include probe result (takes longer time)"
+msgstr "加入侦测结果 (需要较久时间)"
+
+#: ../py/goofy/js/goofy.js
+msgid ""
+"Please insert a formatted USB stick and wait a moment for it to be mounted."
+msgstr "请插入 U盘后稍等挂载。"
+
+#: ../py/goofy/js/goofy.js
+msgid "Update factory software"
+msgstr "更新工厂软体"
+
+#: ../py/goofy/js/goofy.js
+msgid "Save note on device"
+msgstr "注记"
+
+#: ../py/goofy/js/goofy.js
+msgid "View notes"
+msgstr "检视注记"
+
+#: ../py/goofy/js/goofy.js
+msgid "Clear notes"
+msgstr "清除注记"
+
+#: ../py/goofy/js/goofy.js
+msgid "Diagnosis Tool"
+msgstr "诊断工具"
+
+#: ../py/goofy/js/goofy.js
+msgid "Save factory logs to USB drive..."
+msgstr "保存工厂记录到 U盘"
+
+#: ../py/goofy/js/goofy.js
+msgid "Upload factory logs..."
+msgstr "上载工厂记录"
+
+#: ../py/goofy/js/goofy.js
+msgid "DUT Shutdown"
+msgstr "关机"
+
+#: ../py/goofy/js/goofy.js
+msgid "Reload Test List"
+msgstr "重载测试列表"
+
+#: ../py/goofy/js/goofy.js
+msgid "Toggle engineering mode"
+msgstr "切换工程模式"
+
+#: ../py/goofy/js/goofy.js
+msgid "Switch test list"
+msgstr "切换测试列表"
+
+#: ../py/goofy/js/goofy.js
+msgid "Switch Test List: {test_list}"
+msgstr "切换测试列表：{test_list}"
+
+#: ../py/goofy/js/goofy.js
+msgid ""
+"Warning: Switching to test list \"{test_list}\" will clear all test state.\n"
+"Are you sure you want to proceed?"
+msgstr ""
+"警示：切换至测试列表「{test_list}」将清除所有测试状态。\n"
+"确定要继续吗？"
+
+#: ../py/goofy/js/goofy.js
+msgid "Yes, clear state and restart"
+msgstr "确定，清除测试状态并重啓"
+
+#: ../py/goofy/js/goofy.js
+msgid "Switching test list. Please wait..."
+msgstr "正在切换测试列表，请稍等..."
+
+#: ../py/goofy/js/goofy.js
+msgid "Software update"
+msgstr "更新工厂软体"
+
+#: ../py/goofy/js/goofy.js
+msgid "Updating factory software. Please wait..."
+msgstr "正在更新工厂软体，请稍等..."
+
+#: ../py/goofy/js/goofy.js
+msgid "Update succeeded. Restarting."
+msgstr "更新已成功，将会在几秒钟之内重新启动。"
+
+#: ../py/goofy/js/goofy.js
+msgid "No update is currently necessary."
+msgstr "目前不用更新工厂软体"
+
+#: ../py/goofy/js/goofy.js
+msgid "Update failed:"
+msgstr "更新失败了："
+
+#: ../py/goofy/js/i18n.js
+msgid "currentLocaleName#en-US#English"
+msgstr "currentLocaleName#zh-CN#中文"
+
+#: ../py/goofy/plugins/device_manager.py
+msgid "View /var/log/messages"
+msgstr "检视 /var/log/messages"
+
+#: ../py/goofy/plugins/device_manager.py
+msgid "View /var/log/messages before last reboot"
+msgstr "检视上次重开机前的 /var/log/messages"
+
+#: ../py/goofy/plugins/device_manager.py
+msgid "View dmesg"
+msgstr "检视 dmesg"
+
+#: ../py/goofy/plugins/device_manager.py
+msgid "Device manager"
+msgstr "检视硬件"
+
+#: ../py/goofy/plugins/station_setup/static/station_setup.js
+#: ../py/goofy/plugins/station_setup/station_setup.py
+msgid "Update Station Properties"
+msgstr "更新测站资讯"
+
+#: ../py/goofy/plugins/station_setup/station_setup.py
+msgid "Station Name"
+msgstr "测站名称"
+
+#: ../py/goofy/plugins/station_setup/station_setup.py
+msgid "Manufacture Line Number"
+msgstr "产线编号"
+
+#: ../py/goofy/plugins/station_setup/station_setup.py
+msgid "Station Number"
+msgstr "测站编号"
+
+#: ../py/goofy/plugins/station_setup/station_setup.py
+msgid "{key} can't be empty!"
+msgstr "{key} 的值不能为空!"
+
+#: ../py/goofy/plugins/station_setup/station_setup.py
+msgid "Station with same {keys!r} found."
+msgstr "测站 {keys!r} 已存在。"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "MLB S/N"
+msgstr "母板序号"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "S/N"
+msgstr "序号"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Stage"
+msgstr "阶段"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "IP Address"
+msgstr "IP 位址"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Test Image"
+msgstr "测试系统"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Release Image"
+msgstr "出厂系统"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Main Firmware"
+msgstr "主轫体"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Kernel"
+msgstr "内核版本"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Architecture"
+msgstr "架构"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "EC"
+msgstr "EC"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "PD"
+msgstr "PD"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Root Device"
+msgstr "根目录装置"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Device ID"
+msgstr "装置辨识码"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Factory Toolkit Version"
+msgstr "测试工具版本"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "(no update)"
+msgstr "(没有更新)"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "HWID Database Version"
+msgstr "HWID 资料库版本"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "Unknown"
+msgstr "未知"
+
+#: ../py/goofy/plugins/status_monitor/static/status_monitor.js
+msgid "System time"
+msgstr "系统时间"
+
+#: ../py/goofy/static/default_test_ui.html
+msgid "Test Path"
+msgstr "测项路径"
+
+#: ../py/goofy/static/default_test_ui.html
+msgid "Test Label"
+msgstr "测项标籤"
+
+#: ../py/goofy/static/default_test_ui.html
+msgid "Invocation ID"
+msgstr "测试识别号"
+
+#: ../py/goofy/static/default_test_ui.html
+msgid "Elapsed Time"
+msgstr "经过时间"
+
+#: ../py/goofy/static/default_test_ui.html
+msgid "Test Name"
+msgstr "测项名称"
+
+#: ../py/goofy/static/default_test_ui.html
+msgid "Test Arguments"
+msgstr "测项参数"
+
+#: ../py/goofy/static/default_test_ui.html
+msgid "Show Original"
+msgstr "显示原始"
+
+#: ../py/goofy/static/index.html
+msgid "Engineering mode"
+msgstr "工程模式"
+
+#: ../py/goofy/static/js/default_test_ui.js
+msgid "{seconds} seconds"
+msgstr "{seconds}秒"
+
+#: ../py/goofy/static/templates.html
+#: ../py/test/pytests/countdown_static/countdown.html
+msgid "Elapsed time:"
+msgstr "经过时间："
+
+#: ../py/goofy/static/templates.html
+msgid "Time remaining:"
+msgstr "剩余时间："
+
+#: ../py/goofy/static/templates.html
+msgid "Test Progress:"
+msgstr "测试进度："
+
+#: ../py/goofy/static/templates.html
+msgid "Screenshot (Press Ctrl+S)"
+msgstr "屏幕截图（按 Ctrl+S）"
+
+#: ../py/goofy/static/templates.html
+msgid "Mark Failed"
+msgstr "标记失败"
+
+#: ../py/test/fixture/touchscreen_calibration/fixture.py
+msgid "Pull the lever down."
+msgstr "拉下把手"
+
+#: ../py/test/fixture/touchscreen_calibration/fixture.py
+msgid "Pull the lever up."
+msgstr "拉起把手"
+
+#: ../py/test/pytests/ac_power.py
+msgid "Unplug the charger."
+msgstr "请移除充电器"
+
+#: ../py/test/pytests/ac_power.py
+msgid "Plug in the charger ({type})"
+msgstr "请连接充电器 ({type})"
+
+#: ../py/test/pytests/ac_power.py
+msgid "Plug in the charger"
+msgstr "请连接充电器"
+
+#: ../py/test/pytests/ac_power.py
+msgid ""
+"Detected power {watt} W, required power range ({min_watt} W, {max_watt} W)"
+msgstr "侦测到电源{watt}瓦，需求的电源范围({min_watt}瓦, {max_watt}瓦)"
+
+#: ../py/test/pytests/ac_power.py
+msgid "Probed {times} / {total}"
+msgstr "侦测次数 {times} / {total}"
+
+#: ../py/test/pytests/ac_power.py
+msgid "No AC adapter"
+msgstr "没有充电器"
+
+#: ../py/test/pytests/ac_power.py
+msgid "Identifying AC adapter..."
+msgstr "充电器型号识别中..."
+
+#: ../py/test/pytests/ac_power.py
+msgid "AC adapter type: {type}"
+msgstr "充电器型号: {type}"
+
+#: ../py/test/pytests/accelerometers.py ../py/test/pytests/probe/probe.py
+msgid "Press SPACE to continue"
+msgstr "按空白键继续"
+
+#: ../py/test/pytests/accelerometers.py ../py/test/pytests/gyroscope.py
+msgid ""
+"Test will be started within {secs} seconds. Please do not move the device."
+msgstr "测试程序即将于 {secs} 秒后开始，请勿移动待测物。"
+
+#: ../py/test/pytests/accelerometers.py
+#: ../py/test/pytests/thunderbolt_loopback.py
+msgid "Test is in progress, please do not move the device."
+msgstr "测试程序进行中，请勿移动待测物。"
+
+#: ../py/test/pytests/accelerometers_calibration.py
+msgid ""
+"Please put device on a horizontal plane then press space to start "
+"calibration."
+msgstr "请将待测物放置于水平面上，并按空白键开始校准。"
+
+#: ../py/test/pytests/accelerometers_calibration.py
+msgid "Please put device on a horizontal plane."
+msgstr "请将待测物放置于水平面上。"
+
+#: ../py/test/pytests/accelerometers_calibration.py
+msgid ""
+"Calibration will be started within {time} seconds.Please do not move device."
+msgstr "校准程序即将于 {time} 秒后开始，请勿移动待测物。"
+
+#: ../py/test/pytests/accelerometers_calibration.py
+msgid "Calibration is in progress, please do not move device."
+msgstr "校准程序进行中，请勿移动待测物。"
+
+#: ../py/test/pytests/accelerometers_lid_angle.py
+msgid "Please open the lid to {angle} degrees and press SPACE."
+msgstr "请将上盖掀开到 {angle} 度并按空白键。"
+
+#: ../py/test/pytests/accelerometers_lid_angle.py
+msgid "Please open the lid to {angle} degrees."
+msgstr "请将上盖掀开到 {angle} 度。"
+
+#: ../py/test/pytests/accelerometers_lid_angle.py
+msgid "Checking angle..."
+msgstr "正在确认角度……"
+
+#: ../py/test/pytests/audio.py
+msgid "Left Channel"
+msgstr "左声道"
+
+#: ../py/test/pytests/audio.py
+msgid "Right Channel"
+msgstr "右声道"
+
+#: ../py/test/pytests/audio.py
+msgid "Please wait for the {device} playback to finish."
+msgstr "{device} 正在播放语音···"
+
+#: ../py/test/pytests/audio.py
+msgid ""
+"Press the number you hear from {device} to pass the test.<br>Press \"R\" to "
+"replay."
+msgstr "请按你从 {device} 输出所听到的数字<br>按 R 重播语音"
+
+#: ../py/test/pytests/audio.py
+msgid "Internal Speaker"
+msgstr "内建喇叭"
+
+#: ../py/test/pytests/audio.py ../py/test/pytests/audio_basic.py
+msgid "Please plug headphone in."
+msgstr "请接上耳机"
+
+#: ../py/test/pytests/audio.py
+msgid "Please unplug headphone."
+msgstr "请拔下耳机"
+
+#: ../py/test/pytests/audio_basic.py
+msgid "Headset"
+msgstr "外接耳机"
+
+#: ../py/test/pytests/audio_basic.py
+msgid "Start recording"
+msgstr "开始录音"
+
+#: ../py/test/pytests/audio_basic.py
+msgid "Playback sound (Mic channel {channel})"
+msgstr "重播录到的声音(麦克风通道{channel})"
+
+#: ../py/test/pytests/audio_basic.py
+msgid "Playback sound to channel {channel}"
+msgstr "播放范例到通道{channel}"
+
+#: ../py/test/pytests/audio_basic.py
+msgid ""
+"Press 'P' to first play a sample for each channel to ensure audio output "
+"works.<br>Press 'R' to record {record_sec} seconds, Playback will follow."
+"<br>Press space to mark pass."
+msgstr ""
+"按 'P' 键播放范例<br>按 'R' 键开始录音{record_sec}秒，之后会重播录到的声音"
+"<br>压下空白表示成功"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Tone generator"
+msgstr "音频信号发生器"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Tone off"
+msgstr "关闭音频"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Tone On"
+msgstr "播放音频"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Manual record"
+msgstr "手动录音"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Stop record"
+msgstr "停止录音"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Start record"
+msgstr "开始录音"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Stop playback"
+msgstr "停止放音"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Start playback"
+msgstr "开始放音"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Audio loopback"
+msgstr "音频回放"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Loopback off"
+msgstr "停止回放"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Loopback on"
+msgstr "开始回放"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Output Nodes"
+msgstr "输出设备"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Input Nodes"
+msgstr "输入设备"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Pass"
+msgstr "通过"
+
+#: ../py/test/pytests/audio_diagnostic_static/audio_diagnostic.html
+msgid "Fail"
+msgstr "失败"
+
+#: ../py/test/pytests/audio_loop_static/audio_loop.html
+msgid "Plug in audio jack dongle"
+msgstr "请放入音源孔测试置具"
+
+#: ../py/test/pytests/audio_loop_static/audio_loop.html
+msgid "Hit s to start loopback test"
+msgstr "请按下s键开始音源回放测试"
+
+#: ../py/test/pytests/audio_loop_static/audio_loop.js
+msgid ""
+"Loopback testing...\n"
+"Success Rate: {successRate}"
+msgstr ""
+"音源回放测试中...\n"
+"成功率: {successRate}"
+
+#: ../py/test/pytests/audio_loop_static/audio_loop.js
+msgid "Loopback testing..."
+msgstr "音源回放测试中..."
+
+#: ../py/test/pytests/audio_loop_static/audio_loop.js
+msgid ""
+"Testing Result: Fail\n"
+"Success Rate: {successRate}"
+msgstr ""
+"测试结果: 失败\n"
+"成功率: {successRate}"
+
+#: ../py/test/pytests/audio_loop_static/audio_loop.js
+msgid "Testing Result: Success!"
+msgstr "测试结果: 成功!"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Press 'Space' to start test"
+msgstr "按空白键开始测试"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Connected"
+msgstr "已连线"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Waiting for command"
+msgstr "等待指令中"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Audio looping"
+msgstr "音源回放中"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Speaker on"
+msgstr "喇叭开启"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "LCD Dmic on"
+msgstr "LCD mic开启"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "MLB Dmic on"
+msgstr "MLB mic开启"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Playing tone to left channel"
+msgstr "播音至左声道"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Playing tone to right channel"
+msgstr "播音至右声道"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Waiting for IP address"
+msgstr "等待 IP 设定"
+
+#: ../py/test/pytests/audio_quality.py
+msgid "Ready for connection"
+msgstr "准备完成,等待链接"
+
+#: ../py/test/pytests/backlight.py
+msgid ""
+"Press Space to change backlight brightness;<br>Press Esc to reset backlight "
+"brightness to original;<br>After checking, Enter H if pressing Space changes "
+"the backlight to be brighter;<br>Enter L if pressing Space changes the "
+"backlight to be dimmer.<br>This test will be executed twice."
+msgstr ""
+"按空白键调整亮度;<br>按Esc复原亮度;<br>检查后若为提高亮度输入H; 若为降低亮度"
+"输入L<br>此项测试会进行两次。"
+
+#: ../py/test/pytests/bad_blocks.py
+msgid "Testing {test_size_mb} region of storage"
+msgstr "正在测试 {test_size_mb} 的 存储 空间"
+
+#: ../py/test/pytests/bad_blocks.py
+msgid "Phase {current_phase}/{total_phases}: "
+msgstr "阶段 {current_phase}/{total_phases}: "
+
+#: ../py/test/pytests/battery_basic.py
+msgid "Plug AC to proceed"
+msgstr "插上 AC 电源"
+
+#: ../py/test/pytests/battery_basic.py
+msgid "Testing battery charge..."
+msgstr "测试电池充电中..."
+
+#: ../py/test/pytests/battery_basic.py
+msgid "Unplug AC to proceed"
+msgstr "拔除 AC 电源"
+
+#: ../py/test/pytests/battery_basic.py
+msgid "Testing battery discharge..."
+msgstr "测试电池放电中..."
+
+#: ../py/test/pytests/battery_current.py
+msgid ""
+"Waiting for {target_status} current to meet {target_current} mA. (Currently "
+"{status} at {current} mA)"
+msgstr ""
+"等待{target_status}电流大于 {target_current} mA. (目前{status}中:{current} "
+"mA)"
+
+#: ../py/test/pytests/battery_current.py
+msgid "charging"
+msgstr "充电"
+
+#: ../py/test/pytests/battery_current.py
+msgid "discharging"
+msgstr "放电"
+
+#: ../py/test/pytests/battery_current.py
+msgid "Insert power to {prompt}({voltage}mV)"
+msgstr "请将电源线插入{prompt}({voltage}mV)"
+
+#: ../py/test/pytests/battery_current.py
+msgid ""
+"Average current in charging mode is {charging_current}<br>Average current in "
+"discharging mode is {discharging_current}<br>Target current difference is "
+"{target}, but present current difference is {present_difference}"
+msgstr ""
+"充电模式下的平均电流为 {charging_current}<br>放电模式下的平均电流为 "
+"{discharging_current}<br>目标电流差为 {target}，但当前电流差为 "
+"{present_difference}"
+
+#: ../py/test/pytests/battery_current.py
+msgid ""
+"Calculating the current difference between charging mode and discharging "
+"mode."
+msgstr "计算充电模式和放电模式之间的电流差"
+
+#: ../py/test/pytests/battery_current.py
+msgid "CheckCurrentDifference failed. This is the {times} try"
+msgstr "检查电流差异失败，这是第{times}次尝试"
+
+#: ../py/test/pytests/blocking_charge.py
+msgid ""
+"Charging to {target}% (Start: {start}%. Current: {current}%.)<br>Time "
+"elapsed: {elapsed} Time remaining: {remaining}"
+msgstr ""
+"充电至 {target}% (起始电量: {start}%. 当前电量: {current}%.)<br>经过时间: "
+"{elapsed} 剩余时间: {remaining}"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Enable the connection ability of bluetooth device and press Enter"
+msgstr "启用蓝牙装置的连接功能然后按输入键"
+
+#: ../py/test/pytests/bluetooth.py
+msgid ""
+"Place the base into the fixture, and press the space key on the test host."
+msgstr "请把测试键盘放入测试机具中,然后按下电脑的 space 键'"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Please re-attach the magnet, and press the space key on the test host."
+msgstr "请重新连结磁铁,然后按下电脑的 space 键'"
+
+#: ../py/test/pytests/bluetooth.py
+msgid ""
+"Turn on charging by pressing the green button, take the keyboard out and put "
+"it back, and press the space key on the test host."
+msgstr "请按下绿色键开始充电, 然后取出再放回键盘, 最后按下电脑的 space 键"
+
+#: ../py/test/pytests/bluetooth.py
+msgid ""
+"Press the green button again to stop charging, and press the space key on "
+"the test host."
+msgstr "请按下绿色键以停止充电,然后按下电脑的 space 键"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Read firmware revision string."
+msgstr "读取键盘韧体版本"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Check if the battery has charged to a higher percentage"
+msgstr "检查充电之后电量是否增加"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Read battery level for the 1st time."
+msgstr "第1次读取电池电量"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Read battery level for the 2nd time."
+msgstr "第2次读取电池电量"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Detect bluetooth adapter"
+msgstr "检测蓝牙适配器"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Unpairing"
+msgstr "取消配对"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Scanning..."
+msgstr "扫描中..."
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Press shift-p-a-i-r simultaneously on the base."
+msgstr "请在在测试键盘上同时按住 shift-p-a-i-r"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Detect RSSI (count {count}/{total})"
+msgstr "侦测RSSI (第 {count}/{total} 次)"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Enter passkey {key} then press enter on the base."
+msgstr "按 {key} 再按回车"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Authentication failed, retrying..."
+msgstr "验证失败，重试"
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Pairing to input device now..."
+msgstr "配对到蓝牙输入设备..."
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Connecting to input device now..."
+msgstr "连接到蓝牙输入设备..."
+
+#: ../py/test/pytests/bluetooth.py
+msgid "Please test input. Press Escape to fail and Enter to pass"
+msgstr "请测试输入, 如果失败, 请按Esc键，如果成功，请按Enter键"
+
+#: ../py/test/pytests/brightness/lcd_backlight.py
+msgid "Please check if backlight brightness is changing from dark to bright."
+msgstr "请检查萤幕亮度是否由暗变亮"
+
+#: ../py/test/pytests/button.py
+msgid "Press the {name} button"
+msgstr "按下{name}按钮"
+
+#: ../py/test/pytests/button.py
+msgid "Press the {name} button ({count}/{total})"
+msgstr "按下{name}按钮 ({count}/{total})"
+
+#: ../py/test/pytests/button.py
+msgid "Release the button"
+msgstr "松开按钮"
+
+#: ../py/test/pytests/buzzer.py
+msgid "How many beeps do you hear? <br>Press space to start."
+msgstr "你听到几声哔声？<br>压下空白键开始测试"
+
+#: ../py/test/pytests/buzzer.py
+msgid ""
+"How many beeps do you hear? <br>Press the number you hear to pass the test."
+"<br>Press 'r' to play again."
+msgstr "你听到几声哔声？<br>请按下数字代表你听到几声哔声<br>按下 'r' 重播"
+
+#: ../py/test/pytests/camera.py
+msgid "Press ENTER to pass or ESC to fail."
+msgstr "摄像头运作正常请按 ENTER，不正常请按 ESC"
+
+#: ../py/test/pytests/camera.py
+msgid "Running the camera until timeout."
+msgstr "运行相机直到超时"
+
+#: ../py/test/pytests/camera.py
+msgid "Running the camera until expected number of frames captured."
+msgstr "运行相机直到给订数量"
+
+#: ../py/test/pytests/camera.py
+msgid ""
+"Cover the field of view of the camera with a white paper. The red grids "
+"represent which region is too dark."
+msgstr "用白纸覆盖相机的视野。红色格子代表该区域太暗。"
+
+#: ../py/test/pytests/camera.py
+msgid "Scanning QR code..."
+msgstr "侦测 QR 码中..."
+
+#: ../py/test/pytests/camera.py
+msgid ""
+"Place QR code in the frame and cover the field of view of the camera with a "
+"white paper. The red grids represent which region is too dark."
+msgstr "将 QR 码放入框中并用白纸覆盖相机的视野。红色格子代表该个区域太暗。"
+
+#: ../py/test/pytests/camera.py
+msgid "Detecting faces..."
+msgstr "侦测人脸中..."
+
+#: ../py/test/pytests/camera.py
+msgid "Checking brightness..."
+msgstr "正在确认亮度……"
+
+#: ../py/test/pytests/camera.py
+msgid ""
+"Press 0 if LED is constantly lit, 1 if LED is flickering,\n"
+"or ESC to fail."
+msgstr "LED 一直亮着请按 0，闪烁请按 1，没亮请按 ESC"
+
+#: ../py/test/pytests/camera.py
+msgid "Scanned QR code: \"{text}\""
+msgstr "已侦测 QR 码: \"{text}\""
+
+#: ../py/test/pytests/camera.py ../py/test/pytests/compass_static/compass.html
+#: ../py/test/pytests/tablet_mode.py
+#: ../py/test/pytests/tablet_rotation_static/tablet_rotation.html
+msgid "Success!"
+msgstr "成功！"
+
+#: ../py/test/pytests/camera.py ../py/test/pytests/tablet_mode.py
+msgid "Failure"
+msgstr "失败"
+
+#: ../py/test/pytests/camera.py
+msgid ""
+"Camera assemble: {camera_well_assembled}, QR code: {qr_code_scan_success}"
+msgstr "相机组装：{camera_well_assembled}，QR 码：{qr_code_scan_success}"
+
+#: ../py/test/pytests/cellular_switch_firmware.py
+msgid "Switching firmware to {target!r}"
+msgstr "切换数据机至{target!r}韧体"
+
+#: ../py/test/pytests/chameleon.py
+msgid "Please plug in the display to test"
+msgstr "请拔下耳机"
+
+#: ../py/test/pytests/chameleon.py
+msgid ""
+"Testing DUT {dut_port} port on Chameleon {chameleon_port} port using mode "
+"{mode}..."
+msgstr ""
+"测试 DUT {dut_port} 对 Chameleon {chameleon_port} 外接显示 mode: {mode}..."
+
+#: ../py/test/pytests/chameleon.py
+msgid "Automated testing on {dut_port} to {chameleon_port} in progress..."
+msgstr "{dut_port} 对 {chameleon_port} 自动测试进行中..."
+
+#: ../py/test/pytests/chameleon.py
+msgid "Captured images mismatch"
+msgstr "撷取的图片不相符"
+
+#: ../py/test/pytests/charger.py
+msgid "Discharging"
+msgstr "放电"
+
+#: ../py/test/pytests/charger.py
+msgid "Charging"
+msgstr "充电"
+
+#: ../py/test/pytests/charger.py
+msgid ""
+"{action} to {target} (Current charge: {charge}, battery current: "
+"{battery_current} mA) under load {load}."
+msgstr ""
+"{action} 至 {target} (目前电量为 {charge}, 电池电流 {battery_current} mA) 负"
+"载 {load}."
+
+#: ../py/test/pytests/charger.py
+msgid "Time remaining: {timeout:.0f} sec."
+msgstr "剩馀时间: {timeout:.0f} 秒."
+
+#: ../py/test/pytests/charger.py
+msgid "Testing discharge"
+msgstr "测试放电中"
+
+#: ../py/test/pytests/charger.py
+msgid "Testing charger"
+msgstr "测试充电中"
+
+#: ../py/test/pytests/charger.py
+msgid "OK! Meet {target}"
+msgstr "OK! 达到 {target}"
+
+#: ../py/test/pytests/check_image_version.py
+msgid "Please connect to ethernet."
+msgstr "请连接到以太网。"
+
+#: ../py/test/pytests/check_image_version.py
+msgid "Image version is incorrect. Press space to re-image."
+msgstr "映像版本不正确，请按空白键重新安装。"
+
+#: ../py/test/pytests/check_image_version.py
+msgid "Flashing {component}..."
+msgstr "正在烧录 {component}..."
+
+#: ../py/test/pytests/check_image_version.py
+msgid "Updating {component}...."
+msgstr "正在更新 {component}..."
+
+#: ../py/test/pytests/check_retimer_firmware.py
+msgid "Please remove USB type-C cable from port {port}"
+msgstr "请从 port {port} 中移除 USB type-C 线"
+
+#: ../py/test/pytests/check_serial_number.py
+msgid "Checking Device State"
+msgstr "检查机器状态"
+
+#: ../py/test/pytests/compass.py
+msgid "north"
+msgstr "北"
+
+#: ../py/test/pytests/compass.py
+msgid "south"
+msgstr "南"
+
+#: ../py/test/pytests/compass.py
+msgid "Put the DUT towards {direction}"
+msgstr "将机器朝向{direction}方"
+
+#: ../py/test/pytests/countdown_static/countdown.html
+msgid "Remaining time:"
+msgstr "剩余时间："
+
+#: ../py/test/pytests/countdown_static/countdown.html
+msgid "Load:"
+msgstr "系统负载："
+
+#: ../py/test/pytests/display.py
+msgid "solid-gray-170"
+msgstr "灰色170"
+
+#: ../py/test/pytests/display.py
+msgid "solid-gray-127"
+msgstr "灰色127"
+
+#: ../py/test/pytests/display.py
+msgid "solid-gray-63"
+msgstr "灰色63"
+
+#: ../py/test/pytests/display.py
+msgid "solid-red"
+msgstr "红色"
+
+#: ../py/test/pytests/display.py
+msgid "solid-green"
+msgstr "绿色"
+
+#: ../py/test/pytests/display.py
+msgid "solid-blue"
+msgstr "蓝色"
+
+#: ../py/test/pytests/display.py
+msgid "solid-white"
+msgstr "白色"
+
+#: ../py/test/pytests/display.py
+msgid "solid-gray"
+msgstr "灰色"
+
+#: ../py/test/pytests/display.py
+msgid "solid-black"
+msgstr "黑色"
+
+#: ../py/test/pytests/display.py
+msgid "grid"
+msgstr "格框"
+
+#: ../py/test/pytests/display.py
+msgid "rectangle"
+msgstr "矩形"
+
+#: ../py/test/pytests/display.py
+msgid "gradient-red"
+msgstr "渐红"
+
+#: ../py/test/pytests/display.py
+msgid "gradient-green"
+msgstr "渐绿"
+
+#: ../py/test/pytests/display.py
+msgid "gradient-blue"
+msgstr "渐蓝"
+
+#: ../py/test/pytests/display.py
+msgid "gradient-white"
+msgstr "渐白"
+
+#: ../py/test/pytests/display.py
+msgid "image-complex"
+msgstr "影像-复杂"
+
+#: ../py/test/pytests/display.py
+msgid "image-black"
+msgstr "影像-黑色"
+
+#: ../py/test/pytests/display.py
+msgid "image-white"
+msgstr "影像-白色"
+
+#: ../py/test/pytests/display.py
+msgid "image-crosstalk-black"
+msgstr "影像-方形-黑色"
+
+#: ../py/test/pytests/display.py
+msgid "image-crosstalk-white"
+msgstr "影像-方形-白色"
+
+#: ../py/test/pytests/display.py
+msgid "image-gray-63"
+msgstr "影像-灰色63"
+
+#: ../py/test/pytests/display.py
+msgid "image-gray-127"
+msgstr "影像-灰色127"
+
+#: ../py/test/pytests/display.py
+msgid "image-gray-170"
+msgstr "影像-灰色170"
+
+#: ../py/test/pytests/display.py
+msgid "image-horizontal-rgbw"
+msgstr "影像-水平"
+
+#: ../py/test/pytests/display.py
+msgid "image-vertical-rgbw"
+msgstr "影像-垂直"
+
+#: ../py/test/pytests/display_images.py
+msgid "Display Test"
+msgstr "显示测试"
+
+#: ../py/test/pytests/display_images.py
+msgid "({index}/{total}) Uploading images {name}"
+msgstr "({index}/{total}) 正在上传图档 {name}"
+
+#: ../py/test/pytests/display_images.py
+msgid "All images uploaded."
+msgstr "所有图像上传完成"
+
+#: ../py/test/pytests/display_images_static/display_images.html
+msgid "Press space to show each image on display."
+msgstr "按空白键来拨放影像在萤幕上"
+
+#: ../py/test/pytests/display_images_static/display_images.html
+msgid "Press Enter to PASS after showing all images."
+msgstr "拨放完所有影像后,压下Enter表示成功"
+
+#: ../py/test/pytests/display_point_static/display_point.html
+msgid ""
+"Press Space to display;<br>After checking, Enter number of points to pass."
+msgstr "按空白键显示;<br>检查后按下正确的点数按键通过。"
+
+#: ../py/test/pytests/display_static/display.html
+msgid "Press Space to display;<br>After checking, Enter to pass; Esc to fail."
+msgstr "按空白键显示;<br>检查后按Enter键通过; 按Esc键失败。"
+
+#: ../py/test/pytests/display_static/display.js
+msgid "Untested"
+msgstr "未经测试"
+
+#: ../py/test/pytests/display_static/display.js
+msgid "Passed"
+msgstr "通过"
+
+#: ../py/test/pytests/display_static/display.js
+msgid "Failed"
+msgstr "失败"
+
+#: ../py/test/pytests/ethernet.py
+msgid ""
+"Please plug ethernet cable into built-in ethernet port<br>Press space to "
+"start."
+msgstr "请插入网路线到内建网路埠<br>压下空白键开始测试"
+
+#: ../py/test/pytests/exec_shell.py
+msgid "Running shell commands..."
+msgstr "正在执行系统指令..."
+
+#: ../py/test/pytests/external_display.py
+msgid "{display_label} Audio"
+msgstr " {display_label} 音讯"
+
+#: ../py/test/pytests/external_display.py
+msgid "Do you see video on {display}?"
+msgstr "外接显示屏 {display} 是否有画面?"
+
+#: ../py/test/pytests/external_display.py
+msgid "Press {key} to pass the test."
+msgstr "通过请按 <span id=pass_key>{key}</span> 键"
+
+#: ../py/test/pytests/external_display.py
+msgid "Fixture is checking if video is displayed on {display}?"
+msgstr "治具正在测试外接显示屏 {display} 是否有画面?"
+
+#: ../py/test/pytests/external_display.py
+msgid "Connect external display: {display} and wait until it becomes primary."
+msgstr "请接上外接显示屏: {display} 并等待其成为主要显示屏。"
+
+#: ../py/test/pytests/external_display.py
+msgid "Disconnect external display: {display}"
+msgstr "移除外接显示屏: {display}"
+
+#: ../py/test/pytests/external_display.py
+#: ../py/test/pytests/removable_storage.py
+#: ../py/test/pytests/thunderbolt_loopback.py
+msgid "Wrong USB side, please flip over {media}."
+msgstr "USB 方向错误，请将 {media} 反转方向..."
+
+#: ../py/test/pytests/external_display.py
+msgid "Wrong MUX information: {messages}."
+msgstr "MUX 资讯错误：{messages}。"
+
+#: ../py/test/pytests/fan_speed.py
+msgid "{fan_spin_direction}: {observed_rpm} -> {target_rpm} RPM."
+msgstr "{fan_spin_direction}: {observed_rpm} -> {target_rpm} RPM."
+
+#: ../py/test/pytests/fan_speed.py
+msgid "Spin up fan"
+msgstr "风扇加速"
+
+#: ../py/test/pytests/fan_speed.py
+msgid "Spin down fan"
+msgstr "风扇减速"
+
+#: ../py/test/pytests/fan_speed_static/fan_speed.html
+msgid "Fan speed (RPM):"
+msgstr "风扇转速(RPM):"
+
+#: ../py/test/pytests/fastboot_flash.py
+msgid "Switching device into fastboot."
+msgstr "等待待测物进入fastboot"
+
+#: ../py/test/pytests/fastboot_flash.py
+msgid "Switching device back to normal mode."
+msgstr "等待待测物正常开机"
+
+#: ../py/test/pytests/fastboot_flash.py
+msgid "Flashing {file} to {partition}."
+msgstr "安装 {file} 至 {partition}."
+
+#: ../py/test/pytests/finalize.py
+msgid "Build Phase"
+msgstr "生产阶段"
+
+#: ../py/test/pytests/finalize.py
+msgid "Write Protection"
+msgstr "写入保护"
+
+#: ../py/test/pytests/finalize.py
+msgid "Factory Server"
+msgstr "工厂伺服器"
+
+#: ../py/test/pytests/finalize.py
+msgid "Enabled"
+msgstr "启用"
+
+#: ../py/test/pytests/finalize.py
+msgid "Disabled"
+msgstr "停用"
+
+#: ../py/test/pytests/finalize.py
+msgid "Running preflight tasks to prepare for finalization, please wait..."
+msgstr "正在准备系统以执行最终程序..."
+
+#: ../py/test/pytests/finalize.py
+msgid ""
+"Finalizing, please wait.<br>Do not restart the device or terminate this test,"
+"<br>or the device may become unusable."
+msgstr ""
+"正在开始最终程序，请稍等.<br>不要重启机器或停止测试，<br>不然机器将无法开机。"
+
+#: ../py/test/pytests/gyroscope.py
+msgid ""
+"Please put device on a horizontal plane then press space to start testing."
+msgstr "请将待测物放置于水平面上，并按空白键开始测试。"
+
+#: ../py/test/pytests/gyroscope.py ../py/test/pytests/gyroscope_calibration.py
+msgid "Please do not move the device."
+msgstr "请勿移动待测物。"
+
+#: ../py/test/pytests/gyroscope.py
+msgid "Please rotate the device."
+msgstr "请转动待测物。"
+
+#: ../py/test/pytests/gyroscope_calibration.py
+msgid ""
+"Please put device on a static plane then press space to start calibration."
+msgstr "请将待测物放置于静止平面上，并按空白键开始校准。"
+
+#: ../py/test/pytests/gyroscope_calibration.py
+msgid ""
+"Calibration will be started within {secs} seconds.Please do not move the "
+"device."
+msgstr "校正程序即将于 {secs} 秒后开始，请勿移动待测物。"
+
+#: ../py/test/pytests/hwid.py
+msgid "Collecting DUT materials..."
+msgstr "正在收集 DUT 信息..."
+
+#: ../py/test/pytests/hwid.py
+msgid "Generating HWID (v3)..."
+msgstr "正在产生 HWID (v3)..."
+
+#: ../py/test/pytests/hwid.py
+msgid "Verifying HWID (v3): {encoded_string}..."
+msgstr "正在验证 HWID (v3): {encoded_string}..."
+
+#: ../py/test/pytests/hwid.py
+msgid "(unchanged)"
+msgstr "（不变）"
+
+#: ../py/test/pytests/hwid.py
+msgid "Setting HWID (v3): {encoded_string}..."
+msgstr "正在写入 HWID (v3): {encoded_string}..."
+
+#: ../py/test/pytests/keyboard_backlight.py
+msgid "If the keyboard backlight lights up, press ENTER. "
+msgstr "检查键盘背光是否亮起，是请按ENTER。"
+
+#: ../py/test/pytests/keyboard_backlight.py
+msgid "If the keyboard backlight is off, press ENTER. "
+msgstr "检查键盘背光是否熄灭，是请按ENTER。"
+
+#: ../py/test/pytests/keyboard_smt_static/keyboard_smt.html
+msgid "Expected keycode sequence:"
+msgstr "目标键序："
+
+#: ../py/test/pytests/keyboard_static/keyboard.html
+msgid "Press keys sequentially from top-left to bottom-right."
+msgstr "请从左上到右下依序按按键"
+
+#: ../py/test/pytests/keyboard_static/keyboard.html
+msgid "Press main keyboards first before pressing the number pad keys."
+msgstr "先按主键盘，再按数字键盘上的键"
+
+#: ../py/test/pytests/keyboard_static/keyboard.html
+msgid "Press one key at a time."
+msgstr "一次只能按一个键"
+
+#: ../py/test/pytests/led.py
+msgid "yellow"
+msgstr "黄色"
+
+#: ../py/test/pytests/led.py ../py/test/pytests/lightbar.py
+msgid "green"
+msgstr "绿色"
+
+#: ../py/test/pytests/led.py ../py/test/pytests/lightbar.py
+msgid "red"
+msgstr "红色"
+
+#: ../py/test/pytests/led.py ../py/test/pytests/lightbar.py
+msgid "white"
+msgstr "白色"
+
+#: ../py/test/pytests/led.py ../py/test/pytests/lightbar.py
+msgid "blue"
+msgstr "蓝色"
+
+#: ../py/test/pytests/led.py
+msgid "amber"
+msgstr "琥珀色"
+
+#: ../py/test/pytests/led.py
+msgid "off"
+msgstr "关闭"
+
+#: ../py/test/pytests/led.py
+msgid "power LED"
+msgstr "电源 LED"
+
+#: ../py/test/pytests/led.py
+msgid "battery LED"
+msgstr "电池 LED"
+
+#: ../py/test/pytests/led.py
+msgid "adapter LED"
+msgstr "电源适配器 LED"
+
+#: ../py/test/pytests/led.py
+msgid "left LED"
+msgstr "左侧 LED"
+
+#: ../py/test/pytests/led.py
+msgid "right LED"
+msgstr "右侧 LED"
+
+#: ../py/test/pytests/led.py
+msgid "recovery hwreinit LED"
+msgstr "还原硬件重启 LED"
+
+#: ../py/test/pytests/led.py
+msgid "sysrq debug LED"
+msgstr "系统请求调试 LED"
+
+#: ../py/test/pytests/led.py
+msgid "If the <strong>{name}</strong> is <strong>off</strong>, press ENTER."
+msgstr ""
+"请检查 <strong>{name}</strong> 是否 <strong>关掉</strong> 了，关掉了请按 "
+"ENTER。"
+
+#: ../py/test/pytests/led.py
+msgid ""
+"If the <strong>{name}</strong> lights up in <strong>{color}</strong>, press "
+"ENTER."
+msgstr ""
+"请检查 <strong>{name}</strong> 是否亮 <strong>{color}</strong>，是请按 "
+"ENTER。"
+
+#: ../py/test/pytests/led.py
+msgid "Test {test_id}"
+msgstr "测试 {test_id}"
+
+#: ../py/test/pytests/led.py
+msgid "Please press number key according to the <strong>{name}</strong> color"
+msgstr "请根据 <strong>{name}</strong> 的颜色按下数字键"
+
+#: ../py/test/pytests/led.py
+msgid "Result: "
+msgstr "测试结果："
+
+#: ../py/test/pytests/led.py
+msgid ""
+"Plug power into ports: {plug_ports}<br>Unplug power from ports: "
+"{unplug_ports}<br>Current power status: {status}"
+msgstr ""
+"等待插入电源线：{plug_ports}<br>等待拔出电源线：{unplug_ports}<br>目前的电源"
+"状态：{status}"
+
+#: ../py/test/pytests/lid_switch.py
+msgid "Demagnetizing lid sensor"
+msgstr "消磁化上盖感应器"
+
+#: ../py/test/pytests/lid_switch.py
+msgid "Open the lid"
+msgstr "请打开上盖"
+
+#: ../py/test/pytests/lid_switch.py
+msgid "Magnetizing lid sensor"
+msgstr "磁化上盖感应器"
+
+#: ../py/test/pytests/lid_switch.py
+msgid "Close then open the lid"
+msgstr "关上接着打开上盖"
+
+#: ../py/test/pytests/light_sensor.py
+msgid "Cover light sensor with finger"
+msgstr "盖住光感应器"
+
+#: ../py/test/pytests/light_sensor.py
+msgid "Remove finger from light sensor"
+msgstr "移除遮蔽"
+
+#: ../py/test/pytests/light_sensor.py
+msgid "Shine light sensor with flashlight"
+msgstr "用强光照射光感应器"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "ALS Sensor Calibration"
+msgstr "光感应器校正"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Cleaning up calibration values"
+msgstr "清除校正数值"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Sampling {name}"
+msgstr "讀取 {name}"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Checking ALS ordering"
+msgstr "确认 ALS 顺序"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Calculating calibration coefficients"
+msgstr "计算校正参数"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Saving calibration coefficients to VPD"
+msgstr "写入校正参数至VPD"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Validating ALS"
+msgstr "验证ALS"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Fixture Connected"
+msgstr "治具已连线"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Fixture Disconnected"
+msgstr "治具连线断线"
+
+#: ../py/test/pytests/light_sensor_calibration.py
+msgid "Switching to lighting {name}"
+msgstr "切换到 {name}"
+
+#: ../py/test/pytests/light_sensor_static/light_sensor.html
+msgid "Use indicated light source to pass each subtest."
+msgstr "请依指示通过每个子测试"
+
+#: ../py/test/pytests/light_sensor_static/light_sensor.html
+msgid "Hit \"space\" to begin..."
+msgstr "按 \"空白键\" 开始测试..."
+
+#: ../py/test/pytests/lightbar.py
+msgid "dark"
+msgstr "全暗"
+
+#: ../py/test/pytests/lightbar.py
+msgid "Is the lightbar {color}?<br>Press SPACE if yes, \"F\" if no."
+msgstr "光棒是否为{color}？<br>是请按空白键，不是请按 F 。"
+
+#: ../py/test/pytests/memory_size.py
+msgid "Checking memory info..."
+msgstr "正在检查内存大小..."
+
+#: ../py/test/pytests/message.py
+msgid ""
+"<div>Press <strong>Enter</strong> to continue, or <strong>ESC</strong> if "
+"things are not going right.</div>"
+msgstr ""
+"<div>按<strong>Enter</strong>继续，不正确请按<strong>ESC</strong></div>"
+
+#: ../py/test/pytests/message.py
+msgid "<div>Press <strong>Enter</strong> to continue.</div>"
+msgstr "<div>按<strong>Enter</strong>继续</div>"
+
+#: ../py/test/pytests/model_sku.py
+msgid "Please confirm following values"
+msgstr "请确认以下结果"
+
+#: ../py/test/pytests/network_setup/network_setup.py
+msgid "No physical link on {interface}"
+msgstr "{interface} 没有连接网络线"
+
+#: ../py/test/pytests/network_setup/network_setup.py
+msgid "Interface {interface} not found"
+msgstr "找不到网络介面 {interface}"
+
+#: ../py/test/pytests/network_setup/network_setup.py
+msgid "Interface {interface} not initialized"
+msgstr "网络介面 {interface} 未成功初始化"
+
+#: ../py/test/pytests/network_setup/network_setup.py
+msgid "Unknown Error on {interface}"
+msgstr "网络介面 {interface} 发生未知错误"
+
+#: ../py/test/pytests/network_setup/network_setup.py
+msgid "Setting up interface {interface}"
+msgstr "正在设定网络介面 {interface}"
+
+#: ../py/test/pytests/network_setup/network_setup.py
+msgid "Press space to continue"
+msgstr "请按空白键继续"
+
+#: ../py/test/pytests/plankton_cc2_pull_test.py
+msgid "Please remove USB type-C cable in {secs:.1f} seconds"
+msgstr "请在 {secs:.1f} 秒内移除 USB type-C 线"
+
+#: ../py/test/pytests/plankton_cc2_pull_test.py
+msgid "USB type-C port is disconnected in {secs:.1f} seconds"
+msgstr "USB type-C port 失去连接 {secs:.1f} 秒"
+
+#: ../py/test/pytests/plankton_cc2_pull_test.py
+msgid "Please attach USB type-C cable in {secs:.1f} seconds"
+msgstr "请在 {secs:.1f} 秒内连接 USB type-C 线"
+
+#: ../py/test/pytests/plankton_cc_flip_check.py
+msgid "Wait DUT to reconnect"
+msgstr "等待 DUT 重新连接"
+
+#: ../py/test/pytests/plankton_cc_flip_check.py
+msgid "Flip USB type-C cable and plug in again..."
+msgstr "将 USB type-C port 头反转后再次插入机器..."
+
+#: ../py/test/pytests/plankton_cc_flip_check.py
+msgid "And press Enter key to continue..."
+msgstr "并按 Enter 键继续..."
+
+#: ../py/test/pytests/plankton_charge.py
+msgid "Waiting for ADB device connection..."
+msgstr "等待机器连线..."
+
+#: ../py/test/pytests/plankton_charge.py
+msgid "Checking Plankton INA current for protection..."
+msgstr "检查电流保护..."
+
+#: ../py/test/pytests/plankton_charge.py
+msgid "Testing battery {voltage}V charging..."
+msgstr "测试电池 {voltage}V 充电中..."
+
+#: ../py/test/pytests/plankton_charge.py
+msgid "Testing battery discharging..."
+msgstr "测试电池放电中..."
+
+#: ../py/test/pytests/plankton_display.py
+msgid "Connecting BFT display: {device}"
+msgstr "正在连接 BFT 显示屏: {device}"
+
+#: ../py/test/pytests/plankton_display.py
+msgid "Disconnecting BFT display: {device}"
+msgstr "正在移除 BFT 显示屏: {device}"
+
+#: ../py/test/pytests/plankton_display.py
+msgid "BFT display {device} is connected. Sending image..."
+msgstr "已连接 BFT 显示屏: {device}, 正在传送画面"
+
+#: ../py/test/pytests/plankton_display_static/plankton_display.html
+msgid "Caution: monitor may turn black for a short time."
+msgstr "注意: 萤幕可能会有短暂黑屏"
+
+#: ../py/test/pytests/power_under_stress.py
+msgid "Voltage: {voltage} mV"
+msgstr "电压: {voltage} mV"
+
+#: ../py/test/pytests/power_under_stress.py
+msgid "Current: {current} mA"
+msgstr "电流: {current} mA"
+
+#: ../py/test/pytests/probe_sim.py
+msgid "Please insert the SIM card"
+msgstr "请插入SIM卡"
+
+#: ../py/test/pytests/probe_sim.py
+msgid "Detected! Please remove the SIM card"
+msgstr "已经侦测SIM卡, 请移除SIM卡"
+
+#: ../py/test/pytests/probe_sim.py
+msgid "Checking SIM card is present or not..."
+msgstr "检查SIM卡是否存在"
+
+#: ../py/test/pytests/probe_sim_card_tray.py
+msgid "Please insert the SIM card tray"
+msgstr "请插入SIM卡卡盘"
+
+#: ../py/test/pytests/probe_sim_card_tray.py
+msgid "Detected! Please remove the SIM card tray"
+msgstr "已经侦测SIM卡卡盘, 请移除SIM卡卡盘"
+
+#: ../py/test/pytests/proximity_sensor.py
+msgid "Please cover the sensor by hand"
+msgstr "请用手遮住感应器"
+
+#: ../py/test/pytests/proximity_sensor.py
+msgid "Please un-cover the sensor"
+msgstr "请将手远离感应器"
+
+#: ../py/test/pytests/proximity_sensor.py
+msgid "Setting the sensor"
+msgstr "设定感测器中"
+
+#: ../py/test/pytests/read_device_data_from_vpd.py
+msgid "Reading device data from {vpd_section} VPD..."
+msgstr "正在从 {vpd_section} VPD 读机器资料..."
+
+#: ../py/test/pytests/removable_storage.py
+msgid "Testing {device}..."
+msgstr "{device} 检查中..."
+
+#: ../py/test/pytests/removable_storage.py
+msgid "Performing r/w test on {count} {bsize}-byte random blocks..."
+msgstr "执行 {count} 个 {bsize} 字节区块随机读写测试..."
+
+#: ../py/test/pytests/removable_storage.py
+msgid "Performing sequential r/w test of {bsize} bytes..."
+msgstr "执行 {bsize} 字节区块连续读写测试..."
+
+#: ../py/test/pytests/removable_storage.py
+msgid ""
+"Insert {media} drive for read/write test... {extra}<br>WARNING: DATA ON "
+"INSERTED MEDIA WILL BE LOST!"
+msgstr ""
+"插入 {media} 存储以进行读写测试... {extra}<br>注意: 插入装置上的资料将会被清"
+"除!"
+
+#: ../py/test/pytests/removable_storage.py
+msgid "Remove {media} drive..."
+msgstr "提取 {media} 存储..."
+
+#: ../py/test/pytests/removable_storage.py
+msgid "Toggle lock switch and insert {media} drive again..."
+msgstr "切换写保护开关并再次插入 {media} 存储..."
+
+#: ../py/test/pytests/removable_storage.py
+msgid "Remove {media} drive and toggle lock switch..."
+msgstr "提取 {media} 存储并关闭写保护开关..."
+
+#: ../py/test/pytests/rf_graphyte/rf_graphyte.py
+msgid "Executing Graphyte"
+msgstr "执行 Graphyte"
+
+#: ../py/test/pytests/robot_movement.py
+msgid "Initializing Robot..."
+msgstr "正在初始化机器手臂..."
+
+#: ../py/test/pytests/robot_movement.py
+msgid ""
+"Please load DUT onto the robot, connect all cables, and press <b>SPACE</b> "
+"to continue."
+msgstr "将DUT放上机器手臂并接上线路后按下<b>空白键</b>开始。"
+
+#: ../py/test/pytests/robot_movement.py
+msgid "Prepare for movement."
+msgstr "准备开始移动。"
+
+#: ../py/test/pytests/robot_movement.py
+msgid "Moving to start position..."
+msgstr "正在移动至起始位置。"
+
+#: ../py/test/pytests/robot_movement.py
+msgid "Moving to LOAD / UNLOAD position..."
+msgstr "正在移动至卸载位置。"
+
+#: ../py/test/pytests/robot_movement.py
+msgid "Computing..."
+msgstr "校正中..."
+
+#: ../py/test/pytests/robot_movement.py
+msgid "Pushing the result..."
+msgstr "储存结果中..."
+
+#: ../py/test/pytests/scan.py
+msgid "The scanned value is empty."
+msgstr "扫描编号是空的。"
+
+#: ../py/test/pytests/scan.py
+msgid "The scanned value \"{value}\" does not match the expected format."
+msgstr "所扫描的编号「{value}」格式不对。"
+
+#: ../py/test/pytests/scan.py
+msgid ""
+"The scanned value \"{value}\" does not match the expected value <span "
+"class=test-engineering-mode-only>\"{expected_value}\"</span>."
+msgstr ""
+"所扫描的编号「{value}」不搭配所期望的编号<span class=test-engineering-mode-"
+"only>「{expected_value}」</span>。"
+
+#: ../py/test/pytests/scan.py
+msgid "Writing to VPD. Please wait..."
+msgstr "正在写到 VPD，请稍等..."
+
+#: ../py/test/pytests/scan.py
+msgid "Scan {label}"
+msgstr "扫描{label}"
+
+#: ../py/test/pytests/scan.py
+msgid "Please scan the {label} and press ENTER."
+msgstr "请扫描{label}后按下 ENTER。"
+
+#: ../py/test/pytests/shopfloor_service.py
+msgid "Retry"
+msgstr "重试"
+
+#: ../py/test/pytests/shopfloor_service.py
+msgid "Invoking shopfloor service"
+msgstr "执行 Shopfloor 服务"
+
+#: ../py/test/pytests/shopfloor_service.py
+msgid "Shopfloor exception:"
+msgstr "Shopfloor 错误:"
+
+#: ../py/test/pytests/shutdown.py
+msgid "reboot"
+msgstr "重新启动"
+
+#: ../py/test/pytests/shutdown.py
+msgid "full reboot"
+msgstr "深度重启"
+
+#: ../py/test/pytests/shutdown.py
+msgid "halt"
+msgstr "关机"
+
+#: ../py/test/pytests/shutdown.py
+msgid "direct ec reboot"
+msgstr "EC 冷重启"
+
+#: ../py/test/pytests/shutdown.py
+msgid "Shutdown Test ({operation})"
+msgstr "关机测试 ({operation})"
+
+#: ../py/test/pytests/shutdown.py
+msgid "Remote DUT is performing {operation}, timeout in {delay} seconds."
+msgstr "远端测试装置将于 {delay} 秒内{operation}."
+
+#: ../py/test/pytests/shutdown.py
+msgid "Verifying system state after {operation}"
+msgstr "{operation}后验证系统状态"
+
+#: ../py/test/pytests/shutdown.py
+msgid "System is going to {operation} in {delay} seconds."
+msgstr "系统将在 {delay} 秒后{operation}."
+
+#: ../py/test/pytests/spatial_sensor_calibration.py
+msgid "Accelerometer"
+msgstr "加速度计"
+
+#: ../py/test/pytests/spatial_sensor_calibration.py
+msgid "Calibrating {sensor_name}..."
+msgstr "正在校正 {sensor_name}..."
+
+#: ../py/test/pytests/spatial_sensor_calibration.py
+msgid "Device not in position"
+msgstr "装置位置不正确"
+
+#: ../py/test/pytests/spatial_sensor_calibration.py
+msgid "Please put the device in face-up position (press Enter to continue)"
+msgstr "请将装置面向上(按 Enter 继续)"
+
+#: ../py/test/pytests/spatial_sensor_calibration.py ../py/test/pytests/vsync.py
+msgid "Waiting for device..."
+msgstr "正在等待装置..."
+
+#: ../py/test/pytests/spatial_sensor_calibration.py
+msgid "Writing calibration data..."
+msgstr "正在写入校正结果..."
+
+#: ../py/test/pytests/start.py
+msgid "Hit SPACE to start testing..."
+msgstr "按 \"空白键\" 开始测试..."
+
+#: ../py/test/pytests/start.py
+msgid "Hit {name} to start testing..."
+msgstr "按 \"{name}\" 开始测试..."
+
+#: ../py/test/pytests/start.py
+msgid "Plug in external power to continue."
+msgstr "请插上外接电源以继续。"
+
+#: ../py/test/pytests/start.py
+msgid ""
+"Factory install process did not complete. Auto-testing stopped."
+"<br><br>Please install the factory test image using factory server<br>rather "
+"than booting from a USB drive.<br>"
+msgstr ""
+"安装过程中失败, 停止自动测试。<br><br>请使用完整的工厂伺服器安装测试程式，"
+"<br>不要直接从 USB 碟开机执行。<br>"
+
+#: ../py/test/pytests/start.py
+msgid "Initialize some shared data..."
+msgstr "重设旧有共用资料..."
+
+#: ../py/test/pytests/station_entry.py
+msgid "Start Station Test"
+msgstr "开始测试"
+
+#: ../py/test/pytests/station_entry.py
+msgid "End Station Test"
+msgstr "结束测试"
+
+#: ../py/test/pytests/station_entry.py
+msgid "Please attach DUT."
+msgstr "INSERT 请插入测试装置。"
+
+#: ../py/test/pytests/station_entry.py
+msgid "Press SPACE to start the test."
+msgstr "请按空白键开始测试。"
+
+#: ../py/test/pytests/station_entry.py
+msgid "Sending test results to shopfloor..."
+msgstr "SENDING 传送测试结果给服务器..."
+
+#: ../py/test/pytests/station_entry.py
+msgid "Please remove DUT."
+msgstr "REMOVE 请移除测试装置。"
+
+#: ../py/test/pytests/station_entry.py
+msgid "Press SPACE to end the test."
+msgstr "请按空白键结束测试。"
+
+#: ../py/test/pytests/stylus.py
+msgid ""
+"Please extend the green line with stylus to the other end.<br>Stay between "
+"the two red lines.<br>Press SPACE to start; Esc to fail."
+msgstr ""
+"请使用触控笔将绿色线段延伸至另一头，<br>不要超出红线区域。<br>按空白键开始测"
+"试; Esc 键标记失败"
+
+#: ../py/test/pytests/stylus.py
+msgid "clockwise"
+msgstr "顺时针"
+
+#: ../py/test/pytests/stylus.py
+msgid "upside down"
+msgstr "倒置"
+
+#: ../py/test/pytests/stylus.py
+msgid "counterclockwise"
+msgstr "逆时针"
+
+#: ../py/test/pytests/stylus.py
+msgid "Please rotate the device: {msg}"
+msgstr "请转动待测物: {msg}"
+
+#: ../py/test/pytests/stylus_garage.py
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Remove stylus"
+msgstr "移除触控笔"
+
+#: ../py/test/pytests/stylus_garage.py
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Insert stylus"
+msgstr "插入触控笔"
+
+#: ../py/test/pytests/stylus_garage.py
+msgid "Insert or Remove stylus"
+msgstr "插入或移除触控笔"
+
+#: ../py/test/pytests/summary.py
+msgid "Click or press SPACE to continue"
+msgstr "点击或按空白键继续"
+
+#: ../py/test/pytests/summary.py
+msgid "Unable to proceed, since some previous tests have not passed."
+msgstr "之前所有的测试必须通过才能通过此项目"
+
+#: ../py/test/pytests/summary_static/summary.html
+msgid "Click or press any key to continue..."
+msgstr "点击或按任意键继续"
+
+#: ../py/test/pytests/summary_static/summary.js
+msgid "passed"
+msgstr "良好"
+
+#: ../py/test/pytests/summary_static/summary.js
+msgid "failed"
+msgstr "不良"
+
+#: ../py/test/pytests/summary_static/summary.js
+msgid "active"
+msgstr "正在测"
+
+#: ../py/test/pytests/summary_static/summary.js
+msgid "untested"
+msgstr "未测"
+
+#: ../py/test/pytests/summary_static/summary.js
+msgid "Test Status for {testName}:"
+msgstr "{testName} 测试结果列表："
+
+#: ../py/test/pytests/suspend_resume.py
+msgid "Suspend/Resume: {run} of {cycle}"
+msgstr "暂停/恢复: {run} / {cycle}"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Change URL"
+msgstr "变更网址"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Please wait few seconds to edit..."
+msgstr "请等候几秒即可编辑..."
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "No factor server URL configured."
+msgstr "未指定工厂伺服器服务器网址。"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid ""
+"For debugging or development, enter engineering mode to start individual "
+"tests."
+msgstr "若想除错或执行部份测试，请進入工程模式。"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Change server URL: "
+msgstr "变更伺服器网址: "
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Set"
+msgstr "设定"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Please connect to network..."
+msgstr "请连接到网路..."
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Expected network: {networks}"
+msgstr "预期的网路: {networks}"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Current networks: {networks}"
+msgstr "目前的网路: {networks}"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Trying to reach server..."
+msgstr "尝试联络工厂伺服器 ..."
+
+#: ../py/test/pytests/sync_factory_server.py
+#: ../py/test/pytests/thunderbolt_loopback.py
+msgid "Trying to check server protocol..."
+msgstr "正在检查工厂伺服器..."
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Server URL: {server_url}"
+msgstr "伺服器网址: {server_url}"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Flush Test Log: Progress = <br>{progress}"
+msgstr "同步测试记录(TestLog): 进度 = <br>{progress}"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Collecting report data..."
+msgstr "收集报告资料..."
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Getting serial number..."
+msgstr "读取序号..."
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "A software update is available. Press SPACE to update."
+msgstr "有可用的更新。按空白键更新。"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Preparing..."
+msgstr "准备中..."
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Ping"
+msgstr "连线测试"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Detect Server URL"
+msgstr "侦测伺服器网址 "
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Sync time"
+msgstr "同步时间"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Flush Event Logs"
+msgstr "同步事件记录"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Flush Test Log"
+msgstr "同步测试记录(TestLog)"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Create Report"
+msgstr "产生报告"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Upload report"
+msgstr "上传生产报告"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Upload Reg Codes"
+msgstr "上传"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Update Toolkit"
+msgstr "更新测试程序"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Running task: {label}"
+msgstr "執行任务: {label}"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Server Task Finished: {label}"
+msgstr "完成任务: {label}"
+
+#: ../py/test/pytests/sync_factory_server.py
+msgid "Task <b>{label}</b> failed, retry in {time_left} seconds..."
+msgstr "<b>{label}</b>任务失败，将在 {time_left} 秒后重试..."
+
+#: ../py/test/pytests/tablet_mode.py
+msgid "Flip the lid into tablet mode"
+msgstr "把上盖掀开一圈直到贴合下盖"
+
+#: ../py/test/pytests/tablet_mode.py
+msgid "Confirm tablet mode"
+msgstr "确认平板模式"
+
+#: ../py/test/pytests/tablet_mode.py
+msgid "Open the lid back to notebook mode"
+msgstr "把上盖掀开直到正常笔电模式"
+
+#: ../py/test/pytests/tablet_mode.py
+msgid "Press SPACE to confirm notebook mode"
+msgstr "请按空白键确认笔电模式"
+
+#: ../py/test/pytests/tablet_rotation.py
+msgid ""
+"Rotate the tablet to correctly align the picture, holding it at an upright "
+"90-degree angle."
+msgstr "竖立平板电脑使其垂直于桌面，并开始旋转到对齐图片。"
+
+#: ../py/test/pytests/thunderbolt_loopback.py
+msgid "Please unplug and replug."
+msgstr "请拔下再插入"
+
+#: ../py/test/pytests/thunderbolt_loopback.py
+msgid "Do not insert more than one loopback card."
+msgstr "请勿插入超过一个回送卡。"
+
+#: ../py/test/pytests/thunderbolt_loopback.py
+msgid "The loopback card is inserted into the wrong port."
+msgstr "回送卡插入到错误的端口。"
+
+#: ../py/test/pytests/thunderbolt_loopback.py
+msgid "Insert the loopback card."
+msgstr "插入回送卡以进行读写测试。"
+
+#: ../py/test/pytests/thunderbolt_loopback.py
+msgid "Remove the loopback card."
+msgstr "请移除回送卡。"
+
+#: ../py/test/pytests/touch_uniformity.py
+msgid "PASS"
+msgstr "成功"
+
+#: ../py/test/pytests/touch_uniformity.py
+msgid "FAIL"
+msgstr "失败"
+
+#: ../py/test/pytests/touch_uniformity.py
+msgid "ERROR: Touch device not found"
+msgstr "没有找到触控装置"
+
+#: ../py/test/pytests/touch_uniformity.py
+msgid "Calibrating Touch device"
+msgstr "触控装置校正中"
+
+#: ../py/test/pytests/touch_uniformity.py
+msgid "Testing {item}..."
+msgstr "测试 {item} 中... "
+
+#: ../py/test/pytests/touchpad.py
+msgid ""
+"Please don't put your third finger on the touchpad.\n"
+"If you didn't do that,\n"
+"treat this touch panel as a problematic one!!"
+msgstr ""
+"请勿将第三根手指放到触控板上。\n"
+"如果你没有那么做，\n"
+"请将此触控板作为出问题的处理！！"
+
+#: ../py/test/pytests/touchpad.py
+msgid ""
+"Ghost finger detected!!\n"
+"Please treat this touch panel as a problematic one!!"
+msgstr ""
+"侦测到幽灵手指！！\n"
+"请将此触控板作为出问题的处理！！"
+
+#: ../py/test/pytests/touchpad_hover.py
+msgid "Calibrating touchpad..."
+msgstr "触控面板校正中..."
+
+#: ../py/test/pytests/touchpad_hover.py
+msgid "Please put the hover-tool into the holder."
+msgstr "请将悬停测试用具放入支架中"
+
+#: ../py/test/pytests/touchpad_hover.py
+msgid "Please pull out the hover-tool from the holder."
+msgstr "请将悬停测试用具从支架移除"
+
+#: ../py/test/pytests/touchpad_hover.py
+msgid "Checking for false positive..."
+msgstr "进行假阳性检查..."
+
+#: ../py/test/pytests/touchpad_static/touchpad.html
+msgid "Please take off your fingers and then press SPACE to start testing..."
+msgstr "请先将手指远离触控版後按 空白键 开始测试..."
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Serial number"
+msgstr "面板序号"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Submit"
+msgstr "提交"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Probe goes down"
+msgstr "关机前治具下位停俥"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Probe goes up"
+msgstr "测试前治具上位预备"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Read sensor data"
+msgstr "手动读取待测资料"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Probe self test"
+msgstr "手动治具自我测试"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Controller status"
+msgstr "治具连结"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Refresh"
+msgstr "刷新"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Touchscreen status"
+msgstr "待测物连结"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Probe state"
+msgstr "治具内部状态"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "FixtureState"
+msgstr "治具状态查询"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Host IP"
+msgstr "本机网址"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "BB IP"
+msgstr "BB网址"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Shopfloor IP"
+msgstr "Shopfloor网址"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.html
+msgid "Shutdown the host"
+msgstr "关机"
+
+#: ../py/test/pytests/touchscreen_calibration/static/touchscreen_calibration.js
+msgid "Please enter SN"
+msgstr "请输入序号"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid ""
+"Fail to detect the touchscreen.\n"
+"Insert the traveler board, and restart the test."
+msgstr ""
+"无法侦测到面板。\n"
+"请移除小板后再重新插入小板，并重跑测试"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid "Fail to assign DIRECT_SENSORS_IP in ryu.conf"
+msgstr "需要在 ryu.conf 指定 DIRECT_SENSORS_IP"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid "Disconnected from controller"
+msgstr "与治具失去联系"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid "Probe not in initial position, aborted"
+msgstr "治具未就原位, 舍弃"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid ""
+"Please check if the USB cable has been connected between the test fixture "
+"and the control host.\n"
+"Click \"RefreshFixture\" button on screen after connecting the USB cable."
+msgstr ""
+"请确认USB缆线是否已连结治具与控制电脑\n"
+"请连结USB缆线,并点击萤幕上治具连结的刷新按钮。"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid ""
+"The test fixture is not ready.\n"
+"(1) It is possible that the test fixure is not powered on yet.\n"
+"    Turn on the power and click \"RefreshFixture\" button on screen.\n"
+"(2) The test fixture is already powered on. The fixture may be in the "
+"emergency stop state.\n"
+"    Press debug button on the test fixture and click \"RefreshFixture\" "
+"button on screen."
+msgstr ""
+"治具尚未就位，可能原因如下：\n"
+"(1) 治具电源尚未开启。请开启电源，并点击萤幕上治具连结的刷新按钮。\n"
+"(2) 治具电源已经开启，但是处于紧急停止状态。请按治具左侧的debug按钮一次。"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid "Probe not in the DOWN position, aborted"
+msgstr "治具未就下位, 舍弃"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid "Probe not in the UP position, aborted"
+msgstr "治具未就上位, 舍弃"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid "Wrong serial number!"
+msgstr "序号错误!"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid ""
+"Fail to detect the touchscreen.\n"
+"Remove and re-insert the traveler board. And restart the test."
+msgstr ""
+"无法侦测到面板。\n"
+"请移除小板后再重新插入小板，并重跑测试"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid "Current calibration has not completed yet"
+msgstr "目前校正尚未结束"
+
+#: ../py/test/pytests/touchscreen_calibration/touchscreen_calibration.py
+msgid "Please enter SN first"
+msgstr "请先输入序号"
+
+#: ../py/test/pytests/touchscreen_static/touchscreen.js
+msgid "Please start drawing from upper-left corner."
+msgstr "请从左上角开始画格子"
+
+#: ../py/test/pytests/touchscreen_static/touchscreen.js
+msgid "Please leave your finger and restart from upper-left block."
+msgstr "请移开手指并从左上角开始重画"
+
+#: ../py/test/pytests/touchscreen_static/touchscreen.js
+msgid "Fails to draw blocks in sequence. Please try again."
+msgstr "没依照顺序画格子！请重来"
+
+#: ../py/test/pytests/touchscreen_static/touchscreen.js
+msgid "Test failed! Please test this panel carefully with Gods Touch test."
+msgstr "触控面板测试失败. 请以Gods Touch测试软体加以仔细验证"
+
+#: ../py/test/pytests/touchscreen_static/touchscreen.js
+msgid "Finger leaving too early. Please try again."
+msgstr "手指太早离开！请重来"
+
+#: ../py/test/pytests/touchscreen_static/touchscreen.js
+msgid "Draw blocks from upper-left corner in sequence; Esc to fail."
+msgstr "从左上角开始依序画格子; 按 Esc 键标记失败"
+
+#: ../py/test/pytests/touchscreen_static/touchscreen.js
+msgid "Draw blocks in any order; Esc to fail."
+msgstr "用任意顺序画完全部格子; 按 Esc 键标记失败"
+
+#: ../py/test/pytests/update_detachable_base.py
+msgid "Please connect the detachable base."
+msgstr "请连接可拆式底座"
+
+#: ../py/test/pytests/update_detachable_base.py
+msgid "Updating base firmware. Do not remove the base."
+msgstr "更新韧体中，勿移除底座"
+
+#: ../py/test/pytests/update_detachable_base.py
+msgid "Verifying detachable base information..."
+msgstr "验证底座信息..."
+
+#: ../py/test/pytests/update_device_data.py
+msgid "Device Serial Number"
+msgstr "机器编号"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "Mainboard Serial Number"
+msgstr "主板(MLB)序号"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "VPD Region Code"
+msgstr "VPD 地区代码(Region)"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "User Registration Code"
+msgstr "用户注册码(User ECHO)"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "Group Registration Code"
+msgstr "群组注册码(Group ECHO)"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "No valid data on machine for {label}."
+msgstr "缺少装置资料: {label}"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "Invalid value for {label}."
+msgstr "输入的{label}不正确"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "Select {label}:"
+msgstr "选择{label}:"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "Select with ENTER"
+msgstr "按 ENTER 选择"
+
+#: ../py/test/pytests/update_device_data.py
+msgid "Enter {label}: "
+msgstr "输入{label}: "
+
+#: ../py/test/pytests/update_device_data.py
+msgid "(ESC to keep current value)"
+msgstr "(ESC 保持原值不变)"
+
+#: ../py/test/pytests/usb.py
+msgid "Plug device into each USB port, {num_usb_ports} to go..."
+msgstr "在每个 USB 端口插入装置, 还有 {num_usb_ports} 个待测试..."
+
+#: ../py/test/pytests/verify_component_static/verify_component.html
+msgid "Probing components..."
+msgstr "正在探索零件..."
+
+#: ../py/test/pytests/verify_component_static/verify_component.html
+msgid "Unable to pass verify component test."
+msgstr "无法通过验证元件测试"
+
+#: ../py/test/pytests/verify_component_static/verify_component.html
+msgid "Number mismatch component classes"
+msgstr "数量不符合的元件类别"
+
+#: ../py/test/pytests/verify_component_static/verify_component.html
+msgid "Not supported components"
+msgstr "不支援的元件"
+
+#: ../py/test/pytests/verify_component_static/verify_component.html
+msgid "Component"
+msgstr "验证元件"
+
+#: ../py/test/pytests/verify_component_static/verify_component.html
+msgid "Name"
+msgstr "名字"
+
+#: ../py/test/pytests/verify_component_static/verify_component.html
+msgid "Status"
+msgstr "状态"
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Loading parameters from local disk..."
+msgstr "从本地硬盘载入测试参数中..."
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Setting up network..."
+msgstr "设定网路环境中..."
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Connecting with the ENA..."
+msgstr "与 ENA (E5071C) 连线中..."
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid ""
+"Please fully disconnect all the cable.<br> Then press ENTER to continue."
+msgstr "请完全移除天线后，按 ENTER 继续"
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Checking its calibration status..."
+msgstr "验证仪器矫正状态中..."
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "The ENA needs to be calibrated.<br> Please press ENTER to continue."
+msgstr "请矫正 ENA 并按 ENTER 重新启动测试。"
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Please place the LCD panel into the fixture and then press ENTER."
+msgstr "请放置 LCD 本体在治具上<br>完成后按 ENTER"
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid ""
+"Make sure the main WWAN antennta is connected to Port 1<br> Make sure the "
+"main WLAN antennta is connected to Port 2<br> Then press key \"A\" to next "
+"stage."
+msgstr ""
+"连接主 WWAN 天线至 Port 1<br> 连接主 WLAN 天线至 Port 2<br> 完成后按 A 键"
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Testing..."
+msgstr "测试中..."
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Writing log...."
+msgstr "记录中..."
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Results are listed below:"
+msgstr "测试结果显示如下："
+
+#: ../py/test/pytests/vswr/static/vswr.html
+msgid "Please disconnect the panel and press ENTER to write log."
+msgstr "请将 AB Panel 移除, 并按 ENTER 完成测试"
+
+#: ../py/test/pytests/vswr/vswr.py
+msgid "Make sure the {name} antennta is connected to port {port}<br>"
+msgstr "连接 {name} 天线至 port {port}<br>"
+
+#: ../py/test/pytests/vswr/vswr.py
+msgid "Then press key \"{key}\" to next stage."
+msgstr "完成后按 {key} 键"
+
+#: ../py/test/pytests/vsync.py
+msgid "Verifying VSync pin... ({count}/{total})"
+msgstr "正在验证 VSync pin... ({count}/{total})"
+
+#: ../py/test/pytests/wait_external_test.py
+msgid "Please run external test: {name}"
+msgstr "請執行外部測試: {name}"
+
+#: ../py/test/pytests/whale_check_voltage.py
+msgid "Power rail"
+msgstr "电源"
+
+#: ../py/test/pytests/whale_check_voltage.py
+msgid "voltage (mV)"
+msgstr "电压 (mV)"
+
+#: ../py/test/pytests/whale_check_voltage.py
+msgid "expected"
+msgstr "期望值"
+
+#: ../py/test/pytests/whale_check_voltage.py
+msgid "status"
+msgstr "状态"
+
+#: ../py/test/pytests/whale_cover.py
+msgid "Please open the cover!"
+msgstr "请开盖"
+
+#: ../py/test/pytests/whale_cover.py
+msgid "Please close the cover!"
+msgstr "请关盖"
+
+#: ../py/test/pytests/whale_cover.py
+msgid "Checking The Cover"
+msgstr "检查上盖状态"
+
+#: ../py/test/pytests/wifi_throughput.py
+msgid "Running, please wait..."
+msgstr "测试中，请稍后。"
+
+#: ../py/test/pytests/wifi_throughput.py
+msgid ""
+"Please wait for other DUTs to finish WiFiThroughput test, and press spacebar "
+"to continue."
+msgstr "请等其它的裝置完成测试后按空白键继续。"
+
+#: ../py/test/pytests/wireless_antenna.py
+msgid "Scanning on device {device} frequency {freq}..."
+msgstr "在装置 {device} 上扫描频率{freq}..."
+
+#: ../py/test/pytests/wireless_antenna.py
+msgid "Done scanning on device {device} frequency {freq}..."
+msgstr "在装置 {device} 上扫描频率{freq} 完成"
+
+#: ../py/test/pytests/wireless_antenna.py
+msgid "Detecting wifi chip type..."
+msgstr "侦测检测WiFi芯片类型中..."
+
+#: ../py/test/pytests/wireless_antenna.py
+msgid "Checking frequencies..."
+msgstr "检查频率中..."
+
+#: ../py/test/pytests/wireless_antenna.py
+msgid "Press space to start scanning."
+msgstr "请按空白键开始扫描。"
+
+#: ../py/test/pytests/wireless_charge.py
+msgid "Wireless Charge Port testing..."
+msgstr "开始无线充电测试..."
+
+#: ../py/test/pytests/wireless_charge.py
+msgid "{instruction} then hit SPACE"
+msgstr "{instruction}然后按下空白键"
+
+#: ../py/test/pytests/write_device_data_to_vpd.py
+msgid "Writing device data to {vpd_section} VPD..."
+msgstr "机器资料正在写入到 {vpd_section} VPD..."
+
+#: ../py/test/test_lists/base.test_list.json
+msgid "Full Reboot"
+msgstr "深度重启"
+
+#: ../py/test/test_lists/base.test_list.json
+msgid "Halt"
+msgstr "关机"
+
+#: ../py/test/test_lists/base.test_list.json
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Reboot"
+msgstr "重新开机"
+
+#: ../py/test/test_lists/disable_factory_server.test_list.json
+msgid "Has Cellular"
+msgstr "有数据机"
+
+#: ../py/test/test_lists/disable_factory_server.test_list.json
+msgid "Has LTE"
+msgstr "有 LTE"
+
+#: ../py/test/test_lists/disable_factory_server.test_list.json
+msgid "Has Touchscreen"
+msgstr "有触控面板"
+
+#: ../py/test/test_lists/disable_factory_server.test_list.json
+msgid "Set DeviceInfo"
+msgstr "设定机器资讯"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Activate Registration Code"
+msgstr "激活注册码(ECHO Code)"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Check Point for All Tests"
+msgstr "最终确认关卡"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Audio Jack"
+msgstr "音源孔"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Barrier"
+msgstr "检查关卡"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Camera Tests"
+msgstr "相机测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Charge Discharge Current"
+msgstr "充放电电流测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Charger Type Detection"
+msgstr "充电器型号识别"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Check Cr50 Board ID Not Set"
+msgstr "检查 CR50 版号是否未设置"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Check Fingerprint Firmware"
+msgstr "确认指纹韧体"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Check Point"
+msgstr "确认关卡"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Check Release Image"
+msgstr "检查出厂系统"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Clear factory VPD entries"
+msgstr "清除工厂 VPD 资讯"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "EC Cold Reset"
+msgstr "EC 冷重启"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Cold Reset"
+msgstr "冷重启"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Deprovision CBI"
+msgstr "清除 CBI"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Enable EC Write Protect"
+msgstr "EC 写入保护"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Fingerprint Test Group"
+msgstr "测试指纹群组"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Fingerprint Sensor test"
+msgstr "指纹感应器测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+#: ../py/test/test_lists/generic_fat.test_list.json
+#: ../py/test/test_lists/generic_fft.test_list.json
+#: ../py/test/test_lists/generic_grt.test_list.json
+#: ../py/test/test_lists/generic_rma.test_list.json
+#: ../py/test/test_lists/generic_run_in.test_list.json
+#: ../py/test/test_lists/generic_smt.test_list.json
+#: ../py/test/test_lists/generic_unprovisioned.test_list.json
+msgid "Finish"
+msgstr "结束"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Front Camera Assemble"
+msgstr "前相机组装"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Front Camera Assemble QR"
+msgstr "前相机组装和扫描QR码"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Front Camera LED"
+msgstr "前相机 LED"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Volume Down"
+msgstr "音量减"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Volume Up"
+msgstr "音量加"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Power Button"
+msgstr "电源键"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Hardware Button"
+msgstr "按键测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Idle"
+msgstr "闲置等待"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Create Cache"
+msgstr "产生 Cache"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Verify Cache"
+msgstr "验证 Cache"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Model and SKU"
+msgstr "组态与样式(SKU)"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Notebook Mode"
+msgstr "笔电模式"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Notify Overlord to track connection"
+msgstr "通知 Overlord 以追踪连接"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Notify Overlord not to track connection"
+msgstr "通知 Overlord 不要追踪连接"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Placeholder"
+msgstr "未定义测项"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Probe Hardware"
+msgstr "侦测硬件"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "QR Scan"
+msgstr "扫描 QR 码"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Rear Camera Assemble"
+msgstr "后相机组装"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Rear Camera Assemble QR"
+msgstr "后相机组装和扫描QR码"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Rear Camera LED"
+msgstr "后相机 LED"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "SD Performance"
+msgstr "SD 效能"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Screen Rotation"
+msgstr "屏幕旋转"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Shopfloor Service (NotifyEnd)"
+msgstr "Shopfloor 服务 (NotifyEnd)"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Shopfloor Service (NotifyStart)"
+msgstr "Shopfloor 服务 (NotifyStart)"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Speaker/Microphone"
+msgstr "喇叭/麦克风"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Stress App Test"
+msgstr "压力测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Stylus And Garage"
+msgstr "触控笔与插槽"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Tablet Rotation Base-Accel"
+msgstr "平版旋转-主板加速度计"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Tablet Rotation Lid-Accel"
+msgstr "平版旋转-上盖加速度计"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Touchscreen Uniformity"
+msgstr "触屏均一性测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Random Number Generation"
+msgstr "乱数产生"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "USB Performance"
+msgstr "USB 效能"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "USB2 TypeA Performance"
+msgstr "USB2 TypeA 效能测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "USB3 TypeA Performance"
+msgstr "USB3 TypeA 效能测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Manual Test Left USB TypeA"
+msgstr "手动左 USB TypeA 测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Manual Test Right USB TypeA"
+msgstr "手动右 USB TypeA 测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "USB3 CC1 Performance"
+msgstr "USB3 效能测试 CC1"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "USB3 CC2 Performance"
+msgstr "USB3 效能测试 CC2"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "USB2 Performance"
+msgstr "USB2 效能测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "USB3 External Display Test"
+msgstr "USB3 外接显示"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "20V Charging"
+msgstr "20V 充电"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "5V Charging"
+msgstr "5V 充电"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Left USB TypeC"
+msgstr "左 USB TypeC Port"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Manual Test Left USB TypeC"
+msgstr "手动左 USB TypeC 测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Right USB TypeC"
+msgstr "右 USB TypeC Port"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Manual Test Right USB TypeC"
+msgstr "手动右 USB TypeC 测试"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Update CBI"
+msgstr "更新 CBI"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Check Cr50 Firmware Version"
+msgstr "检查 CR50 韧体版本"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Update Cr50 Firmware"
+msgstr "更新 CR50 韧体"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Update Fingerprint Firmware"
+msgstr "更新指纹韧体"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+#: ../py/test/test_lists/generic_unprovisioned.test_list.json
+msgid "Update SKU ID"
+msgstr "更新样式 ID"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Upload Reg (ECHO) Codes to activate"
+msgstr "上传注册码(ECHO)以激活"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Wifi"
+msgstr "无线网路"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Attach peripheral to charging port"
+msgstr "连接配件至充电区"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Remove peripheral from charging port"
+msgstr "移除充电区配件"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Wireless Charger"
+msgstr "无线充电"
+
+#: ../py/test/test_lists/generic_common.test_list.json
+msgid "Write HWID"
+msgstr "硬体代号"
+
+#: ../py/test/test_lists/generic_fat.test_list.json
+msgid "FAT (Final Assembly Test)"
+msgstr "FAT (最终组装测试)"
+
+#: ../py/test/test_lists/generic_fat.test_list.json
+#: ../py/test/test_lists/generic_fft.test_list.json
+#: ../py/test/test_lists/generic_grt.test_list.json
+#: ../py/test/test_lists/generic_run_in.test_list.json
+#: ../py/test/test_lists/generic_smt.test_list.json
+#: ../py/test/test_lists/generic_unprovisioned.test_list.json
+msgid "Prepare"
+msgstr "准备程序"
+
+#: ../py/test/test_lists/generic_fft.test_list.json
+msgid "FFT (Final Functional Test)"
+msgstr "FFT (最终功能测试)"
+
+#: ../py/test/test_lists/generic_grt.test_list.json
+#: ../py/test/test_lists/generic_rma.test_list.json
+msgid "GRT (Google Required Tests)"
+msgstr "GRT (Google 必要测试项目)"
+
+#: ../py/test/test_lists/generic_main.test_list.json
+msgid "Generic Chromebook"
+msgstr "一般 Chromebook 测试"
+
+#: ../py/test/test_lists/generic_replacement_mlb.test_list.json
+msgid "Replacement MLB End"
+msgstr "更换主板结束"
+
+#: ../py/test/test_lists/generic_replacement_mlb.test_list.json
+msgid "Replacement MLB GRT (Google Required Tests)"
+msgstr "更换主板 GRT (Google 必要测试项目)"
+
+#: ../py/test/test_lists/generic_replacement_mlb.test_list.json
+msgid "Replacement MLB SMT"
+msgstr "更换主板 SMT"
+
+#: ../py/test/test_lists/generic_replacement_mlb.test_list.json
+msgid "Generic Replacement MLB SMT"
+msgstr "一般更换主板 SMT"
+
+#: ../py/test/test_lists/generic_rf_station.test_list.json
+msgid "Generic RF Station"
+msgstr "一般射频測試站"
+
+#: ../py/test/test_lists/generic_rma.test_list.json
+msgid "FFT"
+msgstr "最终功能测试"
+
+#: ../py/test/test_lists/generic_rma.test_list.json
+msgid "Generic RMA"
+msgstr "一般退货授权 (RMA)"
+
+#: ../py/test/test_lists/generic_rrt.test_list.json
+#: ../py/test/test_lists/generic_run_in.test_list.json
+msgid "Dozing Stress"
+msgstr "睡眠内存压力测试"
+
+#: ../py/test/test_lists/generic_rrt.test_list.json
+msgid "Check WLAN"
+msgstr "检查无线网络"
+
+#: ../py/test/test_lists/generic_rrt.test_list.json
+msgid "Check Bluetooth"
+msgstr "检查蓝牙"
+
+#: ../py/test/test_lists/generic_rrt.test_list.json
+msgid "Stress Group"
+msgstr "集合压力测试"
+
+#: ../py/test/test_lists/generic_rrt.test_list.json
+msgid "Warm Cold Reboot"
+msgstr "冷热重新开机"
+
+#: ../py/test/test_lists/generic_rrt.test_list.json
+msgid "RRT"
+msgstr "RRT"
+
+#: ../py/test/test_lists/generic_rrt.test_list.json
+msgid "Generic Rolling Reliability"
+msgstr "一般稳定性测试 (RRT)"
+
+#: ../py/test/test_lists/generic_run_in.test_list.json
+msgid "Run-In Test"
+msgstr "Run-In 测试"
+
+#: ../py/test/test_lists/generic_run_in.test_list.json
+msgid "Stress Group With Front Camera"
+msgstr "前相机集合压力测试"
+
+#: ../py/test/test_lists/generic_run_in.test_list.json
+msgid "Stress Group With Rear Camera"
+msgstr "后相机集合压力测试"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "SMT (SA Test)"
+msgstr "SMT (SA 测试)"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "Parallel Test"
+msgstr "平行测试群组"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "MLB Serial Number"
+msgstr "母板序号"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "Scan MLB"
+msgstr "扫描母板序号"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "Operator ID"
+msgstr "作业员 ID"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "Scan Operator ID"
+msgstr "扫描作业员 ID"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "Station ID"
+msgstr "测站 ID"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "ScanStationID"
+msgstr "扫描测站 ID"
+
+#: ../py/test/test_lists/generic_smt.test_list.json
+msgid "Stress Test"
+msgstr "压力测试"
+
+#: ../py/test/test_lists/generic_tast.test_list.json
+msgid "Test List for Tast Tests"
+msgstr "Test List for Tast Tests"
+
+#: ../py/test/test_lists/generic_unprovisioned.test_list.json
+msgid "Provision Chromebook with SKU ID"
+msgstr "供应 Chromebook 样式 ID"
+
+#: ../py/test/test_lists/main_wipe.test_list.json
+msgid "Execute Wipe Test-List"
+msgstr ""
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Connect Device"
+msgstr "接上装置"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Disconnect Device"
+msgstr "移除装置"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Copy Factory State From DUT"
+msgstr "从装置复制测试状态"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Copy Factory State To DUT"
+msgstr "复制测试状态到装置"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Merge Factory State On DUT"
+msgstr "汇整工厂测试状态"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Pop Factory State On Station"
+msgstr "清除暂存测试状态"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Placeholder: AfterDisconnection"
+msgstr "离线后测项（未定义）"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Placeholder: BeforeConnection"
+msgstr "连线前测项（未定义）"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Placeholder: Main"
+msgstr "主测项（未定义）"
+
+#: ../py/test/test_lists/station_based.test_list.json
+msgid "Station-Based Test Template"
+msgstr "测试站模板"
+
+#: ../py/test/test_lists/test_object.py
+msgid "Test Group"
+msgstr "测试群组"
+
+#: ../py/test/test_ui.py
+msgid "Press Enter to pass."
+msgstr "通过请按ENTER键。"
+
+#: ../py/test/test_ui.py
+msgid "Press ESC to fail."
+msgstr "失败请按ESC键。"
